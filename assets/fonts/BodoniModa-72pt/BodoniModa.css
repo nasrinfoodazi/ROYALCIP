@@ -1,0 +1,74 @@
+﻿
+
+@font-face {
+    font-family: BodoniModa_Black;
+    font-style: normal;
+    font-weight: normal;
+    src:url("./BodoniModa_72pt-Black.ttf") format('truetype');
+}
+@font-face {
+    font-family: BodoniModa_BlackItalic;
+    font-style: normal;
+    font-weight: normal;
+    src:url("./BodoniModa_72pt-BlackItalic.ttf") format('truetype');
+}
+@font-face {
+    font-family: BodoniModa_Bold;
+    font-style: normal;
+    font-weight: bold;
+    src:url("./BodoniModa_72pt-Bold.ttf") format('truetype');
+}
+@font-face {
+    font-family: BodoniModa_BoldItalic;
+    font-style: normal;
+    font-weight: bold;
+    src:url("./BodoniModa_72pt-BoldItalic.ttf") format('truetype');
+}
+@font-face {
+    font-family: BodoniModa_ExtraBold;
+    font-style: normal;
+    font-weight: bold;
+    src:url("./BodoniModa_72pt-ExtraBold.ttf") format('truetype');
+}
+@font-face {
+    font-family: BodoniModa_ExtraBoldItalic;
+    font-style: normal;
+    font-weight: bold;
+    src:url("./BodoniModa_72pt-ExtraBoldItalic.ttf") format('truetype');
+}
+@font-face {
+    font-family: BodoniModa_SemiBold;
+    font-style: normal;
+    font-weight: bold;
+    src:url("./BodoniModa_72pt-SemiBold.ttf") format('truetype');
+}
+@font-face {
+    font-family: BodoniModa_SemiBoldItalic;
+    font-style: normal;
+    font-weight: bold;
+    src:url("./BodoniModa_72pt-SemiBoldItalic.ttf") format('truetype');
+}
+@font-face {
+    font-family: BodoniModa_Italic;
+    font-style: normal;
+    font-weight: normal;
+    src:url("./BodoniModa_72pt-Italic.ttf") format('truetype');
+}
+@font-face {
+    font-family: BodoniModa_Medium;
+    font-style: normal;
+    font-weight: normal;
+    src:url("./BodoniModa_72pt-Medium.ttf") format('truetype');
+}
+@font-face {
+    font-family: BodoniModa_MediumItalic;
+    font-style: normal;
+    font-weight: normal;
+    src:url("./BodoniModa_72pt-MediumItalic.ttf") format('truetype');
+}
+@font-face {
+    font-family: BodoniModa_Regular;
+    font-style: normal;
+    font-weight: normal;
+    src:url("./BodoniModa_72pt-Regular.ttf") format('truetype');
+}
