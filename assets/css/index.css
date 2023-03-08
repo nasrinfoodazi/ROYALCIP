@@ -6,15 +6,50 @@ body{
   font-family: 'IRANSans';
   /* font-family: "BodoniModa" */
 }
-h1{
-  color: var(--blue) ;
-}
 
 :root{
   --yellow:#e8c347;
   --darkblue:#10102d;
   --lightblue:#7171dd;
   --white:#fff;
+
+  --bs-font-bodoni-moda-black:BodoniModa_Black;
+  --bs-font-bodoni-moda-black-italic:BlackItalic;
+  --bs-font-bodoni-moda-bold:BodoniModa_Bold;
+  --bs-font-bodoni-moda-bold-italic:BodoniModa_BoldItalic;
+  --bs-font-bodoni-moda-extra-bold:BodoniModa_ExtraBold;
+  --bs-font-bodoni-moda-extra-bold-italic:BodoniModa_ExtraBoldItalic;
+  --bs-font-bodoni-moda-semi-bold:BodoniModa_SemiBold;
+  --bs-font-bodoni-moda-semi-bold-italic:BodoniModa_SemiBoldItalic;
+  --bs-font-bodoni-moda-italic:BodoniModa_Italic;
+  --bs-font-bodoni-moda-medium:BodoniModa_Medium;
+  --bs-font-bodoni-moda-medium-italic:BodoniModa_MediumItalic;
+  --bs-font-bodoni-moda-regular:BodoniModa_Regular;
+
+
+  --bs-font-cairo-black:Cairo_Black;
+  --bs-font-cairo-bold:Cairo_Bold;
+  --bs-font-cairo-light:Cairo_Light;
+  --bs-font-cairo-extra-bold:Cairo_ExtraBold;
+  --bs-font-cairo-semi-bold:Cairo_SemiBold;
+  --bs-font-cairo-medium:Cairo_Medium;
+  --bs-font-cairo-regular:Cairo_Regular;
+
+
+  --bs-font-IRANSans-FaNum:IRANSans_FaNum;
+  --bs-font-IRANSans-black-FaNum:IRANSans_Black_FaNum;
+  --bs-font-IRANSans-bold-FaNum:IRANSans_Bold_FaNum;
+  --bs-font-IRANSans-medium-FaNum:IRANSans_Medium_FaNum;
+  --bs-font-IRANSans-light-FaNum:IRANSans_Light_FaNum;
+  --bs-font-IRANSans-ultra-light-FaNum:IRANSans_UltraLight_FaNum;
+
+
+  --bs-font-IRANSans:IRANSans;
+  --bs-font-IRANSans-black:IRANSans_Black;
+  --bs-font-IRANSans-bold:IRANSans_Bold;
+  --bs-font-IRANSans-medium:IRANSans_Medium;
+  --bs-font-IRANSans-light:IRANSans_Light;
+  --bs-font-IRANSans-ultra-light:IRANSans_UltraLight;
 }
 a,a:hover{
   text-decoration: none;
@@ -27,7 +62,7 @@ ul{
   background-color: var(--darkblue);
   display: flex;
   justify-content: center;
-  
+
 }
 .navbar-header{
   display: flex;
@@ -67,7 +102,7 @@ display: flex;
 .btn-yellow-border{
   border:2px solid var(--yellow);
   border-radius: 8px;
-  padding: 5px 8px; 
+  padding: 5px 8px;
 }
 .header-left>div{
  margin-left:15px;
@@ -90,7 +125,7 @@ display: flex;
 .header-lang{
   position: relative;
   cursor: pointer;
- 
+
 }
 .lang-drop-down{
   position: absolute;
@@ -144,8 +179,8 @@ display: flex;
 }
 .language{
   border-bottom: 1px solid var(--lightblue);
-  padding-bottom: 5px 
-  
+  padding-bottom: 5px
+
 }
 .country{
   padding: 10px 0
@@ -179,9 +214,9 @@ display: flex;
   padding-bottom: 5px !important;
   line-height: 10px !important;
 }
-.btn-check:checked + .btn, 
-.btn.active, .btn.show, 
-.btn:first-child:active, 
+.btn-check:checked + .btn,
+.btn.active, .btn.show,
+.btn:first-child:active,
 :not(.btn-check) + .btn:active {
   color: var(--white) !important;
   background-color:  rgb(47, 61, 117)!important;
@@ -221,13 +256,13 @@ section{
   position: relative;
   background-color: var(--darkblue);
   z-index: -10;
-  
+
 }
 .banner{
   background: url("../image/BIG\ sasha-freemind-cm0eSVxdLDg-unsplash.jpg") no-repeat center;
   background-size: cover;
-}  
-  
+}
+
 .dash-box{
  display: flex;
  justify-content: flex-start;
@@ -269,7 +304,7 @@ section{
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  
+
 
 
 }
@@ -305,7 +340,7 @@ z-index: 2;
   left: 50%;;
   top:-50%;
   z-index: 5;
-  
+
 
 }
 
@@ -343,4 +378,29 @@ z-index: 2;
   background-color: var(--yellow);
   height: 8px;
   transform: rotate(45deg);
+}
+
+
+
+
+.font1{
+  font-family: var(--bs-font-bodoni-moda-black);
+}
+
+
+.font2{
+  font-family: var(--bs-font-IRANSans-bold);
+}
+
+.font3{
+  font-family: var(--bs-font-cairo-bold);
+}
+.font4{
+  font-family: var(--bs-font-cairo-light);
+}
+.font6{
+  font-family: var(--bs-font-bodoni-moda-medium-italic);
+}
+.font7{
+  font-family: var(--bs-font-IRANSans-ultra-light);
 }

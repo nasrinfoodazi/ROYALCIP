@@ -4,42 +4,42 @@
     font-family: Cairo_Black;
     font-style: normal;
     font-weight: normal;
-    src:url("Cario/Cairo-Black.ttf") format('truetype');
+    src:url("./Cairo-Black.ttf") format('truetype');
 }
 
 @font-face {
     font-family: Cairo_Bold;
     font-style: normal;
     font-weight: bold;
-    src:url("Cario/Cairo-Bold.ttf") format('truetype');
+    src:url("./Cairo-Bold.ttf") format('truetype');
 }
 @font-face {
     font-family: Cairo_Light;
     font-style: normal;
     font-weight: normal;
-    src:url("Cario/Cairo-Light.ttf") format('truetype');
+    src:url("./Cairo-Light.ttf") format('truetype');
 }
 @font-face {
     font-family: Cairo_ExtraBold;
     font-style: normal;
     font-weight: bold;
-    src:url("Cario./Cairo-ExtraBold.ttf") format('truetype');
+    src:url("./Cairo-ExtraBold.ttf") format('truetype');
 }
 @font-face {
     font-family: Cairo_SemiBold;
     font-style: normal;
     font-weight: bold;
-    src:url("Cario/Cairo-SemiBold.ttf") format('truetype');
+    src:url("./Cairo-SemiBold.ttf") format('truetype');
 }
 @font-face {
     font-family: Cairo_Medium;
     font-style: normal;
     font-weight: normal;
-    src:url("Cario/Cairo-Medium.ttf") format('truetype');
+    src:url("./Cairo-Medium.ttf") format('truetype');
 }
 @font-face {
     font-family: Cairo_Regular;
     font-style: normal;
     font-weight: normal;
-    src:url("Cario/Cairo-Regular.ttf") format('truetype');
+    src:url("./Cairo-Regular.ttf") format('truetype');
 }
