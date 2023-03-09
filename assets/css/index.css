@@ -281,12 +281,13 @@ section{
   margin: 50px 0;
 }
 .banner{
-  min-height: 85vh;
+  min-height: 80vh;
   display: flex;
   justify-content: center;
   align-items: center;
   position: relative;
   z-index: -10;
+  margin-top: 0;
 
 }
 .banner{
@@ -324,6 +325,66 @@ section{
   font-weight: 900;
 
 }
+.search{
+  display: flex;
+  justify-content: center;
+ margin-top: -220px;
+ margin-bottom: 80px;
+}
+.search-box{
+  background-color: var(--yellow);
+  padding: 30px 20px;
+  border-radius: 10px;
+}
+.search-tab li button{
+  background-color:var(--darkblue) !important;
+ 
+}
+.search-tab li button.active{
+  background-color:var(--white) !important;
+ 
+}
+.nav-search{
+  color: var(--white);
+  display: block;
+  padding: .5rem 1rem;
+  text-decoration: none;
+  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
+  border-radius: 7px;
+  margin:0 .2rem;
+  /* margin-bottom: 20px; */
+}
+.nav-search.active{
+  background-color: var(--white);
+  color: var(--darkblue);
+}
+.search-input input{
+  border-radius: 7px;
+  margin-top: 10px;
+}
+.search-input label{
+  font-family: var(--bs-font-cairo-semi-bold);
+  color: var(--darkblue);
+}
+.search-input .btn-bcdark{
+  font-size: 1rem;
+  margin-top: 0;
+  padding: 10px 30px;
+}
+#pills-tab{
+  padding: 0 !important;
+}
+.search-input-section{
+  display: flex;
+  justify-content: space-around;
+
+}
+.search-button{
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+/*  */
 .about{
   display: flex;
   justify-content: center;
@@ -457,9 +518,11 @@ section{
     background-color:var(--darkblue);
     color:var(--yellow);
     font-family: var(--bs-font-cairo-semi-bold);
-    padding: 15px 80px;
+    padding: 15px 20px;
+    width: 150px;
     margin-top: 15px;
     font-size: 1.2rem;
+    text-align: center;
 
   }
 /* footer */
