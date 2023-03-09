@@ -326,7 +326,7 @@ section{
   color: var(--yellow);
   font-family: var(--bs-font-cairo-light);
   font-size: 1.7rem;
-  
+
 }
 .text-white{
   color: var(--white);
@@ -402,10 +402,10 @@ section{
   color: var(--darkblue);
   font-family: var(--bs-font-bodoni-moda-medium);
   font-size: 1.5rem;
- 
+
 
   }
-  
+
   .form-newsletter{
     width: 70%;
     margin: 20px 0;
@@ -435,7 +435,7 @@ section{
     color: var(--light-gray);
     font-family: var(--bs-font-cairo-light);
   }
-  
+
   ::-ms-input-placeholder { /* Microsoft Edge */
     color: var(--light-gray);
     font-family: var(--bs-font-cairo-light);
@@ -447,7 +447,7 @@ section{
     padding: 15px 80px;
     margin-top: 15px;
     font-size: 1.2rem;
- 
+
   }
 /* footer */
 
@@ -567,4 +567,83 @@ section{
 }
 .font7{
   font-family: var(--bs-font-IRANSans-ultra-light);
+}
+
+
+
+/*the container must be positioned relative:*/
+.autocomplete {
+  position: relative;
+  display: inline-block;
+  width: 35px;
+  opacity: 0;
+}
+
+
+input {
+  border: 1px solid transparent;
+  /*background-color: #f1f1f1;*/
+  padding: 10px;
+  font-size: 16px;
+}
+
+input[type=text] {
+  /*background-color: #f1f1f1;*/
+  width: 100%;
+}
+
+
+.autocomplete-items {
+  position: absolute;
+  border: 1px solid #d4d4d4;
+  border-bottom: none;
+  border-top: none;
+  z-index: 99;
+  /*position the autocomplete items to be the same width as the container:*/
+  top: 100%;
+  left: 0;
+  right: 0;
+}
+
+.autocomplete-items div {
+  padding: 10px;
+  cursor: pointer;
+  background-color: #fff;
+  border-bottom: 1px solid #d4d4d4;
+}
+
+/*when hovering an item:*/
+.autocomplete-items div:hover {
+  background-color: #e9e9e9;
+}
+
+/*when navigating through the items using the arrow keys:*/
+.autocomplete-active {
+  background-color: DodgerBlue !important;
+  color: #ffffff;
+}
+
+
+
+.header-search{
+  position: relative;
+}
+
+.search-icon{
+  position: absolute;
+  z-index: 1;
+  left: 0;
+}
+
+.header-search:hover .autocomplete {
+  width: 250px;
+  opacity: 1;
+  transition: width 300ms ease-in;
+}
+.searchInput{
+  background-color: #1c1c4f6b;
+  width: 100%;
+  border-radius: 16px;
+  font-size: 16px;
+  height: 35px;
 }
