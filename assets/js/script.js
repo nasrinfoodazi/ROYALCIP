@@ -15,7 +15,10 @@ window.addEventListener('click', function (e) {
             autocompleteInput.classList.remove('autocompleteHover')
         }
     }else{
-        langDropDown.style.opacity = null;
+        if(!langDropDown.contains(e.target)){
+            langDropDown.style.opacity = null;
+        }
+
     }
 } );
 
