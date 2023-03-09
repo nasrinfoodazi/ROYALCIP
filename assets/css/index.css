@@ -149,11 +149,26 @@ display: flex;
   background-color: rgb(47, 61, 117);
   top:35px;
   left: -3px;
-  border-radius: 7PX;
+  border-radius: 0 7px 7px;
   opacity: 0;
   transition: cubic-bezier(0.165, 0.84, 0.44, 1) .3s;
-  overflow: hidden;
+  /*overflow: hidden;*/
 
+}
+
+.lang-drop-down.arrow-top {
+  margin-top: 5px;
+}
+
+.lang-drop-down.arrow-top:after {
+  content: " ";
+  position: absolute;
+  left: 0px;
+  top: -20px;
+  border-top: none;
+  border-right: 25px solid transparent;
+  /* border-left: 15px solid transparent; */
+  border-bottom: 20px solid rgb(47, 61, 117);
 }
 
 
