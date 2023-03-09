@@ -575,6 +575,13 @@ section{
   display: inline-block;
   width: 35px;
   opacity: 0;
+  transition: all 300ms ease-in;
+}
+
+.autocompleteHover {
+  width: 250px;
+  opacity: 1;
+  transition: all 300ms ease-in;
 }
 
 
@@ -631,17 +638,15 @@ input[type=text] {
   position: absolute;
   z-index: 1;
   left: 0;
+  cursor: pointer;
 }
 
-.header-search:hover .autocomplete {
-  width: 250px;
-  opacity: 1;
-  transition: width 300ms ease-in;
-}
+
 .searchInput{
   background-color: #1c1c4f6b;
   width: 100%;
   border-radius: 16px;
+  color:#ffffff;
   font-size: 16px;
   height: 35px;
 }
