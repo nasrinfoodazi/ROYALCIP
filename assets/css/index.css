@@ -292,10 +292,12 @@ section{
   font-size: 2rem;
   margin-bottom: 20px;
   font-weight: 500;
+  font-family: var(--bs-font-cairo-light);
 }
 .dash-box-banner h3{
   font-size: 3rem;
   margin-bottom: 50px;
+  font-family: var(--bs-font-cairo-semi-bold);
 }
 .btn-white{
   padding: 10px 35px;
@@ -361,8 +363,7 @@ section{
   border-radius: 30px;
 }
 /* newsletter */
-.newsletter{
-}
+
 .newsletter-form{
   background-color:var(--yellow);
   padding: 30px 40px;
@@ -402,8 +403,6 @@ section{
   color: var(--darkblue);
   font-family: var(--bs-font-bodoni-moda-medium);
   font-size: 1.5rem;
-
-
   }
 
   .form-newsletter{
@@ -413,7 +412,6 @@ section{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
   }
   .form-newsletter input{
     width: 100%;
