@@ -58,12 +58,12 @@
                         <div class="drop-select">
                             <input type="radio" class="btn-check " name="options" id="option1" autocomplete="off"
                                    checked>
-                            <label class="btn " for="option1">
+                            <label class="btn language-btn" for="option1">
                                 <h5>فارسی</h5>
                                 <span>ایران</span>
                             </label>
                             <input type="radio" class="btn-check " name="options" id="option2" autocomplete="off">
-                            <label class="btn " for="option2">
+                            <label class="btn language-btn" for="option2">
                                 <h5>انگلیسی</h5>
                                 <span>امریکا</span>
 
@@ -79,18 +79,18 @@
                         <div class="drop-select">
                             <input type="radio" class="btn-check " name="country" id="count1" autocomplete="off"
                                    checked>
-                            <label class="btn " for="count1">
+                            <label class="btn language-btn" for="count1">
                                 <h5>ریال ایران</h5>
                                 <span>ریال</span>
                             </label>
                             <input type="radio" class="btn-check " name="country" id="count2" autocomplete="off">
-                            <label class="btn " for="count2">
+                            <label class="btn language-btn" for="count2">
                                 <h5>دلار امریکا</h5>
                                 <span>USD-$</span>
 
                             </label>
                             <input type="radio" class="btn-check" name="country" id="count3" autocomplete="off">
-                            <label class="btn " for="count3">
+                            <label class="btn language-btn" for="count3">
                                 <h5>یورو</h5>
                                 <span>EUR-$</span>
 
@@ -185,7 +185,7 @@
                                         aria-controls="pills-tashrifatrf" aria-selected="true">
                                     <div class="d-flex justify-content-around align-content-center">
                                         <div class="reserve-title">پرواز ورودی</div>
-                                        <div  class='reserve-icon'>
+                                        <div class='reserve-icon'>
                                             <div class='arrival-icon'></div>
                                         </div>
                                     </div>
@@ -197,7 +197,7 @@
                                         aria-controls="pills-lounge" aria-selected="false">
                                     <div class="d-flex justify-content-around align-content-center">
                                         <div class="reserve-title">پرواز خروجی</div>
-                                        <div  class='reserve-icon'>
+                                        <div class='reserve-icon'>
                                             <div class='departure-icon'></div>
                                         </div>
                                     </div>
@@ -209,7 +209,7 @@
                                         aria-controls="pills-transfer" aria-selected="false">
                                     <div class="d-flex justify-content-around align-content-center">
                                         <div class="reserve-title">بین پرواز</div>
-                                        <div  class='reserve-square-icon'>
+                                        <div class='reserve-square-icon'>
                                             <div class='connecting-icon'></div>
                                         </div>
                                     </div>
@@ -219,6 +219,57 @@
                     </div>
                 </section>
                 <section class="section-content">
+
+                    <!--                    <div class="container">-->
+                    <!--                        <form>-->
+                    <!--                            <h1>Material Design formular</h1>-->
+                    <!--                            <div class="form-group">-->
+                    <!--                                <select>-->
+                    <!--                                    <option>Value 1</option>-->
+                    <!--                                    <option>Value 2</option>-->
+                    <!--                                </select>-->
+                    <!--                                <label for="select" class="control-label">Selectbox</label><i class="bar"></i>-->
+                    <!--                            </div>-->
+                    <!--                            <div class="form-group">-->
+                    <!--                                <input type="text" required="required"/>-->
+                    <!--                                <label for="input" class="control-label">Textfield</label><i class="bar"></i>-->
+                    <!--                            </div>-->
+                    <!--                            <div class="form-group">-->
+                    <!--                                <textarea required="required"></textarea>-->
+                    <!--                                <label for="textarea" class="control-label">Textarea</label><i class="bar"></i>-->
+                    <!--                            </div>-->
+                    <!--                            <div class="checkbox">-->
+                    <!--                                <label>-->
+                    <!--                                    <input type="checkbox" checked="checked"/><i class="helper"></i>I'm the label from a checkbox-->
+                    <!--                                </label>-->
+                    <!--                            </div>-->
+                    <!--                            <div class="checkbox">-->
+                    <!--                                <label>-->
+                    <!--                                    <input type="checkbox"/><i class="helper"></i>I'm the label from a checkbox-->
+                    <!--                                </label>-->
+                    <!--                            </div>-->
+                    <!--                            <div class="form-radio">-->
+                    <!--                                <div class="radio">-->
+                    <!--                                    <label>-->
+                    <!--                                        <input type="radio" name="radio" checked="checked"/><i class="helper"></i>I'm the label from a radio button-->
+                    <!--                                    </label>-->
+                    <!--                                </div>-->
+                    <!--                                <div class="radio">-->
+                    <!--                                    <label>-->
+                    <!--                                        <input type="radio" name="radio"/><i class="helper"></i>I'm the label from a radio button-->
+                    <!--                                    </label>-->
+                    <!--                                </div>-->
+                    <!--                            </div>-->
+                    <!--                            <div class="checkbox">-->
+                    <!--                                <label>-->
+                    <!--                                    <input type="checkbox"/><i class="helper"></i>I'm the label from a checkbox-->
+                    <!--                                </label>-->
+                    <!--                            </div>-->
+                    <!--                        </form>-->
+                    <!--                        <div class="button-container">-->
+                    <!--                            <button type="button" class="button"><span>Submit</span></button>-->
+                    <!--                        </div>-->
+                    <!--                    </div>-->
                     <div class="col-12 form-content">
                         <div>
                             <div class="form-check form-check-inline">
@@ -233,7 +284,39 @@
                             </div>
                         </div>
                         <hr class="divider"/>
+                        <div class="row">
+                            <div class="col-12 col-sm-6">
+                                <div class="form-group">
+                                    <input type="text" required="required"/>
+                                    <label for="input" class="control-label">تاریخ پرواز</label><i class="bar"></i>
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-6">
+                                <div class="form-group">
+                                    <input type="text" required="required"/>
+                                    <label for="input" class="control-label">شماره پرواز</label><i class="bar"></i>
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-6">
+                                <div class="form-group">
+                                    <select>
+                                        <option>۱</option>
+                                        <option>۲</option>
+                                    </select>
+                                    <label for="select" class="control-label">مسافرین</label><i class="bar"></i>
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-6">
+                                <div class="form-group">
+                                    <input type="text" required="required"/>
+                                    <label for="input" class="control-label">کد CIP</label><i class="bar"></i>
+                                    <div class="hint">در صورتی که کد هدیه از طرف هواپیمایی دارید در این قسمت وارد نمایید</div>
+                                </div>
+                            </div>
+
+                        </div>
                     </div>
+                    <button type="button" class="btn btn-outline-secondary section-content">ثبت اطلاعات</button>
                 </section>
             </div>
         </div>
