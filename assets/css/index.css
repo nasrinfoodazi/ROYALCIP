@@ -2,10 +2,7 @@
 @import "../fonts/IRANSans/IranSans.css";
 @import "../fonts/BodoniModa-72pt/BodoniModa.css";
 /* @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"); */
-body{
-  font-family: 'IRANSans';
-  /* font-family: "Cairo_Black" */
-}
+
 
 :root{
   --yellow:#e8c347;
@@ -57,6 +54,10 @@ body{
   --bs-font-IRANSans-medium:IRANSans_Medium;
   --bs-font-IRANSans-light:IRANSans_Light;
   --bs-font-IRANSans-ultra-light:IRANSans_UltraLight;
+}
+body{
+  font-family: var(--bs-font-IRANSans);
+  color:var(--white)
 }
 .btn-yellow-border{
   border-color: var(--yellow);
@@ -110,11 +111,22 @@ display: flex;
 .nav-header li:hover  a{
   color: var(--yellow);
 }
-.header-left,
+
+
 .header-right{
+  display: none;
+  align-items: center;
+}
+.header-left{
   display: flex;
   align-items: center;
 }
+@media (min-width: 625px) {
+  .header-right{
+    display: flex;
+  }
+}
+
 .btn-dif{
   border:2px solid var(--yellow);
   border-radius: 8px;
@@ -275,7 +287,7 @@ display: flex;
   margin-bottom: 5px !important;
 }
 /* banner */
-section{
+.home-page section{
   display: flex;
   justify-content: center;
   margin: 50px 0;
@@ -338,11 +350,11 @@ section{
 }
 .search-tab li button{
   background-color:var(--darkblue) !important;
- 
+
 }
 .search-tab li button.active{
   background-color:var(--white) !important;
- 
+
 }
 .nav-search{
   color: var(--white);
@@ -728,3 +740,6 @@ input[type=text] {
   font-size: 16px;
   height: 35px;
 }
+
+
+

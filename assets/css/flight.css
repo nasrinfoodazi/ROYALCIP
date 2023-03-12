@@ -1,0 +1,173 @@
+.timeline-content{
+    background-color: var(--lightblue);
+    margin-bottom: 10px;
+}
+.flight-timeline {
+    width: 100%;
+    color: var(--white);
+
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+}
+
+.flight-timeline ul {
+    display: flex;
+    align-items: center;
+    padding: 0;
+    margin:0
+}
+
+.flight-timeline .before {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.flight-timeline .before .shape {
+    width: 8px;
+    height: 8px;
+    border: 1px solid var(--white);
+    display: block;
+    transform: rotate(45deg);
+}
+
+.flight-timeline .before .shape.inprocess {
+    border: 3px solid var(--white);
+}
+
+.flight-timeline .before .shape.done {
+    border: 3px solid var(--yellow);
+}
+
+.flight-timeline .before .line {
+    width: 80px;
+    border-bottom: 1px solid var(--white);
+    display: block;
+    margin-bottom: 1px;
+}
+
+.flight-timeline .before .line.inprocess {
+    border-bottom: 2px solid var(--white);
+    margin-bottom: 2px;
+}
+
+.flight-timeline ul li {
+    display: flex;
+    align-items: center;
+
+}
+
+
+.flight-timeline ul li.inprocess {
+    font-family: var(--bs-font-IRANSans-bold);
+
+}
+
+.flight-timeline ul li.done {
+    font-family: var(--bs-font-IRANSans-bold);
+    color: var(--yellow);
+}
+
+
+
+
+
+
+
+
+
+
+
+.section-content{
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.radio-label{
+    margin-right: 5px;
+    margin-top: 5px;
+}
+.reserve-type{
+    display: flex;
+    justify-content: space-around;
+}
+.reserve-type li{
+    display: flex;
+    flex: 1;
+}
+.reserve-type-btn{
+    width: 100%;
+    height: 100px;
+    border:1px solid var(--white);
+}
+
+
+
+
+
+.reserve-title{
+    font-size: 22px;
+}
+.reserve-icon {
+    display: inline-block;
+    width: 50px;
+    height: 35px;
+}
+.reserve-square-icon {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+}
+.reserve-icon>div,
+.reserve-square-icon>div{
+    width: 100%;
+    height: 100%;
+    background-size: contain;
+    background-repeat: no-repeat
+}
+
+.arrival-icon{
+    background: url(../image/SVG/Arrival-white.svg);
+}
+
+.nav-search.active .arrival-icon{
+    background: url(../image/SVG/Arrival.svg);
+}
+
+.connecting-icon{
+    background: url(../image/SVG/Connecting-white.svg);
+}
+
+.nav-search.active .connecting-icon{
+    background: url(../image/SVG/Connecting.svg);
+}
+
+.departure-icon{
+    background: url(../image/SVG/Departure-white.svg);
+}
+
+.nav-search.active .departure-icon{
+    background: url(../image/SVG/Departure.svg);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.form-content{
+    background-color: var(--lightblue);
+    padding: 15px;
+}
+
+.divider{
+    border-color: var(--light-gray);
+}
