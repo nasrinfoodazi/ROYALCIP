@@ -59,6 +59,10 @@ body{
   font-family: var(--bs-font-IRANSans);
   color:var(--white)
 }
+
+.lead{
+  color: var(--light-gray);
+}
 .btn-yellow-border{
   border-color: var(--yellow);
   color: #000;
