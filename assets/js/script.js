@@ -5,7 +5,7 @@ const SearchIcon = document.querySelector('.search-icon');
 const autocompleteInput = document.querySelector('.autocomplete');
 const autocompleteItems = document.querySelector('.autocomplete-items');
 window.addEventListener('click', function (e) {
-    if (LangIcon.contains(e.target)) {
+    if (LangIcon && LangIcon.contains(e.target)) {
         if (langDropDown.style.opacity) {
             langDropDown.style.animation = 'showUp 0.35s 1';
             langDropDown.style.opacity = null;
@@ -15,7 +15,7 @@ window.addEventListener('click', function (e) {
             autocompleteInput.classList.remove('autocompleteHover')
         }
     } else {
-        if (!langDropDown.contains(e.target)) {
+        if (langDropDown && !langDropDown.contains(e.target)) {
             langDropDown.style.opacity = null;
         }
 
@@ -77,4 +77,20 @@ function GetFormInfo(e) {
     document.getElementById('form-submit-btn').disabled = disabled;
 
     console.log("e, type::GetFormInfo:", e.target.name, e.target.value, document.getElementById('flight2Section').style.display)
+}
+
+
+
+let selectedServices = {}
+
+function checkServices(e, type) {
+    console.log('"ttttttttt',e, type)
+    if(selectedServices[type]){
+        Reflect.deleteProperty(selectedServices,type);
+        document.getElementById(`${type}-select-id`).classList.remove('accordion-check')
+    }else{
+        selectedServices[type] = true;
+        document.getElementById(`${type}-select-id`).classList.add('accordion-check')
+    }
+
 }

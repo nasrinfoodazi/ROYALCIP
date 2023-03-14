@@ -66,6 +66,10 @@
     border-bottom: 2px solid var(--white);
     margin-bottom: 2px;
 }
+.flight-timeline .before .line.done {
+    border-bottom: 2px solid var(--yellow);
+    margin-bottom: 2px;
+}
 
 .flight-timeline ul li {
     display: flex;
@@ -127,6 +131,20 @@
     width: 35px;
     height: 35px;
 }
+.site-icon {
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+}
+
+.reserve-icon > div,
+.site-icon > div,
+.reserve-square-icon > div {
+    width: 100%;
+    height: 100%;
+    background-size: contain;
+    background-repeat: no-repeat
+}
 
 .reserve-icon > div,
 .reserve-square-icon > div {
@@ -158,6 +176,42 @@
 
 .nav-search.active .departure-icon {
     background: url(../image/SVG/Departure.svg);
+}
+
+.pets-icon {
+    background: url(../image/SVG/Pets_white.svg);
+}
+
+
+.wheelchair-icon {
+    background: url(../image/SVG/wheelchair_white.svg);
+}
+.visa-icon {
+    background: url(../image/SVG/Visa_white.svg);
+}
+
+.gust-icon {
+    background: url(../image/SVG/Guset_white.svg);
+}
+
+.gust-icon {
+    background: url(../image/SVG/Guset_white.svg);
+}
+
+.shop-assistant-icon {
+    background: url(../image/SVG/Shop_assistant_white.svg);
+}
+.meal-icon {
+    background: url(../image/SVG/Meal_white.svg);
+}
+.flower-icon {
+    background: url(../image/SVG/flower_white.svg);
+}
+.baggage-icon {
+    background: url(../image/SVG/Baggage_white.svg);
+}
+.transfer-icon {
+    background: url(../image/SVG/Transfer_white.svg);
 }
 
 
@@ -586,3 +640,66 @@ fieldset {
 
 }
 
+
+
+.accordion{
+    background-color: transparent;
+    border-radius: 15px;
+}
+.accordion-item:first-of-type,
+.accordion-item:last-of-type{
+    border-radius: 15px;
+}
+.accordion-item:not(:first-of-type),
+.accordion-item:not(:first-of-type){
+border-top: 1px solid var(--light-gray);
+}
+.accordion-item{
+    background-color: transparent;
+    border: 1px solid var(--light-gray);
+    border-radius: 15px;
+    margin-bottom: 10px;
+}
+
+.accordion-button::after {
+    background-image: initial;
+    width: 0;
+}
+
+.accordion-button:not(.collapsed)::after {
+    background-image: initial;
+    width: 0;
+}
+
+.accordion-header-custom{
+    width: 100%;
+}
+
+.accordion-header{
+    padding: 0 15px;
+}
+
+.accordion-button-custom{
+    width: 100%;
+    background-color: transparent;
+
+    padding: 10px 5px;
+    /*font-size: 15px;*/
+
+    color: var(--white);
+}
+.accordion-title{
+    font-size: 20px;
+    margin-right: 20px;
+}
+.accordion-uncheck{
+    width: 25px;
+    height: 25px;
+    border: 1px solid var(--white);
+    border-radius: 50%;
+    cursor: pointer;
+}
+.accordion-check{
+    background-color: var(--white);
+    cursor: pointer;
+}
