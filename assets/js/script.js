@@ -6,17 +6,17 @@ const autocompleteInput = document.querySelector('.autocomplete');
 const autocompleteItems = document.querySelector('.autocomplete-items');
 window.addEventListener('click', function (e) {
     if (LangIcon && LangIcon.contains(e.target)) {
-        if (langDropDown.style.opacity) {
+        if (langDropDown.style.display==='block') {
             langDropDown.style.animation = 'showUp 0.35s 1';
-            langDropDown.style.opacity = null;
+            langDropDown.style.display = 'none';
         } else {
             langDropDown.style.animation = 'showUp 0.35s 1';
-            langDropDown.style.opacity = '1';
+            langDropDown.style.display = 'block';
             autocompleteInput.classList.remove('autocompleteHover')
         }
     } else {
         if (langDropDown && !langDropDown.contains(e.target)) {
-            langDropDown.style.opacity = null;
+            langDropDown.style.display = 'none';
         }
 
     }
@@ -30,7 +30,7 @@ SearchIcon.addEventListener('click', function (e) {
     } else {
         autocompleteInput.classList.add('autocompleteHover')
         // langDropDown.style.animation = 'showUp 0.35s 1';
-        langDropDown.style.opacity = null;
+        langDropDown.style.display = 'none';
     }
 });
 
