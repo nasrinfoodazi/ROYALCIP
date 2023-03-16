@@ -703,3 +703,47 @@ border-top: 1px solid var(--light-gray);
     background-color: var(--white);
     cursor: pointer;
 }
+
+.accordion-body-custom{
+    color:var(--light-gray)
+}
+.accordion-body-custom>div{
+    margin-bottom: 20px;
+}
+.add-service-title{
+    color:var(--white)
+}
+
+.add-service-action{
+    width: 25px;
+    height: 25px;
+    border: 1px solid var(--white);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 4px;
+    font-size: 20px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.add-service-counter{
+
+}
+
+.add-service-details{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+
+.add-service-details>div{
+  margin-bottom: 10px;
+}
+
+.add-service-detail-item{
+    font-size: 14px;
+    color:var(--light-gray)
+}
+

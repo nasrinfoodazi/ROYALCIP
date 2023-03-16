@@ -166,10 +166,12 @@
                         <div class="col-12">
                             <div class="accordion" id="accordionPanelsStayOpenExample">
                                 <div class="accordion-item">
-                                    <div class="accordion-header d-flex align-items-center justify-content-between" id="panelsStayOpen-1" >
-                                        <div class="accordion-button-custom collapsed" type="button" data-bs-toggle="collapse" aria-expanded="false"
-                                                data-bs-target="#panelsStayOpen-collapse-1"
-                                                aria-controls="panelsStayOpen-collapse-1">
+                                    <div class="accordion-header d-flex align-items-center justify-content-between"
+                                         id="panelsStayOpen-1">
+                                        <div class="accordion-button-custom collapsed" type="button"
+                                             data-bs-toggle="collapse" aria-expanded="false"
+                                             data-bs-target="#panelsStayOpen-collapse-1"
+                                             aria-controls="panelsStayOpen-collapse-1">
                                             <div class="d-flex align-items-center justify-content-between accordion-header-custom">
                                                 <div class="d-flex align-items-center">
                                                     <div class='site-icon'>
@@ -182,21 +184,80 @@
                                         </div>
                                         <div class="d-flex align-items-center">
                                             <div></div>
-                                            <div class="accordion-uncheck" id="pets-select-id" onclick="checkServices(event,'pets')"></div>
+                                            <div class="accordion-uncheck" id="pets-select-id"
+                                                 onclick="checkServices(event,'pets')"></div>
                                         </div>
                                     </div>
                                     <div id="panelsStayOpen-collapse-1" class="accordion-collapse collapse"
                                          aria-labelledby="panelsStayOpen-1">
-                                        <div class="accordion-body">
+                                        <div class="accordion-body accordion-body-custom">
+                                            <div class="row">
+                                                <div class="col-12 col-sm-6 add-service-title">
+                                                    حیوان خانگی
+                                                </div>
+                                                <div class="col-12 col-sm-6">
+                                                    <div class="row">
+                                                        <div class="col-6">
+                                                            <div class="row add-service-counter">
+                                                                <div class="col-6 add-service-title">تعداد</div>
+                                                                <div class="col-6 d-flex align-items-center justify-content-between">
+                                                                    <div class="add-service-action" onclick="addService('pet', 'increase')">+</div>
+                                                                    <div class="add-service-quantity" id="add-service-quantity-pet">0</div>
+                                                                    <div class="add-service-action" onclick="addService('pet', 'decrease')">-</div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-6">
+                                                            <div class="d-flex align-items-center  justify-content-end">
+                                                                <div class="price">500,000</div>
+                                                                <div>&nbsp;تومان&nbsp;</div>
+                                                            </div>
+                                                            <div class="d-flex align-items-center  justify-content-end">
+                                                                به ازای هر حیوان خانگی
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-12 col-sm-6 add-service-title">
+                                                    نگهداری از حیوان خانگی
+                                                </div>
+                                                <div class="col-12 col-sm-6">
+                                                    <div class="row">
+                                                        <div class="col-6">
+                                                            <div class="row add-service-counter">
+                                                                <div class="col-6 add-service-title">تعداد</div>
+                                                                <div class="col-6 d-flex align-items-center justify-content-between">
+                                                                    <div class="add-service-action" onclick="addService('keepPet', 'increase')">+</div>
+                                                                    <div class="add-service-quantity" id="add-service-quantity-keepPet">0</div>
+                                                                    <div class="add-service-action" onclick="addService('keepPet', 'decrease')">-</div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-6">
+                                                            <div class="d-flex align-items-center  justify-content-end">
+                                                                <div class="price">150,000</div>
+                                                                <div>&nbsp;تومان&nbsp;</div>
+                                                            </div>
+                                                            <div class="d-flex align-items-center  justify-content-end">
+                                                                به ازای هر حیوان خانگی
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
 
                                         </div>
                                     </div>
                                 </div>
                                 <div class="accordion-item">
-                                    <div class="accordion-header d-flex align-items-center justify-content-between" id="panelsStayOpen-2">
-                                        <div class="accordion-button-custom collapsed" type="button" data-bs-toggle="collapse"
-                                                data-bs-target="#panelsStayOpen-collapse-2"
-                                                aria-controls="panelsStayOpen-collapse-2">
+                                    <div class="accordion-header d-flex align-items-center justify-content-between"
+                                         id="panelsStayOpen-2">
+                                        <div class="accordion-button-custom collapsed" type="button"
+                                             data-bs-toggle="collapse"
+                                             data-bs-target="#panelsStayOpen-collapse-2"
+                                             aria-controls="panelsStayOpen-collapse-2">
                                             <div class="d-flex align-items-center justify-content-between accordion-header-custom">
                                                 <div class="d-flex align-items-center">
                                                     <div class='site-icon'>
@@ -209,21 +270,73 @@
                                         </div>
                                         <div class="d-flex align-items-center">
                                             <div></div>
-                                            <div class="accordion-uncheck" id="wheelchair-select-id" onclick="checkServices(event,'wheelchair')"></div>
+                                            <div class="accordion-uncheck" id="wheelchair-select-id"
+                                                 onclick="checkServices(event,'wheelchair')"></div>
                                         </div>
                                     </div>
                                     <div id="panelsStayOpen-collapse-2" class="accordion-collapse collapse"
                                          aria-labelledby="panelsStayOpen-2">
-                                        <div class="accordion-body">
-
+                                        <div class="accordion-body  accordion-body-custom">
+                                            <div class="row">
+                                                <div class="col-12 col-sm-6 add-service-title">
+                                                    نیاز به ویلچر دارم
+                                                </div>
+                                                <div class="col-12 col-sm-6">
+                                                    <div class="row">
+                                                        <div class="col-6">
+                                                            <div class="row add-service-counter">
+                                                                <div class="col-6 add-service-title">تعداد</div>
+                                                                <div class="col-6 d-flex align-items-center justify-content-between">
+                                                                    <div class="add-service-action" onclick="addService('wheelchair', 'increase')">+</div>
+                                                                    <div class="add-service-quantity" id="add-service-quantity-wheelchair">0</div>
+                                                                    <div class="add-service-action" onclick="addService('wheelchair', 'decrease')">-</div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-6">
+                                                            <div class="d-flex align-items-center  justify-content-end">
+                                                                <div class="price">500,000</div>
+                                                                <div>&nbsp;تومان&nbsp;</div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-12 col-sm-6 add-service-title">
+                                                    نیاز به دستیار برای ویلچر دارم
+                                                </div>
+                                                <div class="col-12 col-sm-6">
+                                                    <div class="row">
+                                                        <div class="col-6">
+                                                            <div class="row add-service-counter">
+                                                                <div class="col-6 add-service-title">تعداد</div>
+                                                                <div class="col-6 d-flex align-items-center justify-content-between">
+                                                                    <div class="add-service-action" onclick="addService('wheelchairAssistant', 'increase')">+</div>
+                                                                    <div class="add-service-quantity" id="add-service-quantity-wheelchairAssistant">0</div>
+                                                                    <div class="add-service-action" onclick="addService('wheelchairAssistant', 'decrease')">-</div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-6">
+                                                            <div class="d-flex align-items-center  justify-content-end">
+                                                                <div class="price">250,000</div>
+                                                                <div>&nbsp;تومان&nbsp;</div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="accordion-item">
-                                    <div class="accordion-header d-flex align-items-center justify-content-between" id="panelsStayOpen-3">
-                                        <div class="accordion-button-custom collapsed" type="button" data-bs-toggle="collapse"
-                                                data-bs-target="#panelsStayOpen-collapse-3"
-                                                aria-controls="panelsStayOpen-collapse-3">
+                                    <div class="accordion-header d-flex align-items-center justify-content-between"
+                                         id="panelsStayOpen-3">
+                                        <div class="accordion-button-custom collapsed" type="button"
+                                             data-bs-toggle="collapse"
+                                             data-bs-target="#panelsStayOpen-collapse-3"
+                                             aria-controls="panelsStayOpen-collapse-3">
                                             <div class="d-flex align-items-center justify-content-between accordion-header-custom">
                                                 <div class="d-flex align-items-center">
                                                     <div class='site-icon'>
@@ -236,7 +349,8 @@
                                         </div>
                                         <div class="d-flex align-items-center">
                                             <div></div>
-                                            <div class="accordion-uncheck" id="visa-select-id" onclick="checkServices(event,'visa')"></div>
+                                            <div class="accordion-uncheck" id="visa-select-id"
+                                                 onclick="checkServices(event,'visa')"></div>
                                         </div>
                                     </div>
                                     <div id="panelsStayOpen-collapse-3" class="accordion-collapse collapse"
@@ -247,10 +361,12 @@
                                     </div>
                                 </div>
                                 <div class="accordion-item">
-                                    <div class="accordion-header d-flex align-items-center justify-content-between" id="panelsStayOpen-4">
-                                        <div class="accordion-button-custom collapsed" type="button" data-bs-toggle="collapse"
-                                                data-bs-target="#panelsStayOpen-collapse-4"
-                                                aria-controls="panelsStayOpen-collapse-4">
+                                    <div class="accordion-header d-flex align-items-center justify-content-between"
+                                         id="panelsStayOpen-4">
+                                        <div class="accordion-button-custom collapsed" type="button"
+                                             data-bs-toggle="collapse"
+                                             data-bs-target="#panelsStayOpen-collapse-4"
+                                             aria-controls="panelsStayOpen-collapse-4">
                                             <div class="d-flex align-items-center justify-content-between accordion-header-custom">
                                                 <div class="d-flex align-items-center">
                                                     <div class='site-icon'>
@@ -263,21 +379,100 @@
                                         </div>
                                         <div class="d-flex align-items-center">
                                             <div></div>
-                                            <div class="accordion-uncheck" id="gust-select-id" onclick="checkServices(event,'gust')"></div>
+                                            <div class="accordion-uncheck" id="gust-select-id"
+                                                 onclick="checkServices(event,'gust')"></div>
                                         </div>
                                     </div>
                                     <div id="panelsStayOpen-collapse-4" class="accordion-collapse collapse"
                                          aria-labelledby="panelsStayOpen-2">
-                                        <div class="accordion-body">
-
+                                        <div class="accordion-body  accordion-body-custom">
+                                            <div class="row">
+                                                <div class="col-12 col-sm-6 add-service-title d-flex align-items-center">
+                                                    <div>بزرگسال</div>
+                                                    <div class="caption"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>12 سال به بالا</div>
+                                                </div>
+                                                <div class="col-12 col-sm-6">
+                                                    <div class="row">
+                                                        <div class="col-6">
+                                                            <div class="row add-service-counter">
+                                                                <div class="col-6 add-service-title">تعداد</div>
+                                                                <div class="col-6 d-flex align-items-center justify-content-between">
+                                                                    <div class="add-service-action" onclick="addService('adult', 'increase')">+</div>
+                                                                    <div class="add-service-quantity" id="add-service-quantity-adult">0</div>
+                                                                    <div class="add-service-action" onclick="addService('adult', 'decrease')">-</div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-6">
+                                                            <div class="d-flex align-items-center  justify-content-end">
+                                                                <div class="price">948,000</div>
+                                                                <div>&nbsp;تومان&nbsp;</div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-12 col-sm-6 add-service-title d-flex align-items-center">
+                                                    <div>کودک</div>
+                                                    <div class="caption"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>2 تا 12 سال</div>
+                                                </div>
+                                                <div class="col-12 col-sm-6">
+                                                    <div class="row">
+                                                        <div class="col-6">
+                                                            <div class="row add-service-counter">
+                                                                <div class="col-6 add-service-title">تعداد</div>
+                                                                <div class="col-6 d-flex align-items-center justify-content-between">
+                                                                    <div class="add-service-action" onclick="addService('child', 'increase')">+</div>
+                                                                    <div class="add-service-quantity" id="add-service-quantity-child">0</div>
+                                                                    <div class="add-service-action" onclick="addService('child', 'decrease')">-</div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-6">
+                                                            <div class="d-flex align-items-center  justify-content-end">
+                                                                <div class="price">770,000</div>
+                                                                <div>&nbsp;تومان&nbsp;</div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-12 col-sm-6 add-service-title d-flex align-items-center">
+                                                    <div>نوزاد</div>
+                                                    <div class="caption"><span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>زیر 2 سال</div>
+                                                </div>
+                                                <div class="col-12 col-sm-6">
+                                                    <div class="row">
+                                                        <div class="col-6">
+                                                            <div class="row add-service-counter">
+                                                                <div class="col-6 add-service-title">تعداد</div>
+                                                                <div class="col-6 d-flex align-items-center justify-content-between">
+                                                                    <div class="add-service-action" onclick="addService('baby', 'increase')">+</div>
+                                                                    <div class="add-service-quantity" id="add-service-quantity-baby">0</div>
+                                                                    <div class="add-service-action" onclick="addService('baby', 'decrease')">-</div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-6">
+                                                            <div class="d-flex align-items-center  justify-content-end">
+                                                                <div class="price">رایگان</div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="accordion-item">
-                                    <div class="accordion-header d-flex align-items-center justify-content-between" id="panelsStayOpen-5">
-                                        <div class="accordion-button-custom collapsed" type="button" data-bs-toggle="collapse"
-                                                data-bs-target="#panelsStayOpen-collapse-5"
-                                                aria-controls="panelsStayOpen-collapse-5">
+                                    <div class="accordion-header d-flex align-items-center justify-content-between"
+                                         id="panelsStayOpen-5">
+                                        <div class="accordion-button-custom collapsed" type="button"
+                                             data-bs-toggle="collapse"
+                                             data-bs-target="#panelsStayOpen-collapse-5"
+                                             aria-controls="panelsStayOpen-collapse-5">
                                             <div class="d-flex align-items-center justify-content-between accordion-header-custom">
                                                 <div class="d-flex align-items-center">
                                                     <div class='site-icon'>
@@ -290,7 +485,8 @@
                                         </div>
                                         <div class="d-flex align-items-center">
                                             <div></div>
-                                            <div class="accordion-uncheck" id="shop-assistant-select-id" onclick="checkServices(event,'shop-assistant')"></div>
+                                            <div class="accordion-uncheck" id="shop-assistant-select-id"
+                                                 onclick="checkServices(event,'shop-assistant')"></div>
                                         </div>
                                     </div>
                                     <div id="panelsStayOpen-collapse-5" class="accordion-collapse collapse"
@@ -301,10 +497,12 @@
                                     </div>
                                 </div>
                                 <div class="accordion-item">
-                                    <div class="accordion-header d-flex align-items-center justify-content-between" id="panelsStayOpen-6">
-                                        <div class="accordion-button-custom collapsed" type="button" data-bs-toggle="collapse"
-                                                data-bs-target="#panelsStayOpen-collapse-6"
-                                                aria-controls="panelsStayOpen-collapse-6">
+                                    <div class="accordion-header d-flex align-items-center justify-content-between"
+                                         id="panelsStayOpen-6">
+                                        <div class="accordion-button-custom collapsed" type="button"
+                                             data-bs-toggle="collapse"
+                                             data-bs-target="#panelsStayOpen-collapse-6"
+                                             aria-controls="panelsStayOpen-collapse-6">
                                             <div class="d-flex align-items-center justify-content-between accordion-header-custom">
                                                 <div class="d-flex align-items-center">
                                                     <div class='site-icon'>
@@ -317,21 +515,96 @@
                                         </div>
                                         <div class="d-flex align-items-center">
                                             <div></div>
-                                            <div class="accordion-uncheck" id="meal-select-id" onclick="checkServices(event,'meal')"></div>
+                                            <div class="accordion-uncheck" id="meal-select-id"
+                                                 onclick="checkServices(event,'meal')"></div>
                                         </div>
                                     </div>
                                     <div id="panelsStayOpen-collapse-6" class="accordion-collapse collapse"
                                          aria-labelledby="panelsStayOpen-2">
-                                        <div class="accordion-body">
-
+                                        <div class="accordion-body  accordion-body-custom">
+                                            <div class="row">
+                                                <div class="col-12 col-sm-6 add-service-title">
+                                                    استاندارد
+                                                </div>
+                                                <div class="col-12 col-sm-6">
+                                                    <div class="row">
+                                                        <div class="col-6">
+                                                            <div class="row add-service-counter">
+                                                                <div class="col-6 add-service-title">تعداد</div>
+                                                                <div class="col-6 d-flex align-items-center justify-content-between">
+                                                                    <div class="add-service-action" onclick="addService('standardFood', 'increase')">+</div>
+                                                                    <div class="add-service-quantity" id="add-service-quantity-standardFood">0</div>
+                                                                    <div class="add-service-action" onclick="addService('standardFood', 'decrease')">-</div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-6">
+                                                            <div class="d-flex align-items-center  justify-content-end">
+                                                                <div class="price">رایگان</div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-12 col-sm-6 add-service-title">
+                                                    گیاهی
+                                                </div>
+                                                <div class="col-12 col-sm-6">
+                                                    <div class="row">
+                                                        <div class="col-6">
+                                                            <div class="row add-service-counter">
+                                                                <div class="col-6 add-service-title">تعداد</div>
+                                                                <div class="col-6 d-flex align-items-center justify-content-between">
+                                                                    <div class="add-service-action" onclick="addService('vegetarianFood', 'increase')">+</div>
+                                                                    <div class="add-service-quantity" id="add-service-quantity-vegetarianFood">0</div>
+                                                                    <div class="add-service-action" onclick="addService('vegetarianFood', 'decrease')">-</div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-6">
+                                                            <div class="d-flex align-items-center  justify-content-end">
+                                                                <div class="price">رایگان</div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-12 col-sm-6 add-service-title">
+                                                    کلسترول پایین
+                                                </div>
+                                                <div class="col-12 col-sm-6">
+                                                    <div class="row">
+                                                        <div class="col-6">
+                                                            <div class="row add-service-counter">
+                                                                <div class="col-6 add-service-title">تعداد</div>
+                                                                <div class="col-6 d-flex align-items-center justify-content-between">
+                                                                    <div class="add-service-action" onclick="addService('lowCholesterol', 'increase')">+</div>
+                                                                    <div class="add-service-quantity" id="add-service-quantity-lowCholesterol">0</div>
+                                                                    <div class="add-service-action" onclick="addService('lowCholesterol', 'decrease')">-</div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-6">
+                                                            <div class="d-flex align-items-center  justify-content-end">
+                                                                <div class="price">190,000</div>
+                                                                <div>&nbsp;تومان&nbsp;</div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="accordion-item">
-                                    <div class="accordion-header d-flex align-items-center justify-content-between" id="panelsStayOpen-7">
-                                        <div class="accordion-button-custom collapsed" type="button" data-bs-toggle="collapse"
-                                                data-bs-target="#panelsStayOpen-collapse-7"
-                                                aria-controls="panelsStayOpen-collapse-7">
+                                    <div class="accordion-header d-flex align-items-center justify-content-between"
+                                         id="panelsStayOpen-7">
+                                        <div class="accordion-button-custom collapsed" type="button"
+                                             data-bs-toggle="collapse"
+                                             data-bs-target="#panelsStayOpen-collapse-7"
+                                             aria-controls="panelsStayOpen-collapse-7">
                                             <div class="d-flex align-items-center justify-content-between accordion-header-custom">
                                                 <div class="d-flex align-items-center">
                                                     <div class='site-icon'>
@@ -344,21 +617,98 @@
                                         </div>
                                         <div class="d-flex align-items-center">
                                             <div></div>
-                                            <div class="accordion-uncheck" id="flower-select-id" onclick="checkServices(event,'flower')"></div>
+                                            <div class="accordion-uncheck" id="flower-select-id"
+                                                 onclick="checkServices(event,'flower')"></div>
                                         </div>
                                     </div>
                                     <div id="panelsStayOpen-collapse-7" class="accordion-collapse collapse"
                                          aria-labelledby="panelsStayOpen-2">
-                                        <div class="accordion-body">
-
+                                        <div class="accordion-body   accordion-body-custom">
+                                            <div class="row">
+                                                <div class="col-12 col-sm-6 add-service-title">
+                                                     گل
+                                                </div>
+                                                <div class="col-12 col-sm-6">
+                                                    <div class="row">
+                                                        <div class="col-6">
+                                                            <div class="row add-service-counter">
+                                                                <div class="col-6 add-service-title">تعداد</div>
+                                                                <div class="col-6 d-flex align-items-center justify-content-between">
+                                                                    <div class="add-service-action" onclick="addService('flower', 'increase')">+</div>
+                                                                    <div class="add-service-quantity" id="add-service-quantity-flower">0</div>
+                                                                    <div class="add-service-action" onclick="addService('flower', 'decrease')">-</div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-6">
+                                                            <div class="d-flex align-items-center  justify-content-end">
+                                                                <div class="price">90,000</div>
+                                                                <div>&nbsp;تومان&nbsp;</div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-12 col-sm-6 add-service-title">
+                                                     شیرینی محلی
+                                                </div>
+                                                <div class="col-12 col-sm-6">
+                                                    <div class="row">
+                                                        <div class="col-6">
+                                                            <div class="row add-service-counter">
+                                                                <div class="col-6 add-service-title">تعداد</div>
+                                                                <div class="col-6 d-flex align-items-center justify-content-between">
+                                                                    <div class="add-service-action" onclick="addService('localSweets', 'increase')">+</div>
+                                                                    <div class="add-service-quantity" id="add-service-quantity-localSweets">0</div>
+                                                                    <div class="add-service-action" onclick="addService('localSweets', 'decrease')">-</div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-6">
+                                                            <div class="d-flex align-items-center  justify-content-end">
+                                                                <div class="price">75,000</div>
+                                                                <div>&nbsp;تومان&nbsp;</div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-12 col-sm-6 add-service-title">
+                                                    هدیه
+                                                </div>
+                                                <div class="col-12 col-sm-6">
+                                                    <div class="row">
+                                                        <div class="col-6">
+                                                            <div class="row add-service-counter">
+                                                                <div class="col-6 add-service-title">تعداد</div>
+                                                                <div class="col-6 d-flex align-items-center justify-content-between">
+                                                                    <div class="add-service-action" onclick="addService('gift', 'increase')">+</div>
+                                                                    <div class="add-service-quantity" id="add-service-quantity-gift">0</div>
+                                                                    <div class="add-service-action" onclick="addService('gift', 'decrease')">-</div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-6">
+                                                            <div class="d-flex align-items-center  justify-content-end">
+                                                                <div class="price">110,000</div>
+                                                                <div>&nbsp;تومان&nbsp;</div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="accordion-item">
-                                    <div class="accordion-header d-flex align-items-center justify-content-between" id="panelsStayOpen-8">
-                                        <div class="accordion-button-custom collapsed" type="button" data-bs-toggle="collapse"
-                                                data-bs-target="#panelsStayOpen-collapse-8"
-                                                aria-controls="panelsStayOpen-collapse-8">
+                                    <div class="accordion-header d-flex align-items-center justify-content-between"
+                                         id="panelsStayOpen-8">
+                                        <div class="accordion-button-custom collapsed" type="button"
+                                             data-bs-toggle="collapse"
+                                             data-bs-target="#panelsStayOpen-collapse-8"
+                                             aria-controls="panelsStayOpen-collapse-8">
                                             <div class="d-flex align-items-center justify-content-between accordion-header-custom">
                                                 <div class="d-flex align-items-center">
                                                     <div class='site-icon'>
@@ -371,21 +721,49 @@
                                         </div>
                                         <div class="d-flex align-items-center">
                                             <div></div>
-                                            <div class="accordion-uncheck" id="baggage-select-id" onclick="checkServices(event,'baggage')"></div>
+                                            <div class="accordion-uncheck" id="baggage-select-id"
+                                                 onclick="checkServices(event,'baggage')"></div>
                                         </div>
                                     </div>
                                     <div id="panelsStayOpen-collapse-8" class="accordion-collapse collapse"
                                          aria-labelledby="panelsStayOpen-2">
-                                        <div class="accordion-body">
+                                        <div class="accordion-body   accordion-body-custom">
+                                            <div class="row">
+                                                <div class="col-12 col-sm-6 add-service-title">
+                                                    چمدان
+                                                </div>
+                                                <div class="col-12 col-sm-6">
+                                                    <div class="row">
+                                                        <div class="col-6">
+                                                            <div class="row add-service-counter">
+                                                                <div class="col-6 add-service-title">تعداد</div>
+                                                                <div class="col-6 d-flex align-items-center justify-content-between">
+                                                                    <div class="add-service-action" onclick="addService('baggage', 'increase')">+</div>
+                                                                    <div class="add-service-quantity" id="add-service-quantity-baggage">0</div>
+                                                                    <div class="add-service-action" onclick="addService('baggage', 'decrease')">-</div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-6">
+                                                            <div class="d-flex align-items-center  justify-content-end">
+                                                                <div class="price">210,000</div>
+                                                                <div>&nbsp;تومان&nbsp;</div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
 
                                         </div>
                                     </div>
                                 </div>
                                 <div class="accordion-item">
-                                    <div class="accordion-header d-flex align-items-center justify-content-between" id="panelsStayOpen-9">
-                                        <div class="accordion-button-custom collapsed" type="button" data-bs-toggle="collapse"
-                                                data-bs-target="#panelsStayOpen-collapse-9"
-                                                aria-controls="panelsStayOpen-collapse-9">
+                                    <div class="accordion-header d-flex align-items-center justify-content-between"
+                                         id="panelsStayOpen-9">
+                                        <div class="accordion-button-custom collapsed" type="button"
+                                             data-bs-toggle="collapse"
+                                             data-bs-target="#panelsStayOpen-collapse-9"
+                                             aria-controls="panelsStayOpen-collapse-9">
                                             <div class="d-flex align-items-center justify-content-between accordion-header-custom">
                                                 <div class="d-flex align-items-center">
                                                     <div class='site-icon'>
@@ -398,13 +776,89 @@
                                         </div>
                                         <div class="d-flex align-items-center">
                                             <div></div>
-                                            <div class="accordion-uncheck" id="transfer-select-id" onclick="checkServices(event,'transfer')"></div>
+                                            <div class="accordion-uncheck" id="transfer-select-id"
+                                                 onclick="checkServices(event,'transfer')"></div>
                                         </div>
                                     </div>
                                     <div id="panelsStayOpen-collapse-9" class="accordion-collapse collapse"
                                          aria-labelledby="panelsStayOpen-2">
-                                        <div class="accordion-body">
+                                        <div class="accordion-body   accordion-body-custom">
+                                            <div class="row">
+                                                <div class="col-12 col-sm-6 add-service-title">
+                                                    تویوتا RAV4 - ظرفیت 4 نفر - 4چمدان 30kg
+                                                </div>
+                                                <div class="col-12 col-sm-6">
+                                                    <div class="row">
+                                                        <div class="col-6">
+                                                            <div class="row add-service-counter">
+                                                                <div class="col-6 add-service-title">تعداد</div>
+                                                                <div class="col-6 d-flex align-items-center justify-content-between">
+                                                                    <div class="add-service-action" onclick="addService('rav4', 'increase')">+</div>
+                                                                    <div class="add-service-quantity" id="add-service-quantity-rav4">0</div>
+                                                                    <div class="add-service-action" onclick="addService('rav4', 'decrease')">-</div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-6">
+                                                            <div class="d-flex align-items-center  justify-content-end">
+                                                                <div class="price">رایگان</div>
 
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-12 col-sm-6 add-service-title">
+                                                    بنزS500 - ظرفیت 3 نفر - 3چمدان 30kg
+                                                </div>
+                                                <div class="col-12 col-sm-6">
+                                                    <div class="row">
+                                                        <div class="col-6">
+                                                            <div class="row add-service-counter">
+                                                                <div class="col-6 add-service-title">تعداد</div>
+                                                                <div class="col-6 d-flex align-items-center justify-content-between">
+                                                                    <div class="add-service-action" onclick="addService('s500', 'increase')">+</div>
+                                                                    <div class="add-service-quantity" id="add-service-quantity-s500">0</div>
+                                                                    <div class="add-service-action" onclick="addService('s500', 'decrease')">-</div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-6">
+                                                            <div class="d-flex align-items-center  justify-content-end">
+                                                                <div class="price">890,000</div>
+                                                                <div>&nbsp;تومان&nbsp;</div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-12 col-sm-6 add-service-title">
+                                                    ون هیوندای H350 - ظرفیت 7 نفر - 4چمدان 30kg
+                                                </div>
+                                                <div class="col-12 col-sm-6">
+                                                    <div class="row">
+                                                        <div class="col-6">
+                                                            <div class="row add-service-counter">
+                                                                <div class="col-6 add-service-title">تعداد</div>
+                                                                <div class="col-6 d-flex align-items-center justify-content-between">
+                                                                    <div class="add-service-action" onclick="addService('h350', 'increase')">+</div>
+                                                                    <div class="add-service-quantity" id="add-service-quantity-h350">0</div>
+                                                                    <div class="add-service-action" onclick="addService('h350', 'decrease')">-</div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-6">
+                                                            <div class="d-flex align-items-center  justify-content-end">
+                                                                <div class="price">1,050,000</div>
+                                                                <div>&nbsp;تومان&nbsp;</div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -414,59 +868,67 @@
                     </div>
                 </section>
             </div>
-                        <div class="col-12 col-sm-3">
-                            <div class="reserve-details">
-                                <div class="fw-bold">جزییات رزرو</div>
-                                <div class="divider"></div>
-                                <div class="row content">
-                                    <div class="d-flex align-items-center justify-content-between">
-                                        <div class="col-4 d-flex align-items-center">
-                                            <div>امام خمینی</div>
-                                            <div class="caption">(تهران)</div>
-                                        </div>
-                                        <div class="col-4"></div>
-                                        <div class="col-4 d-flex align-items-center  justify-content-end">
-                                            <div>دنیل کی</div>
-                                            <div class="caption">(هاوایی)</div>
-                                        </div>
-                                    </div>
-                                    <div class="d-flex align-items-center justify-content-between">
-                                        <div class="col-4 d-flex align-items-center">
-                                            <div class="caption">IKA 06:45AM</div>
-                                        </div>
-                                        <div class="col-4 d-flex align-items-center">
-                                            <div class="caption">DL443</div>
-                                        </div>
-                                        <div class="col-4 d-flex align-items-center  justify-content-end">
-                                            <div class="caption">HNL 10:15pm</div>
-                                        </div>
-                                    </div>
-                                    <div class="d-flex align-items-center justify-content-between">
-                                        <div class="col-4 d-flex align-items-center">
-                                            <div class="caption">26 شهریور</div>
-                                        </div>
-                                        <div class="col-4 d-flex align-items-center justify-content-end">
-                                            <div class="caption">1 بزرگسال</div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="divider"></div>
-                                <div class="row services-select">
-
-
-                                    <div class="col-6 d-flex">
-                                        <div class="caption">جمع کل:</div>
-
-                                    </div>
-                                    <div class="col-6">
-                                        <div class="d-flex align-items-center  justify-content-end">
-                                            <div class="price">230,000,000</div>
-                                            <div>&nbsp;تومان&nbsp;</div>
-                                        </div>
-                                    </div>
-                                </div>
+            <div class="col-12 col-sm-3">
+                <div class="reserve-details">
+                    <div class="fw-bold">جزییات رزرو</div>
+                    <div class="divider"></div>
+                    <div class="row content">
+                        <div class="d-flex align-items-center justify-content-between">
+                            <div class="col-4 d-flex align-items-center">
+                                <div>امام خمینی</div>
+                                <div class="caption">(تهران)</div>
+                            </div>
+                            <div class="col-4"></div>
+                            <div class="col-4 d-flex align-items-center  justify-content-end">
+                                <div>دنیل کی</div>
+                                <div class="caption">(هاوایی)</div>
                             </div>
                         </div>
+                        <div class="d-flex align-items-center justify-content-between">
+                            <div class="col-4 d-flex align-items-center">
+                                <div class="caption">IKA 06:45AM</div>
+                            </div>
+                            <div class="col-4 d-flex align-items-center">
+                                <div class="caption">DL443</div>
+                            </div>
+                            <div class="col-4 d-flex align-items-center  justify-content-end">
+                                <div class="caption">HNL 10:15pm</div>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-center justify-content-between">
+                            <div class="col-4 d-flex align-items-center">
+                                <div class="caption">26 شهریور</div>
+                            </div>
+                            <div class="col-4 d-flex align-items-center justify-content-end">
+                                <div class="caption">1 بزرگسال</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row" id="add-service-details-content" style="display: none">
+                        <div class="divider"></div>
+                        <div class="col-12">
+                            خدمات جانبی
+                        </div>
+                        <div class="col-12 add-service-details" id="add-service-details"></div>
+                    </div>
+                    <div class="divider"></div>
+
+                    <div class="row services-select">
+
+                        <div class="col-6 d-flex">
+                            <div class="caption">جمع کل:</div>
+
+                        </div>
+                        <div class="col-6">
+                            <div class="d-flex align-items-center  justify-content-end">
+                                <div class="price">230,000,000</div>
+                                <div>&nbsp;تومان&nbsp;</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </div>
