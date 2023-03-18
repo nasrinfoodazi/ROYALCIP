@@ -804,3 +804,30 @@ fieldset {
     width: 100px;
 }
 
+.form-control{
+    background-color: transparent;
+}
+button, input, optgroup, select, textarea{
+    font-family: var(--bs-font-IRANSans-FaNum);
+}
+
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+    font-family: var(--bs-font-IRANSans-FaNum);
+}
+
+input:-ms-input-placeholder,
+textarea:-ms-input-placeholder {
+    font-family: var(--bs-font-IRANSans-FaNum);
+}
+
+input:-moz-placeholder,
+textarea:-moz-placeholder {
+    font-family: var(--bs-font-IRANSans-FaNum);
+}
+
+input::-moz-placeholder,
+textarea::-moz-placeholder {
+    font-family: var(--bs-font-IRANSans-FaNum);
+}
+
