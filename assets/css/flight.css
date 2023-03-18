@@ -20,7 +20,7 @@
 }
 
 @media (min-width: 625px) {
-    .flight-timeline ul{
+    .flight-timeline ul {
         display: flex;
     }
 }
@@ -57,7 +57,7 @@
 
 
 @media (min-width: 625px) {
-    .flight-timeline .before .line{
+    .flight-timeline .before .line {
         display: block;
     }
 }
@@ -66,6 +66,7 @@
     border-bottom: 2px solid var(--white);
     margin-bottom: 2px;
 }
+
 .flight-timeline .before .line.done {
     border-bottom: 2px solid var(--yellow);
     margin-bottom: 2px;
@@ -131,6 +132,7 @@
     width: 35px;
     height: 35px;
 }
+
 .site-icon {
     display: inline-block;
     width: 25px;
@@ -186,6 +188,7 @@
 .wheelchair-icon {
     background: url(../image/SVG/wheelchair_white.svg);
 }
+
 .visa-icon {
     background: url(../image/SVG/Visa_white.svg);
 }
@@ -201,15 +204,19 @@
 .shop-assistant-icon {
     background: url(../image/SVG/Shop_assistant_white.svg);
 }
+
 .meal-icon {
     background: url(../image/SVG/Meal_white.svg);
 }
+
 .flower-icon {
     background: url(../image/SVG/flower_white.svg);
 }
+
 .baggage-icon {
     background: url(../image/SVG/Baggage_white.svg);
 }
+
 .transfer-icon {
     background: url(../image/SVG/Transfer_white.svg);
 }
@@ -585,76 +592,80 @@ fieldset {
 }
 
 
-
-#flight2Section{
+#flight2Section {
     display: none;
 }
 
-.submit-btn{
+.submit-btn {
     width: 200px;
 }
 
-.services{
+.services {
     line-height: 3;
 }
-.moreInfo{
+
+.moreInfo {
     color: var(--yellow);
 }
-.price{
+
+.price {
     color: var(--yellow);
     font-size: 20px;
     font-weight: bold;
 }
-.caption{
+
+.caption {
     color: var(--light-gray);
     font-size: 12px;
 }
 
-.services-select{
+.services-select {
     margin-top: 10px;
     margin-bottom: 10px;
 }
 
 
-.reserve-details{
+.reserve-details {
     border: 1px solid var(--white);
     border-radius: 15px;
     min-height: 100px;
     padding: 10px;
 }
 
-.reserve-details .content{
+.reserve-details .content {
     padding-top: 10px;
     padding-bottom: 10px;
 
 }
 
-.reserve-details .content div:nth-child(3){
+.reserve-details .content div:nth-child(3) {
     padding-top: 10px;
 
 }
 
-.reserve-details .content div:nth-child(4){
+.reserve-details .content div:nth-child(4) {
     padding-top: 20px;
     padding-bottom: 10px;
 
 }
 
 
-
-.accordion{
+.accordion {
     background-color: transparent;
     border-radius: 15px;
 }
+
 .accordion-item:first-of-type,
-.accordion-item:last-of-type{
+.accordion-item:last-of-type {
     border-radius: 15px;
 }
+
 .accordion-item:not(:first-of-type),
-.accordion-item:not(:first-of-type){
-border-top: 1px solid var(--light-gray);
+.accordion-item:not(:first-of-type) {
+    border-top: 1px solid var(--light-gray);
 }
-.accordion-item{
+
+.accordion-item {
     background-color: transparent;
     border: 1px solid var(--light-gray);
     border-radius: 15px;
@@ -671,15 +682,15 @@ border-top: 1px solid var(--light-gray);
     width: 0;
 }
 
-.accordion-header-custom{
+.accordion-header-custom {
     width: 100%;
 }
 
-.accordion-header{
+.accordion-header {
     padding: 0 15px;
 }
 
-.accordion-button-custom{
+.accordion-button-custom {
     width: 100%;
     background-color: transparent;
 
@@ -688,33 +699,42 @@ border-top: 1px solid var(--light-gray);
 
     color: var(--white);
 }
-.accordion-title{
+
+.accordion-title {
     font-size: 20px;
     margin-right: 20px;
 }
-.accordion-uncheck{
+
+.accordion-uncheck {
     width: 25px;
     height: 25px;
     border: 1px solid var(--white);
     border-radius: 50%;
     cursor: pointer;
 }
-.accordion-check{
+
+.accordion-check {
     background-color: var(--white);
     cursor: pointer;
 }
 
-.accordion-body-custom{
-    color:var(--light-gray)
-}
-.accordion-body-custom>div{
-    margin-bottom: 20px;
-}
-.add-service-title{
-    color:var(--white)
+.accordion-body-custom {
+    color: var(--light-gray)
 }
 
-.add-service-action{
+.accordion-body-custom > div {
+    margin-bottom: 20px;
+}
+
+.add-service-title {
+    color: var(--white)
+}
+.add-service-subtitle {
+    color: var(--light-gray);
+    font-size: 15px;
+}
+
+.add-service-action {
     width: 25px;
     height: 25px;
     border: 1px solid var(--white);
@@ -728,22 +748,59 @@ border-top: 1px solid var(--light-gray);
     font-weight: bold;
 }
 
-.add-service-counter{
+.add-service-counter {
 
 }
 
-.add-service-details{
+.add-service-details {
     padding-top: 10px;
     padding-bottom: 10px;
 }
 
 
-.add-service-details>div{
-  margin-bottom: 10px;
+.add-service-details > div {
+    margin-bottom: 10px;
 }
 
-.add-service-detail-item{
+.add-service-detail-item {
     font-size: 14px;
-    color:var(--light-gray)
+    color: var(--light-gray)
+}
+
+.btn-outline-primary {
+    color: var(--white);
+    border-color: var(--white);
+}
+
+.btn-outline-primary:hover {
+    color: #fff !important;
+    /*background-color: var(--white) !important;*/
+    border-color: var(--white) !important;
+}
+
+.btn-check:active + .btn-outline-primary,
+.btn-check:checked + .btn-outline-primary,
+.btn-outline-primary.active,
+.btn-outline-primary.dropdown-toggle.show,
+.btn-outline-primary:active {
+    color: var(--bs-black) !important;
+    background-color: var(--white) !important;
+    border-color: var(--white) !important;
+}
+
+.btn-check:checked + .btn-outline-primary:focus,
+.btn-outline-primary.active:focus,
+.btn-outline-primary.dropdown-toggle.show:focus,
+.btn-outline-primary:active:focus {
+    box-shadow: 0 0 0 .25rem rgba(255, 255, 255, .5) !important;
+}
+
+.btn-check:focus + .btn-outline-primary, .btn-outline-primary:focus {
+    box-shadow: 0 0 0 .25rem rgba(255, 255, 255, .5) !important;
+}
+
+.additional-service-btn{
+    padding-right: 5px;
+    width: 100px;
 }
 

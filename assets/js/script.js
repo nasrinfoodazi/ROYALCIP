@@ -39,7 +39,7 @@ let countries = ['ترانسفر فرودگاهی'];
 autocomplete(document.getElementById("myInput"), countries);
 
 
-function GetReserve(e, type) {
+function GetReserve(e, action) {
     console.log("e, type::GetReserve:", e, type)
 }
 
@@ -187,28 +187,42 @@ let prices = {
         price:10500000,
         group:'transfer'
     },
+    'insideAirport': {
+        title : 'داخل فرودگاه',
+        price:76000,
+        group:'shopAssistant'
+    },
+    'insideCity': {
+        title : 'داخل فرودگاه',
+        price:120000,
+        group:'shopAssistant'
+    },
 }
 
-function addService(service, type) {
-    if (service && type) {
-        if (!addServiceFormData[service]) {
-            addServiceFormData[service] = {
-                price: 0,
-                quantity: 0
+function addService(service, action, parameter, type) {
+    if(type==='otherAction'){
+        addServiceFormData[service][parameter] = action
+    }else{
+        if (service && action) {
+            if (!addServiceFormData[service]) {
+                addServiceFormData[service] = {
+                    price: 0,
+                    quantity: 0
+                }
             }
-        }
-        if (type === 'increase') {
-            addServiceFormData[service]['quantity'] = (addServiceFormData[service]['quantity'] || 0) + 1
-        } else if (type === 'decrease') {
-            addServiceFormData[service]['quantity'] = (addServiceFormData[service]['quantity'] || 0) - 1;
-            if (!addServiceFormData[service]['quantity'] || addServiceFormData[service]['quantity'] < 0) {
-                addServiceFormData[service]['quantity'] = 0
+            if (action === 'increase') {
+                addServiceFormData[service]['quantity'] = (addServiceFormData[service]['quantity'] || 0) + 1
+            } else if (action === 'decrease') {
+                addServiceFormData[service]['quantity'] = (addServiceFormData[service]['quantity'] || 0) - 1;
+                if (!addServiceFormData[service]['quantity'] || addServiceFormData[service]['quantity'] < 0) {
+                    addServiceFormData[service]['quantity'] = 0
+                }
             }
-        }
-        document.getElementById(`add-service-quantity-${service}`).innerHTML = addServiceFormData[service]['quantity'];
-        console.log("addServiceFormData", addServiceFormData);
-        updateDetails()
+            document.getElementById(`add-service-quantity-${service}`).innerHTML = addServiceFormData[service]['quantity'];
+            console.log("addServiceFormData", addServiceFormData);
+            updateDetails()
 
+        }
     }
 }
 
