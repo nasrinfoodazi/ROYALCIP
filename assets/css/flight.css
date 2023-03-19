@@ -137,8 +137,30 @@
     display: inline-block;
     width: 25px;
     height: 25px;
+
+}
+.site-action-icon {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-left:15px;
+    cursor: pointer;
+
+}
+.site-pointer-icon {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+}
+.accordion-arrow-icon {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
 }
 
+.site-action-icon > div,
+.accordion-arrow-icon > div,
+.site-pointer-icon > div,
 .reserve-icon > div,
 .site-icon > div,
 .reserve-square-icon > div {
@@ -219,6 +241,44 @@
 
 .transfer-icon {
     background: url(../image/SVG/Transfer_white.svg);
+}
+
+.path-black-icon {
+    background: url(../image/SVG/Path_black.svg);
+}
+
+.path-yellow-icon {
+    background: url(../image/SVG/Path_yellow.svg);
+}
+
+.arrow-up-icon {
+    background: url(../image/SVG/Arrow-white.svg);
+    transform: rotate(-90deg);
+}
+
+.arrow-down-icon {
+    background: url(../image/SVG/Arrow-white.svg);
+    transform: rotate(90deg);
+}
+
+.calender-gray-icon {
+    background: url(../image/SVG/Calender-lightGray.svg);
+}
+
+.flag-iran-icon {
+    background: url(../image/SVG/Flag_of_Iran.svg);
+}
+
+.plus-icon {
+    background: url(../image/SVG/plus-white.svg);
+}
+
+.delete-icon {
+    background: url(../image/SVG/Delete-white.svg);
+}
+
+.edit-icon {
+    background: url(../image/SVG/Edit-white.svg);
 }
 
 
@@ -327,7 +387,7 @@ fieldset {
     pointer-events: none;
     padding-right: 0.125rem;
     z-index: 1;
-    color: #b3b3b3;
+    color: var(--white);
     font-size: 1rem;
     font-weight: normal;
     -webkit-transition: all 0.28s ease;
@@ -336,7 +396,7 @@ fieldset {
 
 .form-group .bar {
     position: relative;
-    border-bottom: 0.0625rem solid #999;
+    border-bottom: 0.0625rem solid var(--white);
     display: block;
     overflow: hidden;
 }
@@ -348,7 +408,7 @@ fieldset {
     right: 50%;
     bottom: -0.0625rem;
     position: absolute;
-    background: var(--light-gray);
+    background: var(--white);
     -webkit-transition: left 0.28s ease, width 0.28s ease;
     transition: left 0.28s ease, width 0.28s ease;
     z-index: 2;
@@ -389,6 +449,11 @@ fieldset {
 .form-group textarea.has-value {
     color: var(--white);
 }
+.form-check-label{
+    color: var(--white);
+    font-weight: bold;
+
+}
 
 .form-group select ~ .control-label,
 .form-group input:focus ~ .control-label,
@@ -400,7 +465,7 @@ fieldset {
 .form-group textarea.form-file ~ .control-label,
 .form-group textarea.has-value ~ .control-label {
     font-size: 0.8rem;
-    color: gray;
+    color: var(--white);
     top: -1rem;
     right: 0;
 }
@@ -767,9 +832,21 @@ fieldset {
     color: var(--light-gray)
 }
 
-.btn-outline-primary {
+.btn-outline-primary,
+.btn-primary
+{
     color: var(--white);
     border-color: var(--white);
+}
+.btn-primary{
+ background-color: var(--white);
+    color: var(--bs-black);
+
+}
+.btn-custom{
+    font-weight: bold;
+    padding-right: 40px;
+    padding-left: 40px;
 }
 
 .btn-outline-primary:hover {
@@ -798,6 +875,54 @@ fieldset {
 .btn-check:focus + .btn-outline-primary, .btn-outline-primary:focus {
     box-shadow: 0 0 0 .25rem rgba(255, 255, 255, .5) !important;
 }
+
+
+
+.btn-outline-secondary,
+.btn-secondary
+{
+    color: var(--yellow);
+    border-color: var(--yellow);
+}
+.btn-secondary{
+    background-color: var(--yellow);
+    color: var(--bs-black);
+
+}
+.btn-secondary-custom{
+    font-weight: bold;
+    padding-right: 40px;
+    padding-left: 40px;
+}
+
+.btn-outline-secondary:hover {
+    color: var(--yellow) !important;
+    /*background-color: var(--white) !important;*/
+    border-color: var(--yellow) !important;
+}
+
+.btn-check:active + .btn-outline-secondary,
+.btn-check:checked + .btn-outline-secondary,
+.btn-outline-secondary.active,
+.btn-outline-secondary.dropdown-toggle.show,
+.btn-outline-secondary:active {
+    color: var(--bs-black) !important;
+    background-color: var(--yellow) !important;
+    border-color: var(--yellow) !important;
+}
+
+.btn-check:checked + .btn-outline-secondary:focus,
+.btn-outline-secondary.active:focus,
+.btn-outline-secondary.dropdown-toggle.show:focus,
+.btn-outline-secondary:active:focus {
+    box-shadow: 0 0 0 .25rem rgba(255, 255, 255, .5) !important;
+}
+
+.btn-check:focus + .btn-outline-secondary, .btn-outline-secondary:focus {
+    box-shadow: 0 0 0 .25rem rgba(255, 255, 255, .5) !important;
+}
+
+
 
 .additional-service-btn{
     padding-right: 5px;
@@ -829,5 +954,58 @@ textarea:-moz-placeholder {
 input::-moz-placeholder,
 textarea::-moz-placeholder {
     font-family: var(--bs-font-IRANSans-FaNum);
+}
+
+
+.site-box{
+    padding: 10px;
+    border-radius: 15px;
+    margin-bottom: 10px;
+    color: var(--yellow);
+    font-weight: bold;
+    font-size: 20px;
+    border: 1px solid  var(--yellow);
+}
+.site-cip-box{
+    background-color: var(--yellow);
+    color: var(--bs-black);
+
+}
+.site-add-passenger-box{
+    border-style: dashed;
+    border-color: var(--light-gray);
+    color: var(--white);
+    font-weight: unset;
+
+}
+
+.form-input-icon{
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.phone-number-code{
+    border: 1px solid var(--light-gray);
+    border-radius: 5px;
+    padding: 5px;
+    bottom: 5px;
+    direction: ltr;
+}
+
+.ltr-data{
+    direction: ltr;
+}
+.input-icon{
+    padding-left: 75px !important;
+}
+
+.form-check-input{
+    background-color: transparent;
+    border: 3px solid var(--light-gray);
+}
+.form-check-input:checked {
+    background-color:var(--white);
+    border-color: var(--light-gray);
+    border-width:3px ;
 }
 
