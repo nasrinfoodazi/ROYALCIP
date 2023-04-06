@@ -1,0 +1,538 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('fonts/icomoon.eot?35k1r6');
+  src:  url('fonts/icomoon.eot?35k1r6#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?35k1r6') format('truetype'),
+    url('fonts/icomoon.woff?35k1r6') format('woff'),
+    url('fonts/icomoon.svg?35k1r6#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-Adult:before {
+  content: "\e900";
+}
+.icon-Adult1:before {
+  content: "\e901";
+}
+.icon-airplane-st:before {
+  content: "\e902";
+}
+.icon-Arrival:before {
+  content: "\e903";
+}
+.icon-Arrival-white:before {
+  content: "\e904";
+  color: #fff;
+}
+.icon-Arrow-02:before {
+  content: "\e905";
+}
+.icon-Arrow-03:before {
+  content: "\e906";
+}
+.icon-Arrow:before {
+  content: "\e907";
+}
+.icon-Arrow-white:before {
+  content: "\e908";
+  color: #fff;
+}
+.icon-Baggage:before {
+  content: "\e909";
+}
+.icon-Baggage_white:before {
+  content: "\e90a";
+  color: #fff;
+}
+.icon-bed:before {
+  content: "\e90b";
+}
+.icon-black-instagram-icon:before {
+  content: "\e90c";
+}
+.icon-Calender:before {
+  content: "\e90d";
+}
+.icon-Calender-lightGray:before {
+  content: "\e90e";
+  color: #9b9b9b;
+}
+.icon-Call-Center:before {
+  content: "\e90f";
+}
+.icon-Cancel .path1:before {
+  content: "\e910";
+  color: rgb(230, 58, 72);
+}
+.icon-Cancel .path2:before {
+  content: "\e911";
+  margin-left: -1em;
+  color: rgb(238, 234, 233);
+}
+.icon-car-02:before {
+  content: "\e912";
+}
+.icon-Check:before {
+  content: "\e913";
+}
+.icon-confirmed:before {
+  content: "\e914";
+}
+.icon-Connecting:before {
+  content: "\e915";
+}
+.icon-Connecting-white:before {
+  content: "\e916";
+  color: #fff;
+}
+.icon-currency:before {
+  content: "\e917";
+}
+.icon-Dashboard:before {
+  content: "\e918";
+}
+.icon-Delete:before {
+  content: "\e919";
+}
+.icon-Delete-white:before {
+  content: "\e91a";
+  color: #fff;
+}
+.icon-Departure:before {
+  content: "\e91b";
+}
+.icon-Departure-white:before {
+  content: "\e91c";
+  color: #fff;
+}
+.icon-download-02:before {
+  content: "\e91d";
+}
+.icon-Download:before {
+  content: "\e91e";
+}
+.icon-Edit-02:before {
+  content: "\e91f";
+}
+.icon-Edit:before {
+  content: "\e920";
+}
+.icon-Edit-white:before {
+  content: "\e921";
+  color: #fff;
+}
+.icon-email-02:before {
+  content: "\e922";
+}
+.icon-Email:before {
+  content: "\e923";
+}
+.icon-Employees .path1:before {
+  content: "\e924";
+  color: rgb(0, 0, 0);
+}
+.icon-Employees .path2:before {
+  content: "\e925";
+  margin-left: -1.28515625em;
+  color: rgb(255, 255, 255);
+}
+.icon-Employees .path3:before {
+  content: "\e926";
+  margin-left: -1.28515625em;
+  color: rgb(0, 0, 0);
+}
+.icon-Employees .path4:before {
+  content: "\e927";
+  margin-left: -1.28515625em;
+  color: rgb(0, 0, 0);
+}
+.icon-Employees .path5:before {
+  content: "\e928";
+  margin-left: -1.28515625em;
+  color: rgb(0, 0, 0);
+}
+.icon-Employees .path6:before {
+  content: "\e929";
+  margin-left: -1.28515625em;
+  color: rgb(0, 0, 0);
+}
+.icon-Employees .path7:before {
+  content: "\e92a";
+  margin-left: -1.28515625em;
+  color: rgb(0, 0, 0);
+}
+.icon-entertainment:before {
+  content: "\e92b";
+}
+.icon-Exclamation-mark:before {
+  content: "\e92c";
+}
+.icon-Exel .path1:before {
+  content: "\e92d";
+  color: rgb(48, 126, 52);
+}
+.icon-Exel .path2:before {
+  content: "\e92e";
+  margin-left: -1.0693359375em;
+  color: rgb(255, 255, 255);
+}
+.icon-Exel .path3:before {
+  content: "\e92f";
+  margin-left: -1.0693359375em;
+  color: rgb(255, 255, 255);
+}
+.icon-Exel .path4:before {
+  content: "\e930";
+  margin-left: -1.0693359375em;
+  color: rgb(58, 143, 61);
+}
+.icon-Exel .path5:before {
+  content: "\e931";
+  margin-left: -1.0693359375em;
+  color: rgb(58, 143, 61);
+}
+.icon-Exel .path6:before {
+  content: "\e932";
+  margin-left: -1.0693359375em;
+  color: rgb(58, 143, 61);
+}
+.icon-Exel .path7:before {
+  content: "\e933";
+  margin-left: -1.0693359375em;
+  color: rgb(58, 143, 61);
+}
+.icon-Exel .path8:before {
+  content: "\e934";
+  margin-left: -1.0693359375em;
+  color: rgb(59, 143, 62);
+}
+.icon-Exel .path9:before {
+  content: "\e935";
+  margin-left: -1.0693359375em;
+  color: rgb(59, 143, 62);
+}
+.icon-Exel .path10:before {
+  content: "\e936";
+  margin-left: -1.0693359375em;
+  color: rgb(59, 143, 62);
+}
+.icon-Exel .path11:before {
+  content: "\e937";
+  margin-left: -1.0693359375em;
+  color: rgb(59, 143, 62);
+}
+.icon-facebook-square-color-icon .path1:before {
+  content: "\e938";
+  color: rgb(59, 89, 152);
+}
+.icon-facebook-square-color-icon .path2:before {
+  content: "\e939";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.icon-Flag_of_Iran .path1:before {
+  content: "\e93a";
+  color: rgb(218, 0, 0);
+}
+.icon-Flag_of_Iran .path2:before {
+  content: "\e93b";
+  margin-left: -1.75em;
+  color: rgb(255, 255, 255);
+}
+.icon-Flag_of_Iran .path3:before {
+  content: "\e93c";
+  margin-left: -1.75em;
+  color: rgb(35, 159, 64);
+}
+.icon-Flag_of_Iran .path4:before {
+  content: "\e93d";
+  margin-left: -1.75em;
+  color: rgb(218, 0, 0);
+}
+.icon-Flag_of_Iran .path5:before {
+  content: "\e93e";
+  margin-left: -1.75em;
+  color: rgb(218, 0, 0);
+}
+.icon-Flag_of_Iran .path6:before {
+  content: "\e93f";
+  margin-left: -1.75em;
+  color: rgb(218, 0, 0);
+}
+.icon-Flag_of_Iran .path7:before {
+  content: "\e940";
+  margin-left: -1.75em;
+  color: rgb(218, 0, 0);
+}
+.icon-Flag_of_Iran .path8:before {
+  content: "\e941";
+  margin-left: -1.75em;
+  color: rgb(218, 0, 0);
+}
+.icon-Flag_of_Iran .path9:before {
+  content: "\e942";
+  margin-left: -1.75em;
+  color: rgb(218, 0, 0);
+}
+.icon-Flag_of_Iran .path10:before {
+  content: "\e943";
+  margin-left: -1.75em;
+  color: rgb(218, 0, 0);
+}
+.icon-Flag_of_Iran .path11:before {
+  content: "\e944";
+  margin-left: -1.75em;
+  color: rgb(218, 0, 0);
+}
+.icon-flower:before {
+  content: "\e945";
+}
+.icon-flower_white:before {
+  content: "\e946";
+  color: #fff;
+}
+.icon-Google .path1:before {
+  content: "\e947";
+  color: rgb(93, 132, 195);
+}
+.icon-Google .path2:before {
+  content: "\e948";
+  margin-left: -1.0009765625em;
+  color: rgb(232, 70, 43);
+}
+.icon-Google .path3:before {
+  content: "\e949";
+  margin-left: -1.0009765625em;
+  color: rgb(65, 172, 74);
+}
+.icon-Google .path4:before {
+  content: "\e94a";
+  margin-left: -1.0009765625em;
+  color: rgb(251, 188, 11);
+}
+.icon-Group-22:before {
+  content: "\e94b";
+  color: #afafaf;
+}
+.icon-Group-590:before {
+  content: "\e94c";
+}
+.icon-Group-715 .path1:before {
+  content: "\e94d";
+  color: rgb(63, 59, 170);
+}
+.icon-Group-715 .path2:before {
+  content: "\e94e";
+  margin-left: -1em;
+  color: rgb(138, 133, 252);
+}
+.icon-Group-715 .path3:before {
+  content: "\e94f";
+  margin-left: -1em;
+  color: rgb(138, 133, 252);
+}
+.icon-Guset:before {
+  content: "\e950";
+}
+.icon-Guset_white:before {
+  content: "\e951";
+  color: #fff;
+}
+.icon-home:before {
+  content: "\e952";
+}
+.icon-ig-instagram-icon .path1:before {
+  content: "\e953";
+  color: rgb(0, 0, 0);
+}
+.icon-ig-instagram-icon .path2:before {
+  content: "\e954";
+  margin-left: -1em;
+  color: rgb(0, 0, 0);
+}
+.icon-ig-instagram-icon .path3:before {
+  content: "\e955";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.icon-Infants:before {
+  content: "\e956";
+}
+.icon-jet:before {
+  content: "\e957";
+}
+.icon-Kids:before {
+  content: "\e958";
+}
+.icon-kids02:before {
+  content: "\e959";
+}
+.icon-language-and-currency:before {
+  content: "\e95a";
+}
+.icon-language:before {
+  content: "\e95b";
+}
+.icon-Layer-2:before {
+  content: "\e95c";
+  color: #e8c347;
+}
+.icon-loaction:before {
+  content: "\e95d";
+}
+.icon-Meal:before {
+  content: "\e95e";
+}
+.icon-Meal_white:before {
+  content: "\e95f";
+  color: #fff;
+}
+.icon-meeting-room:before {
+  content: "\e960";
+}
+.icon-menu:before {
+  content: "\e961";
+}
+.icon-Order:before {
+  content: "\e962";
+}
+.icon-Path-686:before {
+  content: "\e963";
+}
+.icon-Path_black:before {
+  content: "\e964";
+}
+.icon-Path_yellow:before {
+  content: "\e965";
+}
+.icon-Payment:before {
+  content: "\e966";
+}
+.icon-PDF:before {
+  content: "\e967";
+}
+.icon-Pets:before {
+  content: "\e968";
+}
+.icon-Pets_white:before {
+  content: "\e969";
+  color: #fff;
+}
+.icon-plus:before {
+  content: "\e96a";
+}
+.icon-plus-white:before {
+  content: "\e96b";
+  color: #fff;
+}
+.icon-Profile:before {
+  content: "\e96c";
+}
+.icon-Profile02:before {
+  content: "\e96d";
+}
+.icon-Rectangle-475:before {
+  content: "\e96e";
+}
+.icon-Retry:before {
+  content: "\e96f";
+}
+.icon-Search:before {
+  content: "\e970";
+}
+.icon-send:before {
+  content: "\e971";
+}
+.icon-Services:before {
+  content: "\e972";
+}
+.icon-Shop-assistant:before {
+  content: "\e973";
+}
+.icon-Shop_assistant_white:before {
+  content: "\e974";
+  color: #fff;
+}
+.icon-Show:before {
+  content: "\e975";
+}
+.icon-speaking-bubbles-black-icon:before {
+  content: "\e976";
+}
+.icon-suite:before {
+  content: "\e977";
+}
+.icon-Switch-02:before {
+  content: "\e978";
+}
+.icon-Switch01:before {
+  content: "\e979";
+}
+.icon-telephone-02:before {
+  content: "\e97a";
+}
+.icon-Telephone:before {
+  content: "\e97b";
+}
+.icon-Transfer:before {
+  content: "\e97c";
+}
+.icon-Transfer_white:before {
+  content: "\e97d";
+  color: #fff;
+}
+.icon-Trash:before {
+  content: "\e97e";
+}
+.icon-Traveler:before {
+  content: "\e97f";
+}
+.icon-twitter-square-color-icon .path1:before {
+  content: "\e980";
+  color: rgb(29, 161, 242);
+}
+.icon-twitter-square-color-icon .path2:before {
+  content: "\e981";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+.icon-User:before {
+  content: "\e982";
+}
+.icon-View:before {
+  content: "\e983";
+}
+.icon-Visa:before {
+  content: "\e984";
+}
+.icon-Visa_white:before {
+  content: "\e985";
+  color: #fff;
+}
+.icon-wheelchair:before {
+  content: "\e986";
+}
+.icon-wheelchair_white:before {
+  content: "\e987";
+  color: #fff;
+}
+.icon-wifi:before {
+  content: "\e988";
+}
