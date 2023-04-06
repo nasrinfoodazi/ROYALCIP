@@ -280,7 +280,9 @@
 .edit-icon {
     background: url(../image/SVG/Edit-white.svg);
 }
-
+.suite-icon{
+    background:url(../image/SVG/suite.svg);
+}
 
 .form-content {
     background-color: var(--lightblue);

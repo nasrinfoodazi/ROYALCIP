@@ -63,6 +63,7 @@ function GetFlight(e, type) {
 
 ;
 
+
 function GetFormInfo(e) {
     formData[e.target.name] = e.target.value;
 
@@ -198,6 +199,7 @@ let prices = {
         group: 'shopAssistant'
     },
 }
+
 
 function addService(service, action, parameter, type) {
     if (type === 'otherAction') {
@@ -486,3 +488,4 @@ function updatePassengerInfo(event, id) {
     }
 
 }
+
