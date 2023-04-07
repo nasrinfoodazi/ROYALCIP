@@ -1,9 +1,9 @@
 
-#sync1 .item img{
+.mainSlider .item img{
     height: 100%;
     border-radius: 30px;
 }
-#sync1 .item{
+.mainSlider .item{
     height: 400px;
     border-radius: 30px;
     border: 2px dotted var(--white);
@@ -11,17 +11,17 @@
     padding: 7px;
     margin-bottom: 10px;
 }
-#sync2 .item img{
+.thumbnailSlider .item img{
     height: 80px;
     border-radius: 15px;
 
 }
-#sync2 .item img{
+.thumbnailSlider .item img{
     opacity: 0.6;
     border:unset;
 
 }
-#sync2  .item img:hover{
+.thumbnailSlider  .item img:hover{
     opacity: 1;
     border:1px solid var(--yellow);
     border-radius: 15px;
@@ -34,7 +34,8 @@
 }
 
 
-.activeThumbnail{
+.activeThumbnail-1,
+.activeThumbnail-2{
     opacity: 1 !important;
     border:1px solid var(--yellow) !important;
 }
