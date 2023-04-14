@@ -1,5 +1,5 @@
 .timeline-content {
-    background-color: var(--lightblue);
+    background-color: var(--darkblue);
     margin-bottom: 10px;
 }
 
@@ -752,6 +752,7 @@ fieldset {
 
 .accordion-header {
     padding: 0 15px;
+
 }
 
 .accordion-button-custom {
@@ -762,8 +763,11 @@ fieldset {
     /*font-size: 15px;*/
 
     color: var(--white);
-}
 
+}
+.accordion-collapse{
+    border-top: 1px solid #fff;
+}
 .accordion-title {
     font-size: 20px;
     margin-right: 20px;
