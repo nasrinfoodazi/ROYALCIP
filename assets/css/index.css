@@ -57,7 +57,7 @@
   --bs-font-IRANSans-light:IRANSans_Light;
   --bs-font-IRANSans-ultra-light:IRANSans_UltraLight;
 
-  
+
 
 }
 body{
@@ -930,7 +930,7 @@ img {
   width: 100%;
   margin-top: 20px;
   display: flex;
-  
+
 
 }
 .servic_optoin li .service_item{
@@ -956,10 +956,10 @@ img {
 }
 .border-blue{
   height: 2px;
-  padding: 0 50px; 
+  padding: 0 50px;
   background-color: var(--darkblue);
- 
-  
+
+
 }
 .gray-btn{
   border-color: var(--gray) !important;
@@ -1020,7 +1020,7 @@ img {
   border:none;
   outline: none;
   background:none;
-  width: 80%;   
+  width: 80%;
 }
 ::placeholder {
   color: var(--blue);
@@ -1205,7 +1205,7 @@ input[type=email] {
 }
  .form-group input:focus,
  .form-group input:valid,
-  .form-group input.form-file, 
+  .form-group input.form-file,
  .form-group input.has-value,
  .form-group textarea:focus,
   .form-group textarea:valid,
@@ -1225,7 +1225,7 @@ input[type=email] {
     position: relative;
     margin-top: 1.5rem !important;
     margin-bottom: 1.5rem !important;
-   }  
+   }
    .form-field figure{
     margin: 0;
    }
@@ -1233,7 +1233,7 @@ input[type=email] {
   width: 100%;
   object-fit: fill;
   height: 400px;
-}  
+}
 .no-padding {
   padding: 0 !important;
   --bs-gutter-x:0
@@ -1333,7 +1333,7 @@ border-left:2px solid var(--lightblue);
 .exteraService_item .icon{
   font-size: 3.5rem;
   color: var(--lightblue);
- 
+
 }
 .exteraService_item p{
  /* max-height: 80px; */
@@ -1347,3 +1347,8 @@ min-height: 80px;
   font-size: 1rem !important;
 }
 
+
+
+.accordion-item:has(.show){
+  border-color: var(--lightblue);
+}
