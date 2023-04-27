@@ -7,7 +7,7 @@
     width: 100%;
     color: var(--white);
 display: flex;
-justify-content: center;   
+justify-content: center;
     padding-top: 20px;
     padding-bottom: 20px;
 
@@ -1096,7 +1096,7 @@ padding: 0 30px;
 .form-check{
     /* display: flex;
     align-items: center; */
-   
+
 }
 
 .form-check-input-gift label{
@@ -1127,7 +1127,7 @@ form-check-input:checked[type=checkbox] {
 .form-check-input:checked {
     background-color: var(--yellow) !important;
     border-color:var(--yellow) !important;
- 
+
 }
 .form-check-input:focus{
     box-shadow: none !important;
@@ -1142,7 +1142,7 @@ form-check-input:checked[type=checkbox] {
     justify-content: center;
     margin: 50px 0;
   }
-  
+
   .flip-box-inner {
     position: relative;
     width: 100%;
@@ -1151,11 +1151,11 @@ form-check-input:checked[type=checkbox] {
     transition: transform 0.8s;
     transform-style: preserve-3d;
   }
-  
+
   .flip-box:hover .flip-box-inner {
     transform: rotateY(180deg);
   }
-  
+
   .flip-box-front, .flip-box-back {
     position: absolute;
     width: 100%;
@@ -1163,7 +1163,7 @@ form-check-input:checked[type=checkbox] {
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
   }
-  
+
   .flip-box-front {
     background-color:var(--darkblue);
     border-radius: 15px;
@@ -1224,11 +1224,20 @@ form-check-input:checked[type=checkbox] {
     align-items:center ;
     border:1px solid red;
     border-radius: 7px;
-    width: 80px;
+    width: 50px;
     height: 50px;
     overflow: hidden;
     transition: cubic-bezier(0.075, 0.82, 0.165, 1);
     transition: 1s;
+  }
+  .box-share span:nth-child(2){
+      display: none;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      white-space: nowrap;
+  }
+  .box-share:hover span:nth-child(2) {
+      display: block;
   }
   .box-share:hover{
     width: 200px;
@@ -1243,7 +1252,7 @@ form-check-input:checked[type=checkbox] {
     display: flex;
     justify-content: center;
     align-items: center;
-    
+
     color: #fff;
     background-color: var(--darkblue);
 
