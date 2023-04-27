@@ -93,8 +93,13 @@ justify-content: center;
 
 .section-content {
     margin-bottom: 40px;
+    border-bottom: 1px solid var(--light-gray);
+    padding: 10px 0;
+    overflow-x: hidden;
 }
-
+.section-content .divider{
+    margin-bottom: 10px;
+}
 .radio-label {
     margin-right: 5px;
     margin-top: 5px;
@@ -1222,12 +1227,10 @@ form-check-input:checked[type=checkbox] {
   .box-share{
     display: flex;
     align-items:center ;
-    border:1px solid red;
     border-radius: 7px;
     width: 50px;
     height: 50px;
     overflow: hidden;
-    transition: cubic-bezier(0.075, 0.82, 0.165, 1);
     transition: 1s;
   }
   .box-share span:nth-child(2){
@@ -1242,6 +1245,7 @@ form-check-input:checked[type=checkbox] {
   .box-share:hover{
     width: 200px;
     background-color:transparent;
+    border:1px sold var(--darkblue)
   }
   .box-share:nth-child(2){
     margin: 0 10px;
@@ -1252,8 +1256,20 @@ form-check-input:checked[type=checkbox] {
     display: flex;
     justify-content: center;
     align-items: center;
-
     color: #fff;
     background-color: var(--darkblue);
 
   }
+.edit-btn .icon-Edit{
+    color: var(--light-gray) !important;
+}
+.edit-btn:hover{
+    color: var(--blue);
+    border-color: var(--blue);
+}
+.edit-btn:hover .icon-Edit{
+    color: var(--blue) !important;
+}
+.next-btn:hover{
+    color: var(--darkblue);
+}

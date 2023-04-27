@@ -104,6 +104,10 @@ p{
 .yellow-bg{
   background-color:var(--yellow);
 }
+.btn-gray-border{
+  border:1px solid var(--light-gray);
+  
+}
 /* header */
 .header-top{
   display: flex;
