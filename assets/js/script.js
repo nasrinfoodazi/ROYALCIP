@@ -489,3 +489,15 @@ function updatePassengerInfo(event, id) {
 
 }
 
+
+
+
+function sendContactUs(){
+    let contactUsForm = document.getElementById('contact-us-form');
+    let contactUsSend = document.getElementById('contact-us-send');
+    if(contactUsForm && contactUsSend){
+        contactUsForm.classList.add('contact-us-hide')
+        contactUsSend.classList.remove('contact-us-hide')
+    }
+}
+
