@@ -100,6 +100,10 @@ p{
 .light-blue{
   color: var(--lightblue);
 }
+
+.yellow-bg{
+  background-color:var(--yellow);
+}
 /* header */
 .header-top{
   display: flex;
@@ -377,7 +381,7 @@ display: flex;
   border-radius: 10px;
 }
 .search-tab li button{
-  background-color:var(--darkblue) !important;
+  background-color:var(--black) !important;
 
 }
 .search-tab li button.active{
