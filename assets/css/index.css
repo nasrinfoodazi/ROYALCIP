@@ -96,6 +96,7 @@ ul{
 }
 p{
   line-height: 30px;
+  text-align: justify;
 }
 .light-blue{
   color: var(--lightblue);
@@ -766,7 +767,7 @@ input[type=text] {
 
 
 .searchInput{
-  background-color: #1c1c4f6b;
+  background-color:var(--darkblue);
   width: 100%;
   border-radius: 16px;
   color:#ffffff;
@@ -1219,7 +1220,7 @@ input[type=email] {
   .form-group textarea:valid,
    .form-group textarea.form-file,
     .form-group textarea.has-value{
-      color:var(--blue)  !important
+      /* color:var(--blue)  !important */
     }
 .form_section .submit-btn{
     width: 150px;
@@ -1355,15 +1356,18 @@ min-height: 80px;
   font-size: 1rem !important;
 }
 
-
-
-.accordion-item:has(.show){
+.faq_section .accordion-item:has(.show){
   border-color: var(--lightblue);
 }
-
-
-
-
+.add-service .accordion-item:has(.show){
+  border-color: var(--white);
+}
 .contact-us-hide{
   display: none !important;
+}
+/* log page */
+.logIn-page{
+}
+.logIn-page .icon-menu{
+  color: var(--black);
 }
