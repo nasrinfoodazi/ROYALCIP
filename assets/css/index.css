@@ -1538,7 +1538,8 @@ input[type=email] {
     border-color: var(--white);
 }
 
-.contact-us-hide {
+.contact-us-hide,
+.content-hide{
     display: none !important;
 }
 
@@ -1611,7 +1612,7 @@ input[type=email] {
 }
 
 .logIn-logo{
-  width: 100px;  
+  width: 100px;
 }
 .logIn-title{
   color: var(--black);
@@ -1646,7 +1647,7 @@ input[type=email] {
   margin: 0 10px;
 }
 .log-form .nav-link{
- transition:border-color 0s ease-in-out !important; 
+ transition:border-color 0s ease-in-out !important;
 }
 
 .log-form .nav-pills .nav-link:hover {
@@ -1721,7 +1722,7 @@ border-bottom: 1px solid var(--yellow);
     width: 100%;
     background-color: #fff;
     border:1px solid var(--light-gray);
-text-align: center;    
+text-align: center;
 }
 .btn-login-google span{
     font-weight: 600 ;

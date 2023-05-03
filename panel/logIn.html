@@ -7,11 +7,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.rtl.min.css" type="text/css">
-    <link rel="stylesheet" href="assets/css/index.css" type="text/css">
-    <link rel="stylesheet" href="assets/css/flight.css" type="text/css">
+    <link rel="stylesheet" href="../assets/bootstrap/css/bootstrap.rtl.min.css" type="text/css">
+    <link rel="stylesheet" href="../assets/css/index.css" type="text/css">
+    <link rel="stylesheet" href="../assets/css/flight.css" type="text/css">
 
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
 
     <title>سفر رویایی با رویال سی آی پی</title>
 </head>
@@ -32,7 +32,7 @@
                     <div class="hum-head-top d-flex justify-content-between">
                     <div class="header-logo ">
                         <a href="">
-                            <img src="assets/image/1667121945301-LOGO/SVG/Gold.svg" alt="cip-logo">
+                            <img src="../assets/image/1667121945301-LOGO/SVG/Gold.svg" alt="cip-logo">
                         </a>
                     </div>
                     <div class="header-left">
@@ -46,7 +46,7 @@
                         </div>
                         <div class="header-lang">
                             <div class="lang-icon circle ">
-        
+
                                 <span class="icon-language-and-currency "></span>
                             </div>
                             <div class="lang-drop-down box arrow-top">
@@ -65,9 +65,9 @@
                                         <label class="btn language-btn" for="option2">
                                             <h5>انگلیسی</h5>
                                             <span>امریکا</span>
-        
+
                                         </label>
-        
+
                                     </div>
                                 </div>
                                 <div class="country">
@@ -85,21 +85,21 @@
                                         <label class="btn language-btn" for="count2">
                                             <h5>دلار امریکا</h5>
                                             <span>USD-$</span>
-        
+
                                         </label>
                                         <input type="radio" class="btn-check" name="country" id="count3" autocomplete="off">
                                         <label class="btn language-btn" for="count3">
                                             <h5>یورو</h5>
                                             <span>EUR-$</span>
-        
+
                                         </label>
-        
+
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-               
+
                     </div>
                     </div>
                     <ul class=" hum-navbar-header">
@@ -115,7 +115,7 @@
               <section class="logIn-form d-flex flex-column  align-items-center ">
               <div class="logIn-logo mb-4 ">
                 <a href="">
-                    <img src="assets/image/1667121945301-LOGO/SVG/Black.svg" alt="log-black">
+                    <img src="../assets/image/1667121945301-LOGO/SVG/Black.svg" alt="log-black">
                 </a>
             </div>
             <h5 class="logIn-title ">ورود</h5>
@@ -130,7 +130,7 @@
                     <li class="nav-item" role="presentation">
                       <button class="nav-link" id="pills-mobile-tab" data-bs-toggle="pill" data-bs-target="#pills-mobile" type="button" role="tab" aria-controls="pills-mobile" aria-selected="false">موبایل</button>
                     </li>
-                 
+
                   </ul>
                   <div class="tab-content p-3" id="pills-tabContent">
                     <div class="tab-pane fade show active" id="pills-username" role="tabpanel" aria-labelledby="pills-username-tab" tabindex="0">
@@ -151,48 +151,72 @@
                     </div>
                     <button class="btn btn-login">ورود</button>
                     </div>
-                   
-                 
+
+
                     <div class="tab-pane fade" id="pills-email" role="tabpanel" aria-labelledby="pills-email-tab" tabindex="0">
-                        <div class="row gx-0">
+                        <div class="row gx-0" id="signin-email">
                             <div class="form-group">
                                 <input type="email" required="required" name="email">
                                 <label class="control-label">  ایمیل خود را وارد کنید</label><i class="bar"></i>
                             </div>
-                            <button class="btn btn-login">ارسال کد</button>
+                            <button class="btn btn-login" onclick="switchContent(['signin-email-otp'],['signin-email'])">ارسال کد</button>
+                        </div>
+                        <div class="row gx-0 mt-5 content-hide" id="signin-email-otp">
+                            <div class="col-3">
+                                <div class="box-code">
+                                    <input type="text">
+                                </div>
+                            </div>
+                            <div class="col-3">
+                                <div class="box-code">
+                                    <input type="text">
+                                </div>
+                            </div>
+                            <div class="col-3">
+                                <div class="box-code">
+                                    <input type="text">
+                                </div>
+                            </div>
+                            <div class="col-3">
+                                <div class="box-code">
+                                    <input type="text">
+                                </div>
+                            </div>
+                            <button class="btn btn-login" onclick="switchContent(['signin-email'], ['signin-email-otp'])">تایید کد</button>
                         </div>
                     </div>
                     <div class="tab-pane fade" id="pills-mobile" role="tabpanel" aria-labelledby="pills-mobile-tab" tabindex="0">
-                        <div class="row gx-0">
+                        <div class="row gx-0"  id="signin-mobile">
                             <div class="form-group">
                                 <input type="text" required="required" name="number">
                                 <label class="control-label">  شماره تلفن همراه خود را وارد کنید</label><i class="bar"></i>
                             </div>
+                            <button class="btn btn-login" onclick="switchContent(['signin-otp'],['signin-mobile'])">ارسال کد</button>
                         </div>
-                        <button class="btn btn-login">ارسال کد</button>
 
-                        <div class="row gx-0 mt-5">
-                            <div class="col-3">
-                                <div class="box-code">
-                                    <input type="text">
-                                </div>
-                            </div>
-                            <div class="col-3">
-                                <div class="box-code">
-                                    <input type="text">
-                                </div>
-                            </div>
-                            <div class="col-3">
-                                <div class="box-code">
-                                    <input type="text">
-                                </div>
-                            </div>
-                            <div class="col-3">
-                                <div class="box-code">
-                                    <input type="text">
-                                </div>
-                            </div>
 
+                        <div class="row gx-0 mt-5 content-hide" id="signin-otp">
+                            <div class="col-3">
+                                <div class="box-code">
+                                    <input type="text">
+                                </div>
+                            </div>
+                            <div class="col-3">
+                                <div class="box-code">
+                                    <input type="text">
+                                </div>
+                            </div>
+                            <div class="col-3">
+                                <div class="box-code">
+                                    <input type="text">
+                                </div>
+                            </div>
+                            <div class="col-3">
+                                <div class="box-code">
+                                    <input type="text">
+                                </div>
+                            </div>
+                            <button class="btn btn-login"  onclick="switchContent(['signin-mobile'],['signin-otp'])">تایید کد</button>
                         </div>
                     </div>
                   </div>
@@ -216,17 +240,17 @@
                     <p class=" gray-text"> اگر در سایت ما حساب کاربری ندارید از این قسمت عضو سایت ما شوید </p>
                     <a href="">ثبت نام</a>
                 </div>
-               
+
             </div>
             </section>
-            
+
 
         </div>
         <div class="col-sm-4 d-sm-flex h-100 ">
            <div class="logIn-left">
             <div class="container logIn-left-content">
             <figure class="feature-img">
-                <img src="./assets/image/eduardo-velazco-guart-Nukqi6L_5DU-unsplash.jpg" alt="transfer-image">
+                <img src="../assets/image/eduardo-velazco-guart-Nukqi6L_5DU-unsplash.jpg" alt="transfer-image">
             </figure>
             <p class="white-text my-3 text-center ">تمامی آژانس های مسافرتی می توانند از این قسمت  ثبت نام کرده و از امکانات  رویال سی ای پی بهره مند شوند .</p>
             <button class="btn btn-login-agency">ثبت نام آژانس مسافرتی</button>
@@ -237,9 +261,9 @@
 </section>
 <!-- Optional JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-<script src="assets/bootstrap/js/jquery-3.2.1.slim.min.js" type="application/javascript"></script>
-<script src="assets/bootstrap/js/bootstrap.min.js" type="application/javascript"></script>
-<script src="assets/js/autocomplete.js"></script>
-<script src="assets/js/script.js"></script>
+<script src="../assets/bootstrap/js/jquery-3.2.1.slim.min.js" type="application/javascript"></script>
+<script src="../assets/bootstrap/js/bootstrap.min.js" type="application/javascript"></script>
+<script src="../assets/js/autocomplete.js"></script>
+<script src="../assets/js/script.js"></script>
 </body>
 </html>

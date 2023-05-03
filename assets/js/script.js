@@ -501,3 +501,17 @@ function sendContactUs(){
     }
 }
 
+function switchContent(show=[], hide=[]){
+    show.forEach(item=>{
+        let element = document.getElementById(item);
+        if(element){
+            element.classList.remove('content-hide');
+        }
+    });
+    hide.forEach(item=>{
+        let element = document.getElementById(item);
+        if(element){
+            element.classList.add('content-hide');
+        }
+    });
+}
