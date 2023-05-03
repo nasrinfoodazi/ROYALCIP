@@ -16,7 +16,7 @@
     <title>سفر رویایی با رویال سی آی پی</title>
 </head>
 <body>
-<section class="logIn-page log-page">
+<section class="sigUp-page log-page">
     <div class="row gx-0">
         <div class="col-sm-8 col-12 ">
             <div class="head">
@@ -118,7 +118,7 @@
                     <img src="assets/image/1667121945301-LOGO/SVG/Black.svg" alt="log-black">
                 </a>
             </div>
-            <h5 class="logIn-title ">ورود</h5>
+            <h5 class="logIn-title ">ثبت نام</h5>
             <div class="log-form px-5">
                 <ul class="nav nav-pills " id="pills-tab" role="tablist">
                     <li class="nav-item" role="presentation">
@@ -134,66 +134,102 @@
                   </ul>
                   <div class="tab-content p-3" id="pills-tabContent">
                     <div class="tab-pane fade show active" id="pills-username" role="tabpanel" aria-labelledby="pills-username-tab" tabindex="0">
+                 
                         <div class="row gx-0">
-                        <div class="form-group">
+                            <div class="col-12 col-sm-6 px-2">
+                                <div class="form-group ">
                             <input type="text" required="required" name="firstName">
-                            <label class="control-label">نام کاربری</label><i class="bar"></i>
+                            <label class="control-label">نام </label><i class="bar"></i>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 px-2">
+                           <div class="form-group ">
+                             <input type="text" required="required" name="lastName">
+                            <label class="control-label">نام و خانوادگی </label><i class="bar"></i>
+                        </div>
                         </div>
                     </div>
                     <div class="row gx-0">
-                        <div class="form-group">
-                            <input type="password" required="required" name="password">
-                            <label class="control-label"> رمز عبور</label><i class="bar"></i>
-                        </div>
+                        <div class="col-12 col-sm-6 px-2">
+                            <div class="form-group ">
+                        <input type="text" required="required" name="email">
+                        <label class="control-label">ایمیل </label><i class="bar"></i>
                     </div>
+                </div>
+                <div class="col-12 col-sm-6 px-2">
+                       <div class="form-group ">
+                         <input type="text" required="required" name="userName">
+                        <label class="control-label"> نام کاربری  </label><i class="bar"></i>
+                    </div>
+                    </div>
+                </div>
+                <div class="row gx-0">
+                    <div class="col-12 col-sm-6 px-2">
+                        <div class="form-group ">
+                    <input type="password" required="required" name="password">
+                    <label class="control-label">رمز عبور </label><i class="bar"></i>
+                </div>
+            </div>
+            <div class="col-12 col-sm-6 px-2">
+                   <div class="form-group ">
+                     <input type="password" required="required" name="pass-re">
+                    <label class="control-label">  تکرار رمز عبور  </label><i class="bar"></i>
+                </div>
+                </div>
+            </div>
                     <div class="forgat-pass">
                         <a href="" class="gray-text">رمز عبور خود را فراموش کرده اید</a>
                     </div>
-                    <button class="btn btn-login">ورود</button>
+                    <button class="btn btn-login">ثبت نام</button>
                     </div>
                    
                  
                     <div class="tab-pane fade" id="pills-email" role="tabpanel" aria-labelledby="pills-email-tab" tabindex="0">
                         <div class="row gx-0">
+                            <div class="col-12 col-sm-6 px-2">
+                                <div class="form-group ">
+                            <input type="text" required="required" name="firstName">
+                            <label class="control-label">نام </label><i class="bar"></i>
+                        </div>
+                        </div>
+                        <div class="col-12 col-sm-6 px-2">
+                           <div class="form-group ">
+                        <input type="text" required="required" name="lastName">
+                        <label class="control-label">نام و خانوادگی </label><i class="bar"></i>
+                    </div>
+                            </div>
+                            </div>
+                        <div class="row gx-0">
                             <div class="form-group">
                                 <input type="email" required="required" name="email">
                                 <label class="control-label">  ایمیل خود را وارد کنید</label><i class="bar"></i>
                             </div>
-                            <button class="btn btn-login">ارسال کد</button>
+                            <button class="btn btn-login">ادامه</button>
                         </div>
                     </div>
                     <div class="tab-pane fade" id="pills-mobile" role="tabpanel" aria-labelledby="pills-mobile-tab" tabindex="0">
-                        <div class="row gx-0">
+                    <div class="row gx-0">
+                            <div class="col-12 col-sm-6 px-2">
+                                <div class="form-group ">
+                            <input type="text" required="required" name="firstName">
+                            <label class="control-label">نام </label><i class="bar"></i>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 px-2">
+                           <div class="form-group ">
+                             <input type="text" required="required" name="lastName">
+                            <label class="control-label">نام و خانوادگی </label><i class="bar"></i>
+                        </div>
+                        </div>
+                    </div>
+                            
+                            <div class="row gx-0">
                             <div class="form-group">
                                 <input type="text" required="required" name="number">
                                 <label class="control-label">  شماره تلفن همراه خود را وارد کنید</label><i class="bar"></i>
                             </div>
                         </div>
-                        <button class="btn btn-login">ارسال کد</button>
-
-                        <div class="row gx-0 mt-5">
-                            <div class="col-3">
-                                <div class="box-code">
-                                    <input type="text">
-                                </div>
-                            </div>
-                            <div class="col-3">
-                                <div class="box-code">
-                                    <input type="text">
-                                </div>
-                            </div>
-                            <div class="col-3">
-                                <div class="box-code">
-                                    <input type="text">
-                                </div>
-                            </div>
-                            <div class="col-3">
-                                <div class="box-code">
-                                    <input type="text">
-                                </div>
-                            </div>
-
-                        </div>
+                        <button class="btn btn-login">ادامه</button>
                     </div>
                   </div>
                   <div class="px-3 w-100">
@@ -214,7 +250,7 @@
                     </div>
                 <div class="signup">
                     <p class=" gray-text"> اگر در سایت ما حساب کاربری ندارید از این قسمت عضو سایت ما شوید </p>
-                    <a href="">ثبت نام</a>
+                    <a href="">ورود </a>
                 </div>
                
             </div>
