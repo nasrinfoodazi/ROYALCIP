@@ -401,12 +401,18 @@ fieldset {
     -webkit-transition: all 0.28s ease;
     transition: all 0.28s ease;
 }
+.form-group .control-label.black {
+    color: var(--black);
+}
 
 .form-group .bar {
     position: relative;
     border-bottom: 0.0625rem solid var(--white);
     display: block;
     overflow: hidden;
+}
+.form-group .bar.black {
+    border-bottom: 0.0625rem solid var(--black);
 }
 
 .form-group .bar::before {
@@ -420,6 +426,9 @@ fieldset {
     -webkit-transition: left 0.28s ease, width 0.28s ease;
     transition: left 0.28s ease, width 0.28s ease;
     z-index: 2;
+}
+.form-group .bar.black::before{
+    background: var(--black);
 }
 
 .form-group input,
@@ -457,6 +466,18 @@ fieldset {
 .form-group textarea.has-value {
     color: var(--white);
 }
+
+.form-group.black select,
+.form-group.black  input:focus,
+.form-group.black  input:valid,
+.form-group.black  input.form-file,
+.form-group.black  input.has-value,
+.form-group.black  textarea:focus,
+.form-group.black  textarea:valid,
+.form-group.black  textarea.form-file,
+.form-group.black  textarea.has-value {
+    color: var(--black);
+}
 .form-check-label{
     color: var(--white);
     font-weight: bold;
@@ -476,6 +497,18 @@ fieldset {
     color: var(--white);
     top: -1rem;
     right: 0;
+}
+
+.form-group.black select ~ .control-label,
+.form-group.black  input:focus ~ .control-label,
+.form-group.black  input:valid ~ .control-label,
+.form-group.black  input.form-file ~ .control-label,
+.form-group.black  input.has-value ~ .control-label,
+.form-group.black  textarea:focus ~ .control-label,
+.form-group.black  textarea:valid ~ .control-label,
+.form-group.black  textarea.form-file ~ .control-label,
+.form-group.black  textarea.has-value ~ .control-label {
+    color: var(--black);
 }
 
 .form-group select:focus,
@@ -1272,4 +1305,24 @@ form-check-input:checked[type=checkbox] {
 }
 .next-btn:hover{
     color: var(--darkblue);
+}
+
+
+
+.item-label{
+    color: var(--light-gray);
+    font-size: 12px;
+}
+.item-info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 5px;
+    border-bottom: 1px solid var(--light-gray);
+}
+.item-info div:nth-child(2){
+    color: var(--light-gray);
+    font-size: 12px;
+    cursor: pointer;
 }
