@@ -16,7 +16,7 @@ function setProfileInfo(){
 setProfileInfo()
 
 
-function setFormInfo(list=[], show, hide){
+function setFormInfo(list=[], switchIds={}){
     console.log(list)
     list.forEach(item=>{
         let element = document.getElementById('user-form-'+item)
@@ -24,9 +24,9 @@ function setFormInfo(list=[], show, hide){
             element.value = userInfo[item]
         }
     })
-    switchContent([show], [hide])
+    switchContent(switchIds.show, switchIds.hide)
 }
-function editInfo(list=[], show, hide){
+function editInfo(list=[], switchIds={}){
     list.forEach(item=>{
         let element = document.getElementById('user-form-'+item)
         if(element){
@@ -34,7 +34,7 @@ function editInfo(list=[], show, hide){
         }
     })
     setProfileInfo()
-    switchContent([show], [hide])
+    switchContent(switchIds.show, switchIds.hide)
 }
 
 
