@@ -188,56 +188,310 @@
                 <!-- partial -->
                 <div class="main-panel">
                     <div class="content-wrapper">
-                        <div class="row" id="section-info-name">
-                            <div class="col-12 ">
-                                <div class="item-label">نام و نام خانوادگی</div>
-                                <div class="item-info">
-                                    <div>
-                                        <span id="user-info-name"></span>
-                                        <span id="user-info-family"></span>
-                                    </div>
-                                    <div onclick="setFormInfo(['name', 'family'], {
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="row">
+                                    <div class="col-12" id="section-info-name">
+                                        <div class="item-label">نام و نام خانوادگی</div>
+                                        <div class="item-info">
+                                            <div>
+                                                <span id="user-info-name"></span>
+                                                <span id="user-info-family"></span>
+                                            </div>
+                                            <div onclick="setFormInfo(['name', 'family'], {
                                             show:['section-form-name'],
                                             hide:['section-info-name']
                                           })">
-                                        ویرایش
+                                                ویرایش
+                                            </div>
+                                        </div>
                                     </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row content-hide" id="section-form-name">
-                            <div class="col-12">
-                                این نامی است که ما برای سفارش شما استفاده می کنیم و باید بر اساس شناسنامه باشد
-                            </div>
-                            <div class="col-12 col-sm-6">
-                                <div class="form-group black">
-                                    <input type="text" required="required" name="firstName" id="user-form-name">
-                                    <label class="control-label black">نام</label><i class="bar black"></i>
-                                </div>
-                            </div>
-                            <div class="col-12 col-sm-6">
-                                <div class="form-group black">
-                                    <input type="text" required="required" name="firstName" id="user-form-family">
-                                    <label class="control-label black">نام خانوادگی</label><i class="bar black"></i>
-                                </div>
-                            </div>
-                            <div class="d-flex flex-row-reverse">
-                                <div class="p-2">
-                                    <button type="button" class="btn btn-primary btn-sm"
-                                            onclick="editInfo(['name', 'family'],{
+                                    <div class="col-12 content-hide" id="section-form-name">
+                                        <div class="row">
+                                            <div class="col-12">
+                                                این نامی است که ما برای سفارش شما استفاده می کنیم و باید بر اساس
+                                                شناسنامه باشد
+                                            </div>
+                                            <div class="col-12 col-sm-6">
+                                                <div class="form-group black">
+                                                    <input type="text" required="required" name="name"
+                                                           id="user-form-name">
+                                                    <label class="control-label black">نام</label><i
+                                                        class="bar black"></i>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 col-sm-6">
+                                                <div class="form-group black">
+                                                    <input type="text" required="required" name="family"
+                                                           id="user-form-family">
+                                                    <label class="control-label black">نام خانوادگی</label><i
+                                                        class="bar black"></i>
+                                                </div>
+                                            </div>
+                                            <div class="d-flex flex-row-reverse">
+                                                <div class="p-2">
+                                                    <button type="button" class="btn btn-primary btn-sm"
+                                                            onclick="editInfo(['name', 'family'],{
                                                 show:['section-info-name'],
                                                 hide:['section-form-name']
                                             })">
-                                        ذخیره
-                                    </button>
-                                </div>
-                                <div class="p-2">
-                                    <button type="button" class="btn btn-outline-secondary btn-sm"
-                                            onclick="switchContent(['section-info-name'],['section-form-name'])">لغو
-                                    </button>
+                                                        ذخیره
+                                                    </button>
+                                                </div>
+                                                <div class="p-2">
+                                                    <button type="button" class="btn btn-outline-secondary btn-sm"
+                                                            onclick="switchContent(['section-info-name'],['section-form-name'])">
+                                                        لغو
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
                                 </div>
                             </div>
+                            <div class="col-12 gy-5">
+                                <div class="row">
+                                    <div class="col-12" id="section-info-date">
+                                        <div class="item-label">تاریخ تولد</div>
+                                        <div class="item-info">
+                                            <div>
+                                                <span id="user-info-day"></span>
+                                                <span id="user-info-month"></span>
+                                                <span id="user-info-year"></span>
+                                            </div>
+                                            <div onclick="setFormInfo(['day', 'month', 'year'], {
+                                            show:['section-form-date'],
+                                            hide:['section-info-date']
+                                          },'/')">
+                                                ویرایش
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 content-hide" id="section-form-date">
+                                        <div class="row">
+                                            <div class="col-12">
+                                                تاریخ تولد خود را بر اساس تاریخ درج شده در گذرنامه وارد کنید.
+                                            </div>
+                                            <div class="col-12 col-sm-4">
+                                                <div class="form-group black">
+                                                    <select name="day" id="user-form-day">
+                                                        <option value="1">1</option>
+                                                        <option value="2">2</option>
+                                                        <option value="3">3</option>
+                                                        <option value="4">4</option>
+                                                        <option value="5">5</option>
+                                                        <option value="6">6</option>
+                                                        <option value="7">7</option>
+                                                        <option value="8">8</option>
+                                                        <option value="9">9</option>
+                                                        <option value="10">10</option>
+                                                        <option value="11">11</option>
+                                                        <option value="12">12</option>
+                                                        <option value="13">13</option>
+                                                        <option value="14">14</option>
+                                                        <option value="15">15</option>
+                                                        <option value="16">16</option>
+                                                        <option value="17">17</option>
+                                                        <option value="18">18</option>
+                                                        <option value="19">19</option>
+                                                        <option value="20">20</option>
+                                                        <option value="21">21</option>
+                                                        <option value="22">22</option>
+                                                        <option value="23">23</option>
+                                                        <option value="24">24</option>
+                                                        <option value="25">25</option>
+                                                        <option value="26">26</option>
+                                                        <option value="27">27</option>
+                                                        <option value="28">28</option>
+                                                        <option value="29">29</option>
+                                                        <option value="30">30</option>
+                                                        <option value="31">31</option>
+                                                    </select>
+                                                    <label class="control-label black">روز</label><i
+                                                        class="bar black"></i>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 col-sm-4">
+                                                <div class="form-group black">
+                                                    <select name="day" id="user-form-month">
+                                                        <option value="1">1</option>
+                                                        <option value="2">2</option>
+                                                        <option value="3">3</option>
+                                                        <option value="4">4</option>
+                                                        <option value="5">5</option>
+                                                        <option value="6">6</option>
+                                                        <option value="7">7</option>
+                                                        <option value="8">8</option>
+                                                        <option value="9">9</option>
+                                                        <option value="10">10</option>
+                                                        <option value="11">11</option>
+                                                        <option value="12">12</option>
+                                                    </select>
+                                                    <label class="control-label black">ماه</label><i
+                                                        class="bar black"></i>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 col-sm-4">
+                                                <div class="form-group black">
+                                                    <select name="day" id="user-form-year">
+                                                        <option value="1390">1390</option>
+                                                        <option value="1391">1391</option>
+                                                        <option value="1392">1392</option>
+                                                        <option value="1393">1393</option>
+                                                        <option value="1394">1394</option>
+                                                        <option value="1395">1395</option>
+                                                        <option value="1396">1396</option>
+                                                        <option value="1397">1397</option>
+                                                        <option value="1398">1398</option>
+                                                        <option value="1399">1399</option>
+                                                        <option value="1400">1400</option>
+                                                        <option value="1401">1401</option>
+                                                        <option value="1402">1402</option>
+                                                    </select>
+                                                    <label class="control-label black">سال</label><i
+                                                        class="bar black"></i>
+                                                </div>
+                                            </div>
+                                            <div class="d-flex flex-row-reverse">
+                                                <div class="p-2">
+                                                    <button type="button" class="btn btn-primary btn-sm"
+                                                            onclick="editInfo(['day', 'month', 'year'],{
+                                                show:['section-info-date'],
+                                                hide:['section-form-date']
+                                            }, '/')">
+                                                        ذخیره
+                                                    </button>
+                                                </div>
+                                                <div class="p-2">
+                                                    <button type="button" class="btn btn-outline-secondary btn-sm"
+                                                            onclick="switchContent(['section-info-date'],['section-form-date'])">
+                                                        لغو
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 gy-5">
+                                <div class="row">
+                                    <div class="col-12" id="section-info-mobileNumber">
+                                        <div class="item-label">شماره تلفن همراه</div>
+                                        <div class="item-info">
+                                            <div>
+                                                <span id="user-info-mobileNumber"></span>
+                                                <span id="user-info-countryCode"></span>
+                                            </div>
+                                            <div onclick="setFormInfo(['mobileNumber', 'countryCode'], {
+                                            show:['section-form-mobileNumber'],
+                                            hide:['section-info-mobileNumber']
+                                          })">
+                                                ویرایش
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 content-hide" id="section-form-mobileNumber">
+                                        <div class="row">
+                                            <div class="col-12">
+                                                ما برای هماهنگی و اطلاع دادن به شما از این شماره استفاده می کنیم ، مطمِن
+                                                شوید شماره درست را ثبت می کنید
+                                            </div>
+                                            <div class="col-12 col-sm-6">
+                                                <div class="form-group black">
+                                                    <input type="text" required="required" name="name"
+                                                           id="user-form-mobileNumber">
+                                                    <label class="control-label black">شماره تلفن همراه</label><i
+                                                        class="bar black"></i>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 col-sm-6">
+                                                <div class="form-group black">
+                                                    <select name="countryCode" id="user-form-countryCode">
+                                                        <option value="98">+98</option>
+                                                        <option value="1">+1</option>
+                                                    </select>
+                                                    <label class="control-label black">کشور</label><i
+                                                        class="bar black"></i>
+                                                </div>
+                                            </div>
+                                            <div class="col-12" id="section-form-mobileNumber-actions">
+                                                <div class="d-flex flex-row-reverse">
+                                                    <div class="p-2">
+                                                        <button type="button" class="btn btn-primary btn-sm"
+                                                                onclick="setPhoneNumber(['section-form-mobileNumber-verify'], ['section-form-mobileNumber-actions'],'verify-mobileNumber')">
+                                                            ارسال کد
+                                                        </button>
+                                                    </div>
+                                                    <div class="p-2">
+                                                        <button type="button" class="btn btn-outline-secondary btn-sm"
+                                                                onclick="switchContent(['section-info-mobileNumber'],['section-form-mobileNumber'])">
+                                                            لغو
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 content-hide" id="section-form-mobileNumber-verify">
+                                                <div class="row">
+                                                    <div class="col-12 col-sm-6">
+                                                        <div class="row">
+                                                            <div class="col-12">
+                                                            <span>
+                                                                کد ارسال شده به شماره
+                                                            </span>
+                                                                <span id="verify-mobileNumber"></span>
+                                                                <span>را وارد کنید</span>
+                                                            </div>
+                                                            <div class="col-3">
+                                                                <div class="box-code">
+                                                                    <input type="text">
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-3">
+                                                                <div class="box-code">
+                                                                    <input type="text">
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-3">
+                                                                <div class="box-code">
+                                                                    <input type="text">
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-3">
+                                                                <div class="box-code">
+                                                                    <input type="text">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12 col-sm-6">
+                                                        <div class="d-flex flex-row-reverse">
+                                                            <div class="p-2">
+                                                                <button type="button" class="btn btn-primary btn-sm"
+                                                                        onclick="editInfo(['mobileNumber', 'countryCode'],{
+                                                show:['section-info-mobileNumber','section-form-mobileNumber-actions'],
+                                                hide:['section-form-mobileNumber-verify','section-form-mobileNumber']
+                                            })">
+                                                                    ثبت
+                                                                </button>
+                                                            </div>
+                                                            <div class="p-2">
+                                                                <button type="button"
+                                                                        class="btn btn-outline-secondary btn-sm"
+                                                                        onclick="switchContent(['section-form-mobileNumber-actions'],['section-form-mobileNumber-verify'])">
+                                                                    لغو
+                                                                </button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
 
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <!-- end-of tab -->

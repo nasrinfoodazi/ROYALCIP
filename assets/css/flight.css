@@ -6,8 +6,8 @@
 .flight-timeline {
     width: 100%;
     color: var(--white);
-display: flex;
-justify-content: center;
+    display: flex;
+    justify-content: center;
     padding-top: 20px;
     padding-bottom: 20px;
 
@@ -89,17 +89,20 @@ justify-content: center;
     font-family: var(--bs-font-IRANSans-bold);
     color: var(--yellow);
 }
-.form-check{
-    padding-right: .5em  !important;
+
+.form-check {
+    padding-right: .5em !important;
 }
 
 .section-content {
     margin-bottom: 40px;
     padding: 10px 0;
 }
-.section-content .divider{
+
+.section-content .divider {
     margin-bottom: 10px;
 }
+
 .radio-label {
     margin-right: 5px;
     margin-top: 5px;
@@ -144,19 +147,22 @@ justify-content: center;
     height: 25px;
 
 }
+
 .site-action-icon {
     display: inline-block;
     width: 20px;
     height: 20px;
-    margin-left:15px;
+    margin-left: 15px;
     cursor: pointer;
 
 }
+
 .site-pointer-icon {
     display: inline-block;
     width: 10px;
     height: 10px;
 }
+
 .accordion-arrow-icon {
     display: inline-block;
     width: 15px;
@@ -289,7 +295,7 @@ justify-content: center;
 .form-content {
     background-color: var(--darkblue);
     padding: 15px;
-    border-radius:7px;
+    border-radius: 7px;
 }
 
 /*.divider{*/
@@ -401,6 +407,7 @@ fieldset {
     -webkit-transition: all 0.28s ease;
     transition: all 0.28s ease;
 }
+
 .form-group .control-label.black {
     color: var(--black);
 }
@@ -411,6 +418,7 @@ fieldset {
     display: block;
     overflow: hidden;
 }
+
 .form-group .bar.black {
     border-bottom: 0.0625rem solid var(--black);
 }
@@ -427,7 +435,12 @@ fieldset {
     transition: left 0.28s ease, width 0.28s ease;
     z-index: 2;
 }
-.form-group .bar.black::before{
+
+.form-group .bar.black::before {
+    background: var(--black);
+}
+
+.form-group .bar.black::before {
     background: var(--black);
 }
 
@@ -468,17 +481,23 @@ fieldset {
 }
 
 .form-group.black select,
-.form-group.black  input:focus,
-.form-group.black  input:valid,
-.form-group.black  input.form-file,
-.form-group.black  input.has-value,
-.form-group.black  textarea:focus,
-.form-group.black  textarea:valid,
-.form-group.black  textarea.form-file,
-.form-group.black  textarea.has-value {
+.form-group.black input:focus,
+.form-group.black input:valid,
+.form-group.black input.form-file,
+.form-group.black input.has-value,
+.form-group.black textarea:focus,
+.form-group.black textarea:valid,
+.form-group.black textarea.form-file,
+.form-group.black textarea.has-value {
     color: var(--black);
 }
-.form-check-label{
+.form-group.black select:disabled,
+.form-group.black input:disabled,
+.form-group.black textarea:disabled{
+    color: var(--light-gray);
+}
+
+.form-check-label {
     color: var(--white);
     font-weight: bold;
 
@@ -500,15 +519,31 @@ fieldset {
 }
 
 .form-group.black select ~ .control-label,
-.form-group.black  input:focus ~ .control-label,
-.form-group.black  input:valid ~ .control-label,
-.form-group.black  input.form-file ~ .control-label,
-.form-group.black  input.has-value ~ .control-label,
-.form-group.black  textarea:focus ~ .control-label,
-.form-group.black  textarea:valid ~ .control-label,
-.form-group.black  textarea.form-file ~ .control-label,
-.form-group.black  textarea.has-value ~ .control-label {
+.form-group.black input:focus ~ .control-label,
+.form-group.black input:valid ~ .control-label,
+.form-group.black input.form-file ~ .control-label,
+.form-group.black input.has-value ~ .control-label,
+.form-group.black textarea:focus ~ .control-label,
+.form-group.black textarea:valid ~ .control-label,
+.form-group.black textarea.form-file ~ .control-label,
+.form-group.black textarea.has-value ~ .control-label {
     color: var(--black);
+}
+
+.form-group.black select:disabled ~ .control-label,
+.form-group.black input:disabled ~ .control-label,
+.form-group.black input.form-file ~ .control-label,
+.form-group.black input.has-value ~ .control-label,
+.form-group.black textarea:disabled ~ .control-label,
+.form-group.black textarea.form-file ~ .control-label{
+    color: var(--light-gray);
+    top: -1rem;
+}
+.form-group.black select:disabled ~ .bar,
+.form-group.black input:disabled ~ .bar,
+.form-group.black textarea:disabled ~ .bar,
+.form-group.black textarea.form-file ~ .bar{
+    border-bottom: 0.0625rem solid var(--light-gray);
 }
 
 .form-group select:focus,
@@ -807,9 +842,11 @@ fieldset {
     color: var(--white);
 
 }
-.accordion-collapse{
+
+.accordion-collapse {
     border-top: 1px solid #fff;
 }
+
 .accordion-title {
     font-size: 17px;
     margin-right: 20px;
@@ -839,6 +876,7 @@ fieldset {
 .add-service-title {
     color: var(--white)
 }
+
 .add-service-subtitle {
     color: var(--light-gray);
     font-size: 15px;
@@ -878,17 +916,18 @@ fieldset {
 }
 
 .btn-outline-primary,
-.btn-primary
-{
+.btn-primary {
     color: var(--white);
     border-color: var(--white);
 }
-.btn-primary{
- background-color: var(--white);
+
+.btn-primary {
+    background-color: var(--white);
     color: var(--bs-black);
 
 }
-.btn-custom{
+
+.btn-custom {
     font-weight: bold;
     padding-right: 40px;
     padding-left: 40px;
@@ -922,19 +961,19 @@ fieldset {
 }
 
 
-
 .btn-outline-secondary,
-.btn-secondary
-{
+.btn-secondary {
     color: var(--yellow);
     border-color: var(--yellow);
 }
-.btn-secondary{
+
+.btn-secondary {
     background-color: var(--yellow);
     color: var(--bs-black);
 
 }
-.btn-secondary-custom{
+
+.btn-secondary-custom {
     font-weight: bold;
     padding-right: 40px;
     padding-left: 40px;
@@ -968,16 +1007,16 @@ fieldset {
 }
 
 
-
-.additional-service-btn{
+.additional-service-btn {
     padding-right: 5px;
     width: 100px;
 }
 
-.form-control{
+.form-control {
     background-color: transparent;
 }
-button, input, optgroup, select, textarea{
+
+button, input, optgroup, select, textarea {
     font-family: var(--bs-font-IRANSans-FaNum);
 }
 
@@ -1002,21 +1041,23 @@ textarea::-moz-placeholder {
 }
 
 
-.site-box{
+.site-box {
     padding: 10px;
     border-radius: 15px;
     margin-bottom: 10px;
     color: var(--yellow);
     font-weight: bold;
     font-size: 20px;
-    border: 1px solid  var(--yellow);
+    border: 1px solid var(--yellow);
 }
-.site-cip-box{
+
+.site-cip-box {
     background-color: var(--yellow);
     color: var(--black);
 
 }
-.site-add-passenger-box{
+
+.site-add-passenger-box {
     border-style: dashed;
     border-color: var(--light-gray);
     color: var(--white);
@@ -1024,12 +1065,13 @@ textarea::-moz-placeholder {
 
 }
 
-.form-input-icon{
+.form-input-icon {
     position: absolute;
     left: 0;
     top: 0;
 }
-.phone-number-code{
+
+.phone-number-code {
     border: 1px solid var(--light-gray);
     border-radius: 5px;
     padding: 5px;
@@ -1037,126 +1079,151 @@ textarea::-moz-placeholder {
     direction: ltr;
 }
 
-.ltr-data{
+.ltr-data {
     direction: ltr;
 }
-.input-icon{
+
+.input-icon {
     padding-left: 75px !important;
 }
-.form-check-inline{
+
+.form-check-inline {
     cursor: pointer;
 }
-.form-check-input{
+
+.form-check-input {
     background-color: transparent;
     border: 3px solid var(--light-gray);
     cursor: pointer;
 }
+
 .form-check-input:checked {
-    background-color:var(--white);
+    background-color: var(--white);
     border-color: var(--light-gray);
-    border-width:3px ;
+    border-width: 3px;
 }
 
-.btn.disabled, .btn:disabled, fieldset:disabled .btn{
+.btn.disabled, .btn:disabled, fieldset:disabled .btn {
     opacity: 1;
-    background-color:var(--yellow);
+    background-color: var(--yellow);
     border: none;
     color: var(--black);
     padding: .8rem .9rem;
 }
-.site-box-darkblue{
-    border:none;
+
+.site-box-darkblue {
+    border: none;
     background-color: var(--darkblue);
     padding: 20px;
 
 }
-.site-box-darkblue .divider{
+
+.site-box-darkblue .divider {
     margin-top: 0;
 }
-.site-box-darkblue h5{
+
+.site-box-darkblue h5 {
     font-size: 1.1rem;
 }
-.border{
-    height:1px;
-padding: 0 30px;
+
+.border {
+    height: 1px;
+    padding: 0 30px;
     background-color: var(--light-gray);
     width: 160px;
 }
-.flight-time,.flight-airport{
-    font-size:.9rem;
+
+.flight-time, .flight-airport {
+    font-size: .9rem;
     color: var(--light-gray);
     margin: 10px 0;
 }
-.flight-airport .caption{
+
+.flight-airport .caption {
     color: #fff;
 }
-.table-passenger{
+
+.table-passenger {
     font-size: 1rem;
-    color:#fff
+    color: #fff
 }
-.table-passenger td{
+
+.table-passenger td {
     font-size: .8rem;
 }
-.site-box-dashed{
-    border:1px dashed var(--white)
+
+.site-box-dashed {
+    border: 1px dashed var(--white)
 }
+
 .btn-yellow-border:hover {
     background-color: var(--yellow);
     color: var(--black);
     transition: cubic-bezier(0.55, 0.055, 0.675, 0.19);
 }
 
-#panel{
-  height: 150px;
-  width: 150px;
-  background-color: #66ff6b;;
-  border-radius: 50%;
-  display:block;
+#panel {
+    height: 150px;
+    width: 150px;
+    background-color: #66ff6b;;
+    border-radius: 50%;
+    display: block;
 }
 
 #panel {
-  padding: 50px;
-  display:none;
+    padding: 50px;
+    display: none;
 
 }
-.site-add-passenger-box .noshow{
+
+.site-add-passenger-box .noshow {
     display: none;
 }
-.discount-sec{
-    border-top:1px solid gray;
+
+.discount-sec {
+    border-top: 1px solid gray;
     width: 100%;
 }
-.eror-sec{
+
+.eror-sec {
     color: var(--red);
     font-size: .8rem;
     display: none;
 }
- a:hover{
-    color:var(--light-gray) !important
+
+a:hover {
+    color: var(--light-gray) !important
 }
+
 .form-check-input-gift {
     padding-right: 17px;
 }
-.form-check-input-gift label{
+
+.form-check-input-gift label {
     color: var(--light-gray) !important;
     margin-right: 10px;
     margin-top: 5px;
     cursor: pointer;
 }
-.gift_sec label{
+
+.gift_sec label {
     color: var(--light-gray) !important;
 }
-.form-check-input[type=checkbox]{
-    border-color:var(--yellow) !important;
+
+.form-check-input[type=checkbox] {
+    border-color: var(--yellow) !important;
     cursor: pointer;
 }
+
 form-check-input:checked[type=checkbox] {
-    background-image: url(data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3e%3cpath fill='none' stroke='%23fff' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='m6 10 3 3 6-6'/%3e%3c/svg%3e);
+    background-image: url(data:image/svg+xml,%3csvg xmlns= 'http://www.w3.org/2000/svg' viewBox= '0 0 20 20' %3e%3cpath fill= 'none' stroke= '%23fff' stroke-linecap= 'round' stroke-linejoin= 'round' stroke-width= '3' d= 'm6 10 3 3 6-6' /%3e%3c/svg%3e);
 }
+
 .form-check-input:checked {
     background-color: var(--darkblue);
     border-color: #fff;
 }
+
 .form-check-input:checked[type=checkbox] {
     background-image: url(../image/SVG/Check.svg) !important;
     cursor: pointer;
@@ -1164,66 +1231,71 @@ form-check-input:checked[type=checkbox] {
 
 .form-check-input-gift .form-check-input:checked {
     background-color: var(--yellow) !important;
-    border-color:var(--yellow) !important;
+    border-color: var(--yellow) !important;
 
 }
-.form-check-input:focus{
+
+.form-check-input:focus {
     box-shadow: none !important;
 }
+
 .flip-box {
     background-color: transparent;
-    width:100%;
+    width: 100%;
     height: 400px;
     border: 1px solid var(--black);
     perspective: 1000px;
     display: flex;
     justify-content: center;
     margin: 50px 0;
-  }
+}
 
-  .flip-box-inner {
+.flip-box-inner {
     position: relative;
     width: 100%;
     height: 100%;
     text-align: center;
     transition: transform 0.8s;
     transform-style: preserve-3d;
-  }
+}
 
-  .flip-box:hover .flip-box-inner {
+.flip-box:hover .flip-box-inner {
     transform: rotateY(180deg);
-  }
+}
 
-  .flip-box-front, .flip-box-back {
+.flip-box-front, .flip-box-back {
     position: absolute;
     width: 100%;
     height: 100%;
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
-  }
+}
 
-  .flip-box-front {
-    background-color:var(--darkblue);
+.flip-box-front {
+    background-color: var(--darkblue);
     border-radius: 15px;
     display: flex;
     justify-content: center;
     align-items: center;
-  }
-  .flip-box-front img{
+}
+
+.flip-box-front img {
     width: 200px;
     height: 200px;
-  }
-  .flip-box-back {
+}
+
+.flip-box-back {
     border-radius: 15px;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color:var(--yellow);
+    background-color: var(--yellow);
     color: white;
     transform: rotateY(180deg);
-  }
-  .flip-box-back-child{
-    border:2px dotted #fff;
+}
+
+.flip-box-back-child {
+    border: 2px dotted #fff;
     width: 100%;
     height: 100%;
     display: flex;
@@ -1236,54 +1308,63 @@ form-check-input:checked[type=checkbox] {
     font-weight: 700;
     font-size: 1.2rem;
 
-  }
-  .flip-box-back-child img{
+}
+
+.flip-box-back-child img {
     width: 80px;
     height: 80px;
     display: inline-block;
     margin-bottom: 20px;
 
-  }
-  .flip-box-back-child h5{
+}
+
+.flip-box-back-child h5 {
     font-family: var(--bs-font-cairo-light);
     font-weight: 500;
     font-size: 2.2rem;
-  }
+}
 
-  .flip-box-back-child p{
+.flip-box-back-child p {
     border-bottom: 2px solid white;
     padding-bottom: 25px;
-  }
-  .share_ticket{
+}
+
+.share_ticket {
     margin-top: 20px;
-  }
-  .box-share{
+}
+
+.box-share {
     display: flex;
-    align-items:center ;
+    align-items: center;
     border-radius: 7px;
     width: 50px;
     height: 50px;
     overflow: hidden;
     transition: 1s;
-  }
-  .box-share span:nth-child(2){
-      display: none;
-      text-overflow: ellipsis;
-      overflow: hidden;
-      white-space: nowrap;
-  }
-  .box-share:hover span:nth-child(2) {
-      display: block;
-  }
-  .box-share:hover{
+}
+
+.box-share span:nth-child(2) {
+    display: none;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.box-share:hover span:nth-child(2) {
+    display: block;
+}
+
+.box-share:hover {
     width: 200px;
-    background-color:transparent;
-    border:1px sold var(--darkblue)
-  }
-  .box-share:nth-child(2){
+    background-color: transparent;
+    border: 1px sold var(--darkblue)
+}
+
+.box-share:nth-child(2) {
     margin: 0 10px;
-  }
-  .box-share span:nth-child(1){
+}
+
+.box-share span:nth-child(1) {
     width: 50px;
     height: 50px;
     display: flex;
@@ -1292,28 +1373,32 @@ form-check-input:checked[type=checkbox] {
     color: #fff;
     background-color: var(--darkblue);
 
-  }
-.edit-btn .icon-Edit{
+}
+
+.edit-btn .icon-Edit {
     color: var(--light-gray) !important;
 }
-.edit-btn:hover{
+
+.edit-btn:hover {
     color: var(--blue);
     border-color: var(--blue);
 }
-.edit-btn:hover .icon-Edit{
+
+.edit-btn:hover .icon-Edit {
     color: var(--blue) !important;
 }
-.next-btn:hover{
+
+.next-btn:hover {
     color: var(--darkblue);
 }
 
 
-
-.item-label{
+.item-label {
     color: var(--light-gray);
     font-size: 12px;
 }
-.item-info{
+
+.item-info {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -1321,7 +1406,8 @@ form-check-input:checked[type=checkbox] {
     padding: 5px;
     border-bottom: 1px solid var(--light-gray);
 }
-.item-info div:nth-child(2){
+
+.item-info div:nth-child(2) {
     color: var(--light-gray);
     font-size: 12px;
     cursor: pointer;

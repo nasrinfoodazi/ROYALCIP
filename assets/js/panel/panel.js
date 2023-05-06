@@ -1,35 +1,57 @@
 let userInfo = {
-    name:'آرمین',
-    family:"منوچهری",
+    name: 'آرمین',
+    family: "منوچهری",
+    day: 12,
+    month: 8,
+    year: 1395,
+    mobileNumber: 9121234567,
+    countryCode: 98
 
 }
 
 
-function setProfileInfo(){
-    Object.keys(userInfo).forEach(item=>{
-        let element = document.getElementById('user-info-'+item)
-        if(element){
-            element.innerText = userInfo[item]
+function setProfileInfo() {
+    Object.keys(userInfo).forEach(item => {
+        let element = document.getElementById('user-info-' + item)
+        if (element && userInfo[item]) {
+            if (['year', 'month'].includes(item)) {
+                element.innerText = ' / ' + userInfo[item]
+            } else if (item === 'countryCode') {
+                element.innerText = userInfo[item]+'+'
+            } else {
+                element.innerText = userInfo[item]
+            }
+
         }
     })
 }
-setProfileInfo()
+
+setProfileInfo();
+function setPhoneNumber (show,hide,id){
+    let element = document.getElementById(id);
+
+    if(element){
+        element.innerText = `${userInfo['countryCode']}${userInfo['mobileNumber']}+`
+    }
+    switchContent(show,hide);
+}
 
 
-function setFormInfo(list=[], switchIds={}){
+function setFormInfo(list = [], switchIds = {}) {
     console.log(list)
-    list.forEach(item=>{
-        let element = document.getElementById('user-form-'+item)
-        if(element){
+    list.forEach(item => {
+        let element = document.getElementById('user-form-' + item)
+        if (element) {
             element.value = userInfo[item]
         }
-    })
+    });
     switchContent(switchIds.show, switchIds.hide)
 }
-function editInfo(list=[], switchIds={}){
-    list.forEach(item=>{
-        let element = document.getElementById('user-form-'+item)
-        if(element){
+
+function editInfo(list = [], switchIds = {}) {
+    list.forEach(item => {
+        let element = document.getElementById('user-form-' + item)
+        if (element) {
             userInfo[item] = element.value
         }
     })
@@ -38,16 +60,16 @@ function editInfo(list=[], switchIds={}){
 }
 
 
-function switchContent(show=[], hide=[]){
-    show.forEach(item=>{
+function switchContent(show = [], hide = []) {
+    show.forEach(item => {
         let element = document.getElementById(item);
-        if(element){
+        if (element) {
             element.classList.remove('content-hide');
         }
     });
-    hide.forEach(item=>{
+    hide.forEach(item => {
         let element = document.getElementById(item);
-        if(element){
+        if (element) {
             element.classList.add('content-hide');
         }
     });
