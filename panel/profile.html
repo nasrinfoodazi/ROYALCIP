@@ -492,6 +492,164 @@
                                     </div>
                                 </div>
                             </div>
+                            <div class="col-12 gy-5">
+                                <div class="row">
+                                    <div class="col-12" id="section-info-email">
+                                        <div class="item-label">ایمیل</div>
+                                        <div class="item-info">
+                                            <div>
+                                                <span id="user-info-email"></span>
+                                            </div>
+                                            <div onclick="setFormInfo(['email'], {
+                                            show:['section-form-email'],
+                                            hide:['section-info-email']
+                                          })">
+                                                ویرایش
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 content-hide" id="section-form-email">
+                                        <div class="row">
+                                            <div class="col-12">
+                                                این ایمیلی است که ما برای سفارش شما استفاده می کنیم
+                                            </div>
+                                            <div class="col-12">
+                                                <div class="form-group black">
+                                                    <input type="text" required="required" name="name"
+                                                           id="user-form-email">
+                                                    <label class="control-label black">ایمیل</label><i
+                                                        class="bar black"></i>
+                                                </div>
+                                            </div>
+
+                                            <div class="d-flex flex-row-reverse">
+                                                <div class="p-2">
+                                                    <button type="button" class="btn btn-primary btn-sm"
+                                                            onclick="editInfo(['email'],{
+                                                show:['section-info-email'],
+                                                hide:['section-form-email']
+                                            })">
+                                                        ذخیره
+                                                    </button>
+                                                </div>
+                                                <div class="p-2">
+                                                    <button type="button" class="btn btn-outline-secondary btn-sm"
+                                                            onclick="switchContent(['section-info-email'],['section-form-email'])">
+                                                        لغو
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 gy-5">
+                                <div class="row">
+                                    <div class="col-12" id="section-info-sex">
+                                        <div class="item-label">جنسیت</div>
+                                        <div class="item-info">
+                                            <div>
+                                                <span id="user-info-sex"></span>
+                                            </div>
+                                            <div onclick="setFormInfo(['sex'], {
+                                            show:['section-form-sex'],
+                                            hide:['section-info-sex']
+                                          })">
+                                                ویرایش
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 content-hide" id="section-form-sex">
+                                        <div class="row">
+                                            <div class="col-12">
+                                                جنسیت خود را مشخص کنید
+                                            </div>
+                                            <div class="col-12">
+                                                <div class="form-group black">
+                                                    <select name="day" id="user-form-sex">
+                                                        <option value="male">مرد</option>
+                                                        <option value="female">زن</option>
+                                                    </select>
+                                                    <label class="control-label black">جنسیت</label><i
+                                                        class="bar black"></i>
+                                                </div>
+                                            </div>
+
+                                            <div class="d-flex flex-row-reverse">
+                                                <div class="p-2">
+                                                    <button type="button" class="btn btn-primary btn-sm"
+                                                            onclick="editInfo(['sex'],{
+                                                show:['section-info-sex'],
+                                                hide:['section-form-sex']
+                                            })">
+                                                        ذخیره
+                                                    </button>
+                                                </div>
+                                                <div class="p-2">
+                                                    <button type="button" class="btn btn-outline-secondary btn-sm"
+                                                            onclick="switchContent(['section-info-sex'],['section-form-sex'])">
+                                                        لغو
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 gy-5">
+                                <div class="row">
+                                    <div class="col-12" id="section-info-nationalCode">
+                                        <div class="item-label">کد ملی</div>
+                                        <div class="item-info">
+                                            <div>
+                                                <span id="user-info-nationalCode"></span>
+                                            </div>
+                                            <div onclick="setFormInfo(['nationalCode'], {
+                                            show:['section-form-nationalCode'],
+                                            hide:['section-info-nationalCode']
+                                          })">
+                                                ویرایش
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 content-hide" id="section-form-nationalCode">
+                                        <div class="row">
+                                            <div class="col-12">
+                                                کد ملی خود را بر اساس کد ملی درج شده در گذرنامه وارد کنید.
+                                            </div>
+                                            <div class="col-12">
+                                                <div class="form-group black">
+                                                    <input type="text" required="required" name="name"
+                                                           id="user-form-nationalCode">
+                                                    <label class="control-label black">کد ملی</label><i
+                                                        class="bar black"></i>
+                                                </div>
+                                            </div>
+
+                                            <div class="d-flex flex-row-reverse">
+                                                <div class="p-2">
+                                                    <button type="button" class="btn btn-primary btn-sm"
+                                                            onclick="editInfo(['nationalCode'],{
+                                                show:['section-info-nationalCode'],
+                                                hide:['section-form-nationalCode']
+                                            })">
+                                                        ذخیره
+                                                    </button>
+                                                </div>
+                                                <div class="p-2">
+                                                    <button type="button" class="btn btn-outline-secondary btn-sm"
+                                                            onclick="switchContent(['section-info-nationalCode'],['section-form-nationalCode'])">
+                                                        لغو
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <!-- end-of tab -->

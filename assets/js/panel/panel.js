@@ -5,7 +5,10 @@ let userInfo = {
     month: 8,
     year: 1395,
     mobileNumber: 9121234567,
-    countryCode: 98
+    countryCode: 98,
+    email:'test@gmail.com',
+    sex:'male',
+    nationalCode:212127192871
 
 }
 
@@ -18,6 +21,13 @@ function setProfileInfo() {
                 element.innerText = ' / ' + userInfo[item]
             } else if (item === 'countryCode') {
                 element.innerText = userInfo[item]+'+'
+            } else if (item === 'sex') {
+                if(userInfo[item]==='male'){
+                    element.innerText = 'مرد'
+                }else{
+                    element.innerText = 'زن'
+                }
+
             } else {
                 element.innerText = userInfo[item]
             }
