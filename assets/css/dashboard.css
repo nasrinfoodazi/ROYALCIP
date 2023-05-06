@@ -8378,7 +8378,7 @@ fieldset:disabled .btn {
 .accordion-button:focus {
     z-index: 3;
     outline: 0;
-  
+
 }
 
 .accordion-header {
@@ -16534,7 +16534,7 @@ code {
 /* Footer */
 footer {
     background: var(--black);
-   
+
 }
 
 .footer-header li a{
@@ -18057,7 +18057,7 @@ footer {
 .btn-outline-success:hover,
 .btn-outline-success:focus,
 .btn-outline-success:active {
- 
+
     color: #ffff;
 }
 
@@ -20850,7 +20850,7 @@ dl li {
     line-height: 1;
     /* color: var(--gray); */
 }
- 
+
 .sidebar .nav .nav-item .nav-link .menu-title {
     color: inherit;
     display: inline-block;
@@ -21345,7 +21345,7 @@ dl li {
 }
 .service-name{
     font-weight: 600;
-    
+
 }
 .btn-green-border.btn-outline-secondary{
     border-color: var(--green);
@@ -21373,7 +21373,7 @@ dl li {
 .flight-rout .divider{
   display: flex;
   /* width: 50%; */
-  
+
 }
 .flight-details{
 

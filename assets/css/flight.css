@@ -502,6 +502,11 @@ fieldset {
     font-weight: bold;
 
 }
+.form-check-label.black {
+    color: var(--black);
+    font-weight: unset;
+
+}
 
 .form-group select ~ .control-label,
 .form-group input:focus ~ .control-label,
