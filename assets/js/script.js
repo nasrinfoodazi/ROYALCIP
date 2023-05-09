@@ -444,7 +444,7 @@ function generatePassengerForm(newPassenger, state) {
 
 
     let getAccordion = document.getElementById('accordionPanelPassengers');
-    getAccordion.insertAdjacentHTML('beforeend', pHtml);
+    getAccordion?.insertAdjacentHTML('beforeend', pHtml);
     if(state!=='start'){
         document.getElementById(`passenger-edit-${newPassenger['id']}`).style.display='inline-block';
         document.getElementById(`passenger-delete-${newPassenger['id']}`).style.display='inline-block';

@@ -200,7 +200,7 @@
                     </div>
                   </form>
                 </div>
-                <div class="btn-info btn  d-flex justify-content-between" onclick="addPassenger()">
+                <div class="btn-info btn  d-flex justify-content-between" onclick="addPanelPassenger()">
                   <span class="icon-plus-white mx-2"></span>
                   <span> مسافر جدید</span>
                 </div>
@@ -209,416 +209,415 @@
 
               <!-- content-wrapper HEADER ends -->
               <div class="passenger-list py-2">
-                <div class="main-passenger border-active">
-                  <div class="main-passenger-header">
-                    <h5>مسافر اصلی</h5>
-                    <div class="d-flex justify-content-between align-items-center">
-                      <p class="m-0"> سفارش شما بر اساس مشخصات مسافر اصلی انجام می گردد. </p>
-                      <div class="edit-sec d-flex justify-content-end align-items-center">
-                        <button class=" btn-border-blue">لغو</button>
-                        <button class=" btn-info mx-2">ذخیره</button>
-                        <a class="delete" title="Delete" data-toggle="tooltip"><span class="icon-Trash"></span></a>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="main-passenger-info">
-                    <div class="row ">
-                      <div class="col-12 col-md-4 ">
-                        <div class="form-group">
-                          <label for="">نام</label>
-                          <input type="text" type="text" required="required" name="firstName" value="نسرین">
-                          <i class="bar"></i>
-                        </div>
-                      </div>
-                      <div class="col-12 col-md-4 - ">
-                        <div class="form-group">
-                          <label for="">نام خانوادگی</label>
-                          <input type="text" type="text" required="required" name="flastName" value="فودازی">
-                          <i class="bar"></i>
-                        </div>
-                      </div>
-                      <div class="col-12 col-md-4 ">
-                        <div class="row">
-                          <div class="col-12 col-sm-4">
-                            <div class="form-group black">
-                              <label class=" black">روز</label>
-                              <select name="day" id="user-form-day">
-                                <option value="1">1</option>
-                                <option value="2">2</option>
-                                <option value="3">3</option>
-                                <option value="4">4</option>
-                                <option value="5">5</option>
-                                <option value="6">6</option>
-                                <option value="7">7</option>
-                                <option value="8">8</option>
-                                <option value="9">9</option>
-                                <option value="10">10</option>
-                                <option value="11">11</option>
-                                <option value="12">12</option>
-                                <option value="13">13</option>
-                                <option value="14">14</option>
-                                <option value="15">15</option>
-                                <option value="16">16</option>
-                                <option value="17">17</option>
-                                <option value="18">18</option>
-                                <option value="19">19</option>
-                                <option value="20">20</option>
-                                <option value="21">21</option>
-                                <option value="22">22</option>
-                                <option value="23">23</option>
-                                <option value="24">24</option>
-                                <option value="25">25</option>
-                                <option value="26">26</option>
-                                <option value="27">27</option>
-                                <option value="28">28</option>
-                                <option value="29">29</option>
-                                <option value="30">30</option>
-                                <option value="31">31</option>
-                              </select>
-                              <i class="bar black"></i>
+<!--                <div class="main-passenger border-active">-->
+<!--                  <div class="main-passenger-header">-->
+<!--                    <h5>مسافر اصلی</h5>-->
+<!--                    <div class="d-flex justify-content-between align-items-center">-->
+<!--                      <p class="m-0"> سفارش شما بر اساس مشخصات مسافر اصلی انجام می گردد. </p>-->
+<!--                      <div class="edit-sec d-flex justify-content-end align-items-center">-->
+<!--                        <button class=" btn-border-blue">لغو</button>-->
+<!--                        <button class=" btn-info mx-2">ذخیره</button>-->
+<!--                        <a class="delete" title="Delete" data-toggle="tooltip"><span class="icon-Trash"></span></a>-->
+<!--                      </div>-->
+<!--                    </div>-->
+<!--                  </div>-->
+<!--                  <div class="main-passenger-info">-->
+<!--                    <div class="row ">-->
+<!--                      <div class="col-12 col-md-4 ">-->
+<!--                        <div class="form-group">-->
+<!--                          <label for="">نام</label>-->
+<!--                          <input type="text" type="text" required="required" name="firstName" value="نسرین">-->
+<!--                          <i class="bar"></i>-->
+<!--                        </div>-->
+<!--                      </div>-->
+<!--                      <div class="col-12 col-md-4 - ">-->
+<!--                        <div class="form-group">-->
+<!--                          <label for="">نام خانوادگی</label>-->
+<!--                          <input type="text" type="text" required="required" name="flastName" value="فودازی">-->
+<!--                          <i class="bar"></i>-->
+<!--                        </div>-->
+<!--                      </div>-->
+<!--                      <div class="col-12 col-md-4 ">-->
+<!--                        <div class="row">-->
+<!--                          <div class="col-12 col-sm-4">-->
+<!--                            <div class="form-group black">-->
+<!--                              <label class=" black">روز</label>-->
+<!--                              <select name="day" id="user-form-day">-->
+<!--                                <option value="1">1</option>-->
+<!--                                <option value="2">2</option>-->
+<!--                                <option value="3">3</option>-->
+<!--                                <option value="4">4</option>-->
+<!--                                <option value="5">5</option>-->
+<!--                                <option value="6">6</option>-->
+<!--                                <option value="7">7</option>-->
+<!--                                <option value="8">8</option>-->
+<!--                                <option value="9">9</option>-->
+<!--                                <option value="10">10</option>-->
+<!--                                <option value="11">11</option>-->
+<!--                                <option value="12">12</option>-->
+<!--                                <option value="13">13</option>-->
+<!--                                <option value="14">14</option>-->
+<!--                                <option value="15">15</option>-->
+<!--                                <option value="16">16</option>-->
+<!--                                <option value="17">17</option>-->
+<!--                                <option value="18">18</option>-->
+<!--                                <option value="19">19</option>-->
+<!--                                <option value="20">20</option>-->
+<!--                                <option value="21">21</option>-->
+<!--                                <option value="22">22</option>-->
+<!--                                <option value="23">23</option>-->
+<!--                                <option value="24">24</option>-->
+<!--                                <option value="25">25</option>-->
+<!--                                <option value="26">26</option>-->
+<!--                                <option value="27">27</option>-->
+<!--                                <option value="28">28</option>-->
+<!--                                <option value="29">29</option>-->
+<!--                                <option value="30">30</option>-->
+<!--                                <option value="31">31</option>-->
+<!--                              </select>-->
+<!--                              <i class="bar black"></i>-->
 
-                            </div>
-                          </div>
-                          <div class="col-12 col-sm-4">
-                            <div class="form-group black">
-                              <label class=" black">ماه</label>
-                              <select name="day" id="user-form-month">
-                                <option value="1">1</option>
-                                <option value="2">2</option>
-                                <option value="3">3</option>
-                                <option value="4">4</option>
-                                <option value="5">5</option>
-                                <option value="6">6</option>
-                                <option value="7">7</option>
-                                <option value="8">8</option>
-                                <option value="9">9</option>
-                                <option value="10">10</option>
-                                <option value="11">11</option>
-                                <option value="12">12</option>
+<!--                            </div>-->
+<!--                          </div>-->
+<!--                          <div class="col-12 col-sm-4">-->
+<!--                            <div class="form-group black">-->
+<!--                              <label class=" black">ماه</label>-->
+<!--                              <select name="day" id="user-form-month">-->
+<!--                                <option value="1">1</option>-->
+<!--                                <option value="2">2</option>-->
+<!--                                <option value="3">3</option>-->
+<!--                                <option value="4">4</option>-->
+<!--                                <option value="5">5</option>-->
+<!--                                <option value="6">6</option>-->
+<!--                                <option value="7">7</option>-->
+<!--                                <option value="8">8</option>-->
+<!--                                <option value="9">9</option>-->
+<!--                                <option value="10">10</option>-->
+<!--                                <option value="11">11</option>-->
+<!--                                <option value="12">12</option>-->
 
-                              </select>
-                              <i class="bar black"></i>
+<!--                              </select>-->
+<!--                              <i class="bar black"></i>-->
 
-                            </div>
-                          </div>
+<!--                            </div>-->
+<!--                          </div>-->
 
-                          <div class="col-12 col-sm-4">
-                            <div class="form-group black">
-                              <label class=" black">سال</label>
-                              <select name="day" id="user-form-year">
-                                <option value="1">1</option>
-                                <option value="2">2</option>
-                                <option value="3">3</option>
-                                <option value="4">4</option>
-                                <option value="5">5</option>
-                                <option value="6">6</option>
-                                <option value="7">7</option>
-                                <option value="8">8</option>
-                                <option value="9">9</option>
-                                <option value="10">10</option>
-                                <option value="11">11</option>
-                                <option value="12">12</option>
+<!--                          <div class="col-12 col-sm-4">-->
+<!--                            <div class="form-group black">-->
+<!--                              <label class=" black">سال</label>-->
+<!--                              <select name="day" id="user-form-year">-->
+<!--                                <option value="1">1</option>-->
+<!--                                <option value="2">2</option>-->
+<!--                                <option value="3">3</option>-->
+<!--                                <option value="4">4</option>-->
+<!--                                <option value="5">5</option>-->
+<!--                                <option value="6">6</option>-->
+<!--                                <option value="7">7</option>-->
+<!--                                <option value="8">8</option>-->
+<!--                                <option value="9">9</option>-->
+<!--                                <option value="10">10</option>-->
+<!--                                <option value="11">11</option>-->
+<!--                                <option value="12">12</option>-->
 
-                              </select>
-                              <i class="bar black"></i>
+<!--                              </select>-->
+<!--                              <i class="bar black"></i>-->
 
-                            </div>
-                          </div>
+<!--                            </div>-->
+<!--                          </div>-->
 
-                        </div>
-                      </div>
-                    </div>
-                    <div class="row">
-                      <div class="col-12 col-md-4 ">
-                        <div class="form-group">
-                          <label for="">ایمیل</label>
-                          <input type="text" type="text" required="required" name="email" value="emailer7po@gmail.com">
-                          <i class="bar"></i>
-                        </div>
-                      </div>
-                      <div class="col-12 col-sm-4">
-                        <div class="form-group black">
-                          <label class=" black">کشور</label>
-                          <select name="day" id="country">
-                            <option value="1">ایران</option>
-                            <option value="2">کانادا</option>
-                            <option value="3">آلمان</option>
-                            <option value="4">اینگلیس</option>
-                          </select>
-                          <i class="bar black"></i>
-                        </div>
-                      </div>
-                      <div class="col-12 col-md-4 ">
-                        <div class="form-group">
-                          <label for="">شماره موبایل</label>
-                          <input type="text" type="text" required="required" name="mobile" value="0912-2269712">
-                          <i class="bar"></i>
-                        </div>
-                      </div>
+<!--                        </div>-->
+<!--                      </div>-->
+<!--                    </div>-->
+<!--                    <div class="row">-->
+<!--                      <div class="col-12 col-md-4 ">-->
+<!--                        <div class="form-group">-->
+<!--                          <label for="">ایمیل</label>-->
+<!--                          <input type="text" type="text" required="required" name="email" value="emailer7po@gmail.com">-->
+<!--                          <i class="bar"></i>-->
+<!--                        </div>-->
+<!--                      </div>-->
+<!--                      <div class="col-12 col-sm-4">-->
+<!--                        <div class="form-group black">-->
+<!--                          <label class=" black">کشور</label>-->
+<!--                          <select name="day" id="country">-->
+<!--                            <option value="1">ایران</option>-->
+<!--                            <option value="2">کانادا</option>-->
+<!--                            <option value="3">آلمان</option>-->
+<!--                            <option value="4">انگلیس</option>-->
+<!--                          </select>-->
+<!--                          <i class="bar black"></i>-->
+<!--                        </div>-->
+<!--                      </div>-->
+<!--                      <div class="col-12 col-md-4 ">-->
+<!--                        <div class="form-group">-->
+<!--                          <label for="">شماره موبایل</label>-->
+<!--                          <input type="text" type="text" required="required" name="mobile" value="0912-2269712">-->
+<!--                          <i class="bar"></i>-->
+<!--                        </div>-->
+<!--                      </div>-->
 
-                    </div>
-                    <div class="row">
-                      <div class="col-12 col-md-4 ">
-                        <div class="form-group">
-                          <label for=""> کد ملی</label>
-                          <input type="text" type="text" required="required" name="id-nemiber" value="0010563393">
-                          <i class="bar"></i>
-                        </div>
-                      </div>
-                      <div class="col-12 col-md-4 ">
-                        <div class="form-group">
-                          <label for=""> شماره گذرنامه</label>
-                          <input type="text" type="text" required="required" name="pas-nemiber" value="A123589745">
-                          <i class="bar"></i>
-                        </div>
-                      </div>
+<!--                    </div>-->
+<!--                    <div class="row">-->
+<!--                      <div class="col-12 col-md-4 ">-->
+<!--                        <div class="form-group">-->
+<!--                          <label for=""> کد ملی</label>-->
+<!--                          <input type="text" type="text" required="required" name="id-nemiber" value="0010563393">-->
+<!--                          <i class="bar"></i>-->
+<!--                        </div>-->
+<!--                      </div>-->
+<!--                      <div class="col-12 col-md-4 ">-->
+<!--                        <div class="form-group">-->
+<!--                          <label for=""> شماره گذرنامه</label>-->
+<!--                          <input type="text" type="text" required="required" name="pas-nemiber" value="A123589745">-->
+<!--                          <i class="bar"></i>-->
+<!--                        </div>-->
+<!--                      </div>-->
 
-                      <div class="col-12 col-sm-4">
-                        <div class="row">
-                          <div class="col-12 col-sm-6">
-                            <div class="form-group black">
-                              <label class=" black">جنسیت</label>
-                              <select name="day" id="gendor">
-                                <option value="1">زن</option>
-                                <option value="2">مرد</option>
+<!--                      <div class="col-12 col-sm-4">-->
+<!--                        <div class="row">-->
+<!--                          <div class="col-12 col-sm-6">-->
+<!--                            <div class="form-group black">-->
+<!--                              <label class=" black">جنسیت</label>-->
+<!--                              <select name="day" id="gendor">-->
+<!--                                <option value="1">زن</option>-->
+<!--                                <option value="2">مرد</option>-->
 
-                              </select>
-                              <i class="bar black"></i>
-                            </div>
-                          </div>
-                          <div class="col-12 col-sm-6">
-                            <div class="d-flex form-group">
-                              <div class="form-check">
-                                <label class="form-check-label black">
+<!--                              </select>-->
+<!--                              <i class="bar black"></i>-->
+<!--                            </div>-->
+<!--                          </div>-->
+<!--                          <div class="col-12 col-sm-6">-->
+<!--                            <div class="d-flex form-group">-->
+<!--                              <div class="form-check">-->
+<!--                                <label class="form-check-label black">-->
 
-                                  <i class="input-helper"></i>مسافر اصلی
-                                  <input type="checkbox" class="form-check-input">
-                                </label>
-                              </div>
+<!--                                  <i class="input-helper"></i>مسافر اصلی-->
+<!--                                  <input type="checkbox" class="form-check-input">-->
+<!--                                </label>-->
+<!--                              </div>-->
 
-                            </div>
-                          </div>
-                        </div>
+<!--                            </div>-->
+<!--                          </div>-->
+<!--                        </div>-->
 
-                      </div>
-                    </div>
-                  </div>
-                </div>
+<!--                      </div>-->
+<!--                    </div>-->
+<!--                  </div>-->
+<!--                </div>-->
 
-                <div class="accordion mt-2" id="accordionExample">
-                  <div class="accordion-item">
-                    <div class="accordion-header">
-                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                <div class="accordion mt-2" id="accordionPassengers">
+<!--                  <div class="accordion-item">-->
+<!--                    <div class="accordion-header">-->
+<!--                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">-->
 
-                        <div class="col-10">
-                          <div class="row">
-                            <div class="col-3">
-                              <div class="d-flex flex-column align-items-start pass-info">
-                                <div class="lightgray-text">
-                                  نام و نام خانوادگی
-                                </div>
-                                <div class="gray-text">
-                                  نسرین فودازی
-                                </div>
-                              </div>
-                            </div>
-                            <div class="col-3">
-                              <div class="d-flex flex-column align-items-start pass-info">
-                                <div class="lightgray-text">
-                                  شماره تماس
-                                </div>
-                                <div class="gray-text">
+<!--                        <div class="col-10">-->
+<!--                          <div class="row">-->
+<!--                            <div class="col-3">-->
+<!--                              <div class="d-flex flex-column align-items-start pass-info">-->
+<!--                                <div class="lightgray-text">-->
+<!--                                  نام و نام خانوادگی-->
+<!--                                </div>-->
+<!--                                <div class="gray-text">-->
+<!--                                  نسرین فودازی-->
+<!--                                </div>-->
+<!--                              </div>-->
+<!--                            </div>-->
+<!--                            <div class="col-3">-->
+<!--                              <div class="d-flex flex-column align-items-start pass-info">-->
+<!--                                <div class="lightgray-text">-->
+<!--                                  شماره تماس-->
+<!--                                </div>-->
+<!--                                <div class="gray-text">-->
 
-                                  09122269712 </div>
-                              </div>
-                            </div>
-                            <div class="col-3">
-                              <div class="d-flex flex-column align-items-start pass-info">
-                                <div class="lightgray-text">
-                                  شماره گذرنامه
-                                </div>
-                                <div class="gray-text">
-                                  A23578964
-                                </div>
-                              </div>
-                            </div>
-                            <div class="col-3">
-                              <div class="d-flex flex-column align-items-start pass-info">
-                                <div class="lightgray-text">
-                                  کد ملی
-                                </div>
-                                <div class="gray-text">
-                                  0010563393
-                                </div>
-                              </div>
-                            </div>
-                          </div>
+<!--                                  09122269712 </div>-->
+<!--                              </div>-->
+<!--                            </div>-->
+<!--                            <div class="col-3">-->
+<!--                              <div class="d-flex flex-column align-items-start pass-info">-->
+<!--                                <div class="lightgray-text">-->
+<!--                                  شماره گذرنامه-->
+<!--                                </div>-->
+<!--                                <div class="gray-text">-->
+<!--                                  A23578964-->
+<!--                                </div>-->
+<!--                              </div>-->
+<!--                            </div>-->
+<!--                            <div class="col-3">-->
+<!--                              <div class="d-flex flex-column align-items-start pass-info">-->
+<!--                                <div class="lightgray-text">-->
+<!--                                  کد ملی-->
+<!--                                </div>-->
+<!--                                <div class="gray-text">-->
+<!--                                  0010563393-->
+<!--                                </div>-->
+<!--                              </div>-->
+<!--                            </div>-->
+<!--                          </div>-->
 
-                        </div>
-                        <div class="col-2">
-                          <div class="px-2">
-                            <a href="" class="edit">ویرایش</a>
-                            <a class="delete" title="Delete" data-toggle="tooltip"><span class="icon-Trash"></span></a>
-                          </div>
-                        </div>                      </button>
-                    </div>
-                
-                    <div id="collapseOne" class="accordion-collapse collapse " data-bs-parent="#accordionExample">
-                      <div class="accordion-body px-5">
-                        <div class="col-10">
-                          <div class="row">
-                            <div class="col-3">
-                              <div class="d-flex flex-column align-items-start pass-info">
-                                <div class="lightgray-text">
-                                     جنسیت
-                                </div>
-                                <div class="gray-text">
-                                   زن
-                                </div>
-                              </div>
-                            </div>
-                            <div class="col-3">
-                              <div class="d-flex flex-column align-items-start pass-info">
-                                <div class="lightgray-text">
-                                   کشور
-                                </div>
-                                <div class="gray-text">
-                                  ایران
-                                  </div>
-                              </div>
-                            </div>
-                            <div class="col-3">
-                              <div class="d-flex flex-column align-items-start pass-info">
-                                <div class="lightgray-text">
-                                  تاریخ تولد 
-                                </div>
-                                <div class="gray-text">
-                                  1368/02/23
-                                </div>
-                              </div>
-                            </div>
-                            <div class="col-3">
-                              <div class="d-flex flex-column align-items-start pass-info">
-                                <div class="lightgray-text">
-                                  ایمیل 
-                                </div>
-                                <div class="gray-text">
-                                  emailer7po@gmail.com
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="accordion-item">
-                    <h2 class="accordion-header">
-                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                        <div class="col-10">
-                          <div class="row">
-                            <div class="col-3">
-                              <div class="d-flex flex-column align-items-start pass-info">
-                                <div class="lightgray-text">
-                                  نام و نام خانوادگی
-                                </div>
-                                <div class="gray-text">
+<!--                        </div>-->
+<!--                        <div class="col-2">-->
+<!--                          <div class="px-2">-->
+<!--                            <a href="" class="edit">ویرایش</a>-->
+<!--                            <a class="delete" title="Delete" data-toggle="tooltip"><span class="icon-Trash"></span></a>-->
+<!--                          </div>-->
+<!--                        </div>                      </button>-->
+<!--                    </div>-->
 
-کارن مفیدی                                </div>
-                              </div>
-                            </div>
-                            <div class="col-3">
-                              <div class="d-flex flex-column align-items-start pass-info">
-                                <div class="lightgray-text">
-                                  شماره تماس
-                                </div>
-                                <div class="gray-text">
+<!--                    <div id="collapseOne" class="accordion-collapse collapse " data-bs-parent="#accordionExample">-->
+<!--                      <div class="accordion-body px-5">-->
+<!--                        <div class="col-10">-->
+<!--                          <div class="row">-->
+<!--                            <div class="col-3">-->
+<!--                              <div class="d-flex flex-column align-items-start pass-info">-->
+<!--                                <div class="lightgray-text">-->
+<!--                                     جنسیت-->
+<!--                                </div>-->
+<!--                                <div class="gray-text">-->
+<!--                                   زن-->
+<!--                                </div>-->
+<!--                              </div>-->
+<!--                            </div>-->
+<!--                            <div class="col-3">-->
+<!--                              <div class="d-flex flex-column align-items-start pass-info">-->
+<!--                                <div class="lightgray-text">-->
+<!--                                   کشور-->
+<!--                                </div>-->
+<!--                                <div class="gray-text">-->
+<!--                                  ایران-->
+<!--                                  </div>-->
+<!--                              </div>-->
+<!--                            </div>-->
+<!--                            <div class="col-3">-->
+<!--                              <div class="d-flex flex-column align-items-start pass-info">-->
+<!--                                <div class="lightgray-text">-->
+<!--                                  تاریخ تولد-->
+<!--                                </div>-->
+<!--                                <div class="gray-text">-->
+<!--                                  1368/02/23-->
+<!--                                </div>-->
+<!--                              </div>-->
+<!--                            </div>-->
+<!--                            <div class="col-3">-->
+<!--                              <div class="d-flex flex-column align-items-start pass-info">-->
+<!--                                <div class="lightgray-text">-->
+<!--                                  ایمیل-->
+<!--                                </div>-->
+<!--                                <div class="gray-text">-->
+<!--                                  emailer7po@gmail.com-->
+<!--                                </div>-->
+<!--                              </div>-->
+<!--                            </div>-->
+<!--                          </div>-->
+<!--                        </div>-->
+<!--                      </div>-->
+<!--                    </div>-->
+<!--                  </div>-->
+<!--                  <div class="accordion-item">-->
+<!--                    <h2 class="accordion-header">-->
+<!--                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"-->
+<!--                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">-->
+<!--                        <div class="col-10">-->
+<!--                          <div class="row">-->
+<!--                            <div class="col-3">-->
+<!--                              <div class="d-flex flex-column align-items-start pass-info">-->
+<!--                                <div class="lightgray-text">-->
+<!--                                  نام و نام خانوادگی-->
+<!--                                </div>-->
+<!--                                <div class="gray-text">-->
 
-                                  09122269712 </div>
-                              </div>
-                            </div>
-                            <div class="col-3">
-                              <div class="d-flex flex-column align-items-start pass-info">
-                                <div class="lightgray-text">
-                                  شماره گذرنامه
-                                </div>
-                                <div class="gray-text">
-                                  A23578964
-                                </div>
-                              </div>
-                            </div>
-                            <div class="col-3">
-                              <div class="d-flex flex-column align-items-start pass-info">
-                                <div class="lightgray-text">
-                                  کد ملی
-                                </div>
-                                <div class="gray-text">
-                                  0010563393
-                                </div>
-                              </div>
-                            </div>
-                          </div>
+<!--کارن مفیدی                                </div>-->
+<!--                              </div>-->
+<!--                            </div>-->
+<!--                            <div class="col-3">-->
+<!--                              <div class="d-flex flex-column align-items-start pass-info">-->
+<!--                                <div class="lightgray-text">-->
+<!--                                  شماره تماس-->
+<!--                                </div>-->
+<!--                                <div class="gray-text">-->
 
-                        </div>
-                        <div class="col-2">
-                          <div class="px-2">
-                            <a href="" class="edit">ویرایش</a>
-                            <a class="delete" title="Delete" data-toggle="tooltip"><span class="icon-Trash"></span></a>
-                          </div>
-                        </div>
-                      </button>
-                    </h2>
-                    <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                      <div class="accordion-body px-5">
-                        <div class="col-10">
-                          <div class="row">
-                            <div class="col-3">
-                              <div class="d-flex flex-column align-items-start pass-info">
-                                <div class="lightgray-text">
-                                     جنسیت
-                                </div>
-                                <div class="gray-text">
-                                   زن
-                                </div>
-                              </div>
-                            </div>
-                            <div class="col-3">
-                              <div class="d-flex flex-column align-items-start pass-info">
-                                <div class="lightgray-text">
-                                   کشور
-                                </div>
-                                <div class="gray-text">
-                                  ایران
-                                  </div>
-                              </div>
-                            </div>
-                            <div class="col-3">
-                              <div class="d-flex flex-column align-items-start pass-info">
-                                <div class="lightgray-text">
-                                  تاریخ تولد 
-                                </div>
-                                <div class="gray-text">
-                                  1368/02/23
-                                </div>
-                              </div>
-                            </div>
-                            <div class="col-3">
-                              <div class="d-flex flex-column align-items-start pass-info">
-                                <div class="lightgray-text">
-                                  ایمیل 
-                                </div>
-                                <div class="gray-text">
-                                  emailer7po@gmail.com
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-        
+<!--                                  09122269712 </div>-->
+<!--                              </div>-->
+<!--                            </div>-->
+<!--                            <div class="col-3">-->
+<!--                              <div class="d-flex flex-column align-items-start pass-info">-->
+<!--                                <div class="lightgray-text">-->
+<!--                                  شماره گذرنامه-->
+<!--                                </div>-->
+<!--                                <div class="gray-text">-->
+<!--                                  A23578964-->
+<!--                                </div>-->
+<!--                              </div>-->
+<!--                            </div>-->
+<!--                            <div class="col-3">-->
+<!--                              <div class="d-flex flex-column align-items-start pass-info">-->
+<!--                                <div class="lightgray-text">-->
+<!--                                  کد ملی-->
+<!--                                </div>-->
+<!--                                <div class="gray-text">-->
+<!--                                  0010563393-->
+<!--                                </div>-->
+<!--                              </div>-->
+<!--                            </div>-->
+<!--                          </div>-->
+
+<!--                        </div>-->
+<!--                        <div class="col-2">-->
+<!--                          <div class="px-2">-->
+<!--                            <a href="" class="edit">ویرایش</a>-->
+<!--                            <a class="delete" title="Delete" data-toggle="tooltip"><span class="icon-Trash"></span></a>-->
+<!--                          </div>-->
+<!--                        </div>-->
+<!--                      </button>-->
+<!--                    </h2>-->
+<!--                    <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">-->
+<!--                      <div class="accordion-body px-5">-->
+<!--                        <div class="col-10">-->
+<!--                          <div class="row">-->
+<!--                            <div class="col-3">-->
+<!--                              <div class="d-flex flex-column align-items-start pass-info">-->
+<!--                                <div class="lightgray-text">-->
+<!--                                     جنسیت-->
+<!--                                </div>-->
+<!--                                <div class="gray-text">-->
+<!--                                   زن-->
+<!--                                </div>-->
+<!--                              </div>-->
+<!--                            </div>-->
+<!--                            <div class="col-3">-->
+<!--                              <div class="d-flex flex-column align-items-start pass-info">-->
+<!--                                <div class="lightgray-text">-->
+<!--                                   کشور-->
+<!--                                </div>-->
+<!--                                <div class="gray-text">-->
+<!--                                  ایران-->
+<!--                                  </div>-->
+<!--                              </div>-->
+<!--                            </div>-->
+<!--                            <div class="col-3">-->
+<!--                              <div class="d-flex flex-column align-items-start pass-info">-->
+<!--                                <div class="lightgray-text">-->
+<!--                                  تاریخ تولد -->
+<!--                                </div>-->
+<!--                                <div class="gray-text">-->
+<!--                                  1368/02/23-->
+<!--                                </div>-->
+<!--                              </div>-->
+<!--                            </div>-->
+<!--                            <div class="col-3">-->
+<!--                              <div class="d-flex flex-column align-items-start pass-info">-->
+<!--                                <div class="lightgray-text">-->
+<!--                                  ایمیل -->
+<!--                                </div>-->
+<!--                                <div class="gray-text">-->
+<!--                                  emailer7po@gmail.com-->
+<!--                                </div>-->
+<!--                              </div>-->
+<!--                            </div>-->
+<!--                          </div>-->
+<!--                        </div>-->
+<!--                      </div>-->
+<!--                    </div>-->
+<!--                  </div>-->
                 </div>
               </div>
 
@@ -689,6 +688,7 @@
   <script src="../assets/js/panel/misc.js"></script>
   <script src="../assets/js/panel/off-canvas.js"></script>
   <script src="../assets/js/panel/panel.js"></script>
+  <script src="../assets/js/panel/passenger.js"></script>
 </body>
 
 </html>
