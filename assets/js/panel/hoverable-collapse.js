@@ -18,7 +18,7 @@
           } else {
             $menuItem.removeClass('hover-open')
           }
-        }
+        } 
       }
     }
   });
