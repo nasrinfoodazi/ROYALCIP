@@ -19276,7 +19276,7 @@ footer {
 }
 
 .form-check .form-check-label input[type="checkbox"]:checked+.input-helper:before {
-    
+
     background:var(--blue);
     border-width: 0;
 }
@@ -21160,7 +21160,7 @@ justify-content: space-between;
     width: 100%;
     margin: 30px auto;
     background: #fff;
-    padding: 20px;	
+    padding: 20px;
     box-shadow: 0 1px 1px rgba(0,0,0,.05);
 }
 .table-title {
@@ -21193,7 +21193,7 @@ table.table td a {
     margin: 0 5px;
     min-width: 24px;
     color: var(--light-gray);
-}    
+}
 table.table td a.add {
     /* color: #27C46B; */
 }
@@ -21279,7 +21279,7 @@ margin-top:5px;
     border-color:var(--blue)
 }
 .main-passenger .form-group{
-  
+
 }
 .main-passenger .form-group .control-label{
     color:var(--gray)
