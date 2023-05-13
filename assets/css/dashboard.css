@@ -5367,7 +5367,7 @@ textarea.form-control-lg {
     background-color: var(--blue);
     border-color: var(--blue);
 }
-
+/* 
 .form-check-input:checked[type="checkbox"] {
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3e%3cpath fill='none' stroke='%23fff' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='M6 10l3 3l6-6'/%3e%3c/svg%3e");
 }
@@ -5380,7 +5380,7 @@ textarea.form-control-lg {
     background-color: #0d6efd;
     border-color: #0d6efd;
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3e%3cpath fill='none' stroke='%23fff' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='M6 10h8'/%3e%3c/svg%3e");
-}
+} */
 
 .form-check-input:disabled {
     pointer-events: none;
@@ -5399,10 +5399,9 @@ textarea.form-control-lg {
 }
 
 .form-switch .form-check-input {
-    width: 2em;
-    margin-left: -2.5em;
-    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='rgba%280, 0, 0, 0.25%29'/%3e%3c/svg%3e");
-    background-position: left center;
+    width: 3em;
+    margin-right: -2.5em;
+   
     border-radius: 2em;
     -webkit-transition: background-position 0.15s ease-in-out;
     transition: background-position 0.15s ease-in-out;
@@ -5416,12 +5415,9 @@ textarea.form-control-lg {
 }
 
 .form-switch .form-check-input:focus {
-    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='%2386b7fe'/%3e%3c/svg%3e");
 }
 
 .form-switch .form-check-input:checked {
-    background-position: right center;
-    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='%23fff'/%3e%3c/svg%3e");
 }
 
 .form-check-inline {
@@ -5429,7 +5425,7 @@ textarea.form-control-lg {
     margin-right: 1rem;
 }
 
-.btn-check {
+.icheck {
     position: absolute;
     clip: rect(0, 0, 0, 0);
     pointer-events: none;
@@ -6176,8 +6172,14 @@ fieldset:disabled .btn {
     background-color:var(--blue);
     border-color:var(--blue);
     border-radius: 7px;
+    padding:5px 30px
 }
-
+.btn-border-blue{
+    padding:5px 30px !important
+}
+.panel-head-section .btn-info{
+    padding: 15px 30px;
+}
 .btn-info:hover {
     color: var(--blue);
     background-color: #fff;
@@ -6217,7 +6219,9 @@ fieldset:disabled .btn {
     background-color: #198ae3;
     border-color: #198ae3;
 } */
-
+.btn-info:hover span:first-child{
+    color: var(--blue) !important;
+}
 .btn-warning {
     color: #000;
     background-color: #fed713;
@@ -6439,21 +6443,17 @@ fieldset:disabled .btn {
 }
 
 .btn-outline-secondary {
-    color: #c3bdbd;
-    border-color: #c3bdbd;
+    color: var(--blue);
+    border-color:var(--blue);
 }
 
 .btn-outline-secondary:hover {
-    color: #000;
-    background-color: #c3bdbd;
-    border-color: #c3bdbd;
+    color:#fff;
+    background-color: #fff;
+    border-color: var(--blue);
 }
 
-.btn-check:focus+.btn-outline-secondary,
-.btn-outline-secondary:focus {
-    -webkit-box-shadow: 0 0 0 0.25rem rgba(195, 189, 189, 0.5);
-    box-shadow: 0 0 0 0.25rem rgba(195, 189, 189, 0.5);
-}
+
 
 .btn-check:checked+.btn-outline-secondary,
 .btn-check:active+.btn-outline-secondary,
@@ -6461,8 +6461,8 @@ fieldset:disabled .btn {
 .btn-outline-secondary.active,
 .btn-outline-secondary.dropdown-toggle.show {
     color: #000;
-    background-color: #c3bdbd;
-    border-color: #c3bdbd;
+    background-color: #fff;
+    border-color: var(--blue);
 }
 
 .btn-check:checked+.btn-outline-secondary:focus,
@@ -17989,11 +17989,15 @@ footer {
 .btn-outline-secondary:hover,
 .btn-outline-secondary:focus,
 .btn-outline-secondary:active {
-   ;
-    background: var(--green);
-    color: #fff;
+    background:var(--blue) !important;
+    color: #fff !important;
+    border-color:var(--blue) !important
 }
-
+.btn-outline-secondary:active{
+    background:var(--blue);
+    color: #fff !important;
+    border-color:var(--blue) !important
+}
 .btn-inverse-success {
     background-color: rgba(27, 207, 180, 0.2);
     background-image: none;
@@ -19344,7 +19348,7 @@ footer {
 
 .rtl .form-check .form-check-label input[type="radio"]+.input-helper:after {
     left: auto;
-    right: 6px;
+    right: 46px;
 }
 
 .form-check .form-check-label input[type="radio"]:checked+.input-helper:before {
@@ -19362,11 +19366,11 @@ footer {
 }
 
 .form-check .form-check-label input[type="radio"]:disabled+.input-helper:before {
-    border-color: #ebedf2;
+    border-color: var(--blue);
 }
 
 .form-check .form-check-label input[type="radio"]:disabled:checked+.input-helper:before {
-    background: #ebedf2;
+    background:var(--blue);
 }
 
 .form-check .form-check-label input[type="radio"]:disabled:checked+.input-helper:after {
@@ -21234,7 +21238,7 @@ margin-top:5px;
     background-color: inherit;
     border-bottom: 3px solid var(--blue);
     font-weight: 500;
-    font-size: 1rem;
+    font-size: 1.2rem;
     padding-bottom: 20px;
     margin-bottom: 0;
 }
@@ -21248,9 +21252,12 @@ margin-top:5px;
     padding: 20px 10px;
 }
 .main-passenger-header{
-
+padding:20px;
     padding-bottom: 20px;
     border-bottom: 1px solid var(--light-gray);
+}
+#accordionPassengers .accordion-header{
+    padding: 0 5px !important;
 }
 .search-field{
     border:1px solid var(--light-gray);
@@ -21304,4 +21311,24 @@ margin-top:5px;
 }
  .edit{
     font-size: .9rem;
+    color:var(--gray)
+}
+.delete{
+    color:var(--gray);
+    margin: 0 10px;
+    font-size: 1.2rem;
+
+}
+.pass-dash .accordion-item:first-of-type,.pass-dash .accordion-item:last-of-type{
+border-radius: 5px;
+}
+.pass-dash .form-check-input:checked[type=checkbox]{
+    background-image: url(data:image/svg+xml,%3csvg xmlns= 'http://www.w3.org/2000/svg' viewBox= '0 0 20 20' %3e%3cpath fill= 'none' stroke= '%23fff' stroke-linecap= 'round' stroke-linejoin= 'round' stroke-width= '3' d= 'm6 10 3 3 6-6' /%3e%3c/svg%3e);
+    border-color:var(--blue) !important
+}
+.pass-dash .form-check .form-check-label{
+    Color:var(--blue) !important
+}
+.pass-das .form-check-input[type=checkbox]{
+    border-color:var(--blue) !important
 }

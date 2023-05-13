@@ -8,8 +8,11 @@ let userInfo = {
     countryCode: 98,
     email:'test@gmail.com',
     sex:'male',
-    nationalCode:212127192871
-
+    nationalCode:212127192871,
+    username:'arminmanochehri',
+    password:123456,
+    google:'connect',
+    googlecalndar:'connect'
 }
 
 
@@ -28,7 +31,23 @@ function setProfileInfo() {
                     element.innerText = 'زن'
                 }
 
-            } else {
+            } else if (item === 'google') {
+                if(userInfo[item]==='connect'){
+                    element.innerText = 'ارتباط'
+                }else{
+                    element.innerText = 'قطع ارتباط'
+                }
+
+            }
+            else if (item === 'googlecalndar') {
+                if(userInfo[item]==='connect'){
+                    element.innerText = 'ارتباط'
+                }else{
+                    element.innerText = 'قطع ارتباط'
+                }
+
+            }
+             else {
                 element.innerText = userInfo[item]
             }
 

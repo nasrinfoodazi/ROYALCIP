@@ -136,7 +136,7 @@ function updatePassengerFormItem(e, parameter) {
 
 function mainPassengerHeader(record, index) {
     return `
-    <div class="main-passenger-header" style="padding: 5px">
+    <div class="main-passenger-header" style="padding: 15px">
                     <h5>مسافر اصلی</h5>
                     <div class="d-flex justify-content-between align-items-center">
                       <p class="m-0"> سفارش شما بر اساس مشخصات مسافر اصلی انجام می گردد. </p>
@@ -160,8 +160,8 @@ function EditActions(record, index) {
 function ViewActions(record, index) {
     return `
   <div class="col-2">
-      <div class="px-2">
-        <a href="" class="edit">ویرایش</a>
+      <div class="d-flex justify-content-end align-items-center e-sec">
+        <a href="" class="edit mx-2">ویرایش</a>
         <a class="delete" onclick="removePassenger(${index})" title="Delete" data-toggle="tooltip" ><span class="icon-Trash"></span></a>
       </div>
     </div>  
@@ -170,7 +170,7 @@ function ViewActions(record, index) {
 
 function otherPassengerEditHeader(record, index) {
     return `
-    <div class="main-passenger-header" style="padding: 5px">
+    <div class="main-passenger-header" style="padding: 15px">
                     <h5>مسافر</h5>
                     <div class="d-flex justify-content-between align-items-center">
                       <p class="m-0">  </p>
@@ -182,13 +182,13 @@ function otherPassengerEditHeader(record, index) {
 
 function otherPassengerViewHeader(record, index) {
     return `
-            <div class="accordion-header" style="padding: 5px">
+            <div class="accordion-header" style="padding: 15px">
               <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-${index}" aria-expanded="false" aria-controls="collapse-${index}">
 
                 <div class="col-10">
                   <div class="row">
                     <div class="col-3">
-                      <div class="d-flex flex-column align-items-start pass-info">
+                      <div class="d-flex flex-column align-items-start pass-info ">
                         <div class="lightgray-text">
                           نام و نام خانوادگی
                         </div>
@@ -305,7 +305,7 @@ function editPassengerInfo(record, index) {
     let birthDay = (passengerEdited?.birthDay || '1400/01/01')?.split('/');
     console.log("birthDay", birthDay)
     return `
-      <div class="main-passenger-info" style="padding: 5px">
+      <div class="main-passenger-info" style="padding: 15px">
                     <div class="row ">
                       <div class="col-12 col-md-4 ">
                         <div class="form-group">
@@ -492,7 +492,7 @@ function editPassengerInfo(record, index) {
 
 function GetAccordionItem(record, index) {
     return `
-    <div class="accordion-item" style="border-top: 1px solid gray">
+    <div class="accordion-item" style="border-top: 1px solid var(--light-gray)">
             
                 
             ${record.isMainPassenger && mainPassengerHeader(record, index) || otherPassengerHeader(record, index)}
