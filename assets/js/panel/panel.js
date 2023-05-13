@@ -103,3 +103,35 @@ function switchContent(show = [], hide = []) {
         }
     });
 }
+
+
+
+function onchangeSwitch(e,  labelId){
+    let getLabel = document.getElementById(labelId);
+    if(getLabel){
+        getLabel.innerText = (e?.target?.checked || e.checked) && 'روشن' || 'خاموش'
+    }
+}
+
+[
+    {
+        input:'status-3',
+        label:'switch-label-3'
+    },
+    {
+        input:'status-2',
+        label:'switch-label-2'
+    },
+    {
+        input:'status-1',
+        label:'switch-label-1'
+    }
+].forEach(item=>{
+    let e = document.getElementById(item.input);
+    console.log("item", item)
+    if(e){
+        // console.log("eeeee", e.checked)
+        onchangeSwitch(e,item.label)
+    }
+
+})

@@ -5367,7 +5367,7 @@ textarea.form-control-lg {
     background-color: var(--blue);
     border-color: var(--blue);
 }
-/* 
+/*
 .form-check-input:checked[type="checkbox"] {
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3e%3cpath fill='none' stroke='%23fff' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='M6 10l3 3l6-6'/%3e%3c/svg%3e");
 }
@@ -5401,7 +5401,7 @@ textarea.form-control-lg {
 .form-switch .form-check-input {
     width: 3em;
     margin-right: -2.5em;
-   
+
     border-radius: 2em;
     -webkit-transition: background-position 0.15s ease-in-out;
     transition: background-position 0.15s ease-in-out;
@@ -21331,4 +21331,8 @@ border-radius: 5px;
 }
 .pass-das .form-check-input[type=checkbox]{
     border-color:var(--blue) !important
+}
+
+.switch-button{
+    color: black;font-weight: unset; margin-left: 2.75rem !important;
 }
