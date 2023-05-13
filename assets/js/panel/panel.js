@@ -6,13 +6,13 @@ let userInfo = {
     year: 1395,
     mobileNumber: 9121234567,
     countryCode: 98,
-    email:'test@gmail.com',
-    sex:'male',
-    nationalCode:212127192871,
-    username:'arminmanochehri',
-    password:123456,
-    google:'connect',
-    googlecalndar:'connect'
+    email: 'test@gmail.com',
+    sex: 'male',
+    nationalCode: 212127192871,
+    username: 'arminmanochehri',
+    password: 123456,
+    google: 'connect',
+    googlecalndar: 'connect'
 }
 
 
@@ -23,31 +23,29 @@ function setProfileInfo() {
             if (['year', 'month'].includes(item)) {
                 element.innerText = ' / ' + userInfo[item]
             } else if (item === 'countryCode') {
-                element.innerText = userInfo[item]+'+'
+                element.innerText = userInfo[item] + '+'
             } else if (item === 'sex') {
-                if(userInfo[item]==='male'){
+                if (userInfo[item] === 'male') {
                     element.innerText = 'مرد'
-                }else{
+                } else {
                     element.innerText = 'زن'
                 }
 
             } else if (item === 'google') {
-                if(userInfo[item]==='connect'){
-                    element.innerText = 'ارتباط'
-                }else{
-                    element.innerText = 'قطع ارتباط'
+                if (userInfo[item] === 'connect') {
+                    element.innerText = 'متصل است'
+                } else {
+                    element.innerText = 'متصل نیست'
                 }
 
-            }
-            else if (item === 'googlecalndar') {
-                if(userInfo[item]==='connect'){
-                    element.innerText = 'ارتباط'
-                }else{
-                    element.innerText = 'قطع ارتباط'
+            } else if (item === 'googlecalndar') {
+                if (userInfo[item] === 'connect') {
+                    element.innerText = 'متصل است'
+                } else {
+                    element.innerText = 'متصل نیست'
                 }
 
-            }
-             else {
+            } else {
                 element.innerText = userInfo[item]
             }
 
@@ -56,13 +54,14 @@ function setProfileInfo() {
 }
 
 setProfileInfo();
-function setPhoneNumber (show,hide,id){
+
+function setPhoneNumber(show, hide, id) {
     let element = document.getElementById(id);
 
-    if(element){
+    if (element) {
         element.innerText = `${userInfo['countryCode']}${userInfo['mobileNumber']}+`
     }
-    switchContent(show,hide);
+    switchContent(show, hide);
 }
 
 
@@ -105,33 +104,48 @@ function switchContent(show = [], hide = []) {
 }
 
 
-
-function onchangeSwitch(e,  labelId){
+function onchangeSwitch(e, labelId) {
     let getLabel = document.getElementById(labelId);
-    if(getLabel){
+    if (getLabel) {
         getLabel.innerText = (e?.target?.checked || e.checked) && 'روشن' || 'خاموش'
     }
 }
 
 [
     {
-        input:'status-3',
-        label:'switch-label-3'
+        input: 'status-3',
+        label: 'switch-label-3'
     },
     {
-        input:'status-2',
-        label:'switch-label-2'
+        input: 'status-2',
+        label: 'switch-label-2'
     },
     {
-        input:'status-1',
-        label:'switch-label-1'
+        input: 'status-1',
+        label: 'switch-label-1'
     }
-].forEach(item=>{
+].forEach(item => {
     let e = document.getElementById(item.input);
     console.log("item", item)
-    if(e){
+    if (e) {
         // console.log("eeeee", e.checked)
-        onchangeSwitch(e,item.label)
+        onchangeSwitch(e, item.label)
     }
 
 })
+
+
+
+
+function setGoogle(parameter) {
+    userInfo[parameter] = userInfo[parameter] === 'connect' && 'disconnect' || 'connect';
+    let element = document.getElementById('user-info-' + parameter);
+    let elementAction = document.getElementById('user-action-' + parameter);
+    if (element)
+        element.innerText = userInfo[parameter] === 'connect' && 'متصل است' || 'متصل نیست'
+
+
+    if (elementAction)
+        elementAction.innerText = userInfo[parameter] === 'connect' && 'قطع ارتباط' || 'اتصال'
+
+}

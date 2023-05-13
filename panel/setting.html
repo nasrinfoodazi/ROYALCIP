@@ -405,101 +405,95 @@
                                         <div class="item-label">Google</div>
                                         <div class="item-info">
                                             <div>
-                                                <span id="user-info-google"></span>
+                                                <span id="user-info-google">متصل است</span>
                                             </div>
-                                            <div onclick="setFormInfo(['google'], {
-                              show:['section-form-google'],
-                              hide:['section-info-google']
-                            })">
-                                                ویرایش
+                                            <div onclick="setGoogle('google')" id="user-action-google">
+                                                قطع ارتباط
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-12 content-hide" id="section-form-google">
-                                        <div class="row">
+<!--                                    <div class="col-12 content-hide" id="section-form-google">-->
+<!--                                        <div class="row">-->
 
-                                            <div class="col-12">
-                                                <div class="form-group black">
-                                                    <select name="day" id="user-form-google" class="my-">
-                                                        <option value="connect">ارتباط</option>
-                                                        <option value="disconnect">عدم ارتباط</option>
-                                                    </select>
-                                                    <label class="control-label black ">Google</label><i
-                                                        class="bar black"></i>
-                                                </div>
-                                            </div>
+<!--                                            <div class="col-12">-->
+<!--                                                <div class="form-group black">-->
+<!--                                                    <select name="day" id="user-form-google" class="my-">-->
+<!--                                                        <option value="connect">ارتباط</option>-->
+<!--                                                        <option value="disconnect">عدم ارتباط</option>-->
+<!--                                                    </select>-->
+<!--                                                    <label class="control-label black ">Google</label><i-->
+<!--                                                        class="bar black"></i>-->
+<!--                                                </div>-->
+<!--                                            </div>-->
 
-                                            <div class="d-flex flex-row-reverse">
-                                                <div class="p-2">
-                                                    <button type="button" class="btn btn-info btn-sm" onclick="editInfo(['google'],{
-                                  show:['section-info-google'],
-                                  hide:['section-form-google']
-                              })">
-                                                        ذخیره
-                                                    </button>
-                                                </div>
-                                                <div class="p-2">
-                                                    <button type="button" class="btn btn-outline-secondary btn-sm"
-                                                            onclick="switchContent(['section-info-google'],['section-form-google'])">
-                                                        لغو
-                                                    </button>
-                                                </div>
-                                            </div>
-                                        </div>
+<!--                                            <div class="d-flex flex-row-reverse">-->
+<!--                                                <div class="p-2">-->
+<!--                                                    <button type="button" class="btn btn-info btn-sm" onclick="editInfo(['google'],{-->
+<!--                                  show:['section-info-google'],-->
+<!--                                  hide:['section-form-google']-->
+<!--                              })">-->
+<!--                                                        ذخیره-->
+<!--                                                    </button>-->
+<!--                                                </div>-->
+<!--                                                <div class="p-2">-->
+<!--                                                    <button type="button" class="btn btn-outline-secondary btn-sm"-->
+<!--                                                            onclick="switchContent(['section-info-google'],['section-form-google'])">-->
+<!--                                                        لغو-->
+<!--                                                    </button>-->
+<!--                                                </div>-->
+<!--                                            </div>-->
+<!--                                        </div>-->
 
-                                    </div>
+<!--                                    </div>-->
                                 </div>
                             </div>
 
                             <div class="col-12  my-5">
                                 <div class="row">
-                                    <div class="col-12" id="section-info-googlecalndar">
+                                    <div class="col-12" id="section-info-googleCalendar">
                                         <div class="item-label">googlecalndar</div>
                                         <div class="item-info">
                                             <div>
-                                                <span id="user-info-googlecalndar"></span>
+                                                <span id="user-info-googleCalendar">متصل است</span>
                                             </div>
-                                            <div onclick="setFormInfo(['googlecalndar'], {
-                              show:['section-form-googlecalndar'],
-                              hide:['section-info-googlecalndar']
-                            })">
-                                                ویرایش
+                                            <div onclick="setGoogle('googleCalendar')" id="user-action-googleCalendar">
+                                                قطع ارتباط
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-12 content-hide" id="section-form-googlecalndar">
-                                        <div class="row">
+<!--                                    <div class="col-12 content-hide" id="section-form-googlecalndar">-->
+<!--                                        <div class="row">-->
 
-                                            <div class="col-12">
-                                                <div class="form-group black">
-                                                    <select name="day" id="user-form-googlecalndar" class="my-">
-                                                        <option value="connect">ارتباط</option>
-                                                        <option value="disconnect">عدم ارتباط</option>
-                                                    </select>
-                                                    <label class="control-label black ">googlecalndar</label><i
-                                                        class="bar black"></i>
-                                                </div>
-                                            </div>
+<!--                                            <div class="col-12">-->
+<!--                                                <div class="form-group black">-->
+<!--                                                    <select name="day" id="user-form-googlecalndar" class="my-">-->
+<!--                                                        <option value="connect">ارتباط</option>-->
+<!--                                                        <option value="disconnect">عدم ارتباط</option>-->
+<!--                                                    </select>-->
+<!--                                                    <label class="control-label black ">googlecalndar</label><i-->
+<!--                                                        class="bar black"></i>-->
+<!--                                                </div>-->
+<!--                                            </div>-->
 
-                                            <div class="d-flex flex-row-reverse">
-                                                <div class="p-2">
-                                                    <button type="button" class="btn btn-info  btn-sm" onclick="editInfo(['googlecalndar'],{
-                                  show:['section-info-googlecalndar'],
-                                  hide:['section-form-googlecalndar']
-                              })">
-                                                        ذخیره
-                                                    </button>
-                                                </div>
-                                                <div class="p-2">
-                                                    <button type="button" class="btn btn-outline-secondary btn-sm"
-                                                            onclick="switchContent(['section-info-googlecalndar'],['section-form-googlecalndar'])">
-                                                        لغو
-                                                    </button>
-                                                </div>
-                                            </div>
-                                        </div>
+<!--                                            <div class="d-flex flex-row-reverse">-->
+<!--                                                <div class="p-2">-->
+<!--                                                    <button type="button" class="btn btn-info  btn-sm" onclick="editInfo(['googlecalndar'],{-->
+<!--                                  show:['section-info-googlecalndar'],-->
+<!--                                  hide:['section-form-googlecalndar']-->
+<!--                              })">-->
+<!--                                                        ذخیره-->
+<!--                                                    </button>-->
+<!--                                                </div>-->
+<!--                                                <div class="p-2">-->
+<!--                                                    <button type="button" class="btn btn-outline-secondary btn-sm"-->
+<!--                                                            onclick="switchContent(['section-info-googlecalndar'],['section-form-googlecalndar'])">-->
+<!--                                                        لغو-->
+<!--                                                    </button>-->
+<!--                                                </div>-->
+<!--                                            </div>-->
+<!--                                        </div>-->
 
-                                    </div>
+<!--                                    </div>-->
                                 </div>
                             </div>
                             <div class="panel-head-section d-flex justify-content-between align-items-end my-5 ">
