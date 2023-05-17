@@ -18,7 +18,7 @@ let userInfo = {
     // nationality: 'iranian'
     nationality: 'non-iranian'
 }
-let countryCode = [
+let countryCodeArray = [
     {key: '98', value: 'ایران'},
     {key: '1', value: 'کانادا'},
 ]
@@ -27,8 +27,8 @@ let nationality = [
     {key: 'iranian', value: 'ایرانی'},
     {key: 'non-iranian', value: 'غیر ایرانی'},
 ]
-let findCountryName = (key) => {
-    let country = countryCode.find(item => item.key === key)
+let findCountryNameFunc = (key) => {
+    let country = countryCodeArray.find(item => item.key === key)
     if (country) {
         return country.value
     }
@@ -73,7 +73,7 @@ function setProfileInfo() {
                 }
 
             } else if (item === 'passportCountry') {
-                element.innerText = findCountryName(userInfo[item])
+                element.innerText = findCountryNameFunc(userInfo[item])
 
             }
             // else if (item === 'nationality') {

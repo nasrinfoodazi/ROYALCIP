@@ -37,7 +37,7 @@ let passengersList = [{
 let passengerEdited = {};
 
 let countryCode = [
-    {key: '1', value: 'ایران'},
+    {key: '98', value: 'ایران'},
     {key: '2', value: 'کانادا'},
     {key: '3', value: 'آلمان'},
     {key: '4', value: 'انگلیس'},
