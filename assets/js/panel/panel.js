@@ -13,13 +13,38 @@ let userInfo = {
     password: 123456,
     google: 'connect',
     googlecalndar: 'connect',
-    passportNumber:24323423,
-    passportCountry:98
+    passportNumber: 24323423,
+    passportCountry: "98",
+    // nationality: 'iranian'
+    nationality: 'non-iranian'
+}
+let countryCode = [
+    {key: '98', value: 'ایران'},
+    {key: '1', value: 'کانادا'},
+]
+
+let nationality = [
+    {key: 'iranian', value: 'ایرانی'},
+    {key: 'non-iranian', value: 'غیر ایرانی'},
+]
+let findCountryName = (key) => {
+    let country = countryCode.find(item => item.key === key)
+    if (country) {
+        return country.value
+    }
+}
+let findNationalityName = (key) => {
+    let nationa = nationality.find(item => item.key === key)
+    if (nationa) {
+        return nationa.value
+    }
 }
 
 
 function setProfileInfo() {
+
     Object.keys(userInfo).forEach(item => {
+        console.log(userInfo[item], item)
         let element = document.getElementById('user-info-' + item)
         if (element && userInfo[item]) {
             if (['year', 'month'].includes(item)) {
@@ -47,7 +72,29 @@ function setProfileInfo() {
                     element.innerText = 'متصل نیست'
                 }
 
-            } else {
+            } else if (item === 'passportCountry') {
+                element.innerText = findCountryName(userInfo[item])
+
+            }
+            // else if (item === 'nationality') {
+            //
+            //     // element.innerText = findNationalityName(userInfo[item]);
+            //     console.log("userInfo[item]===>", userInfo[item])
+            //     if (userInfo[item] === 'iranian') {
+            //         editInfo(['nationalCode'], {
+            //             show: ['nationalCode-item'],
+            //             hide: ['passport-item']
+            //         })
+            //     } else {
+            //         editInfo(['passportNumber', 'passportCountry'], {
+            //             show: ['passport-item'],
+            //             hide: ['nationalCode-item']
+            //         })
+            //     }
+            //
+            //
+            // }
+            else {
                 element.innerText = userInfo[item]
             }
 
@@ -135,8 +182,6 @@ function onchangeSwitch(e, labelId) {
     }
 
 })
-
-
 
 
 function setGoogle(parameter) {

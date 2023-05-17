@@ -597,18 +597,19 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-12 gy-5 d-flex align-items-center ">
+<!--                            <div class="col-12 gy-5 d-flex align-items-center " id="user-info-nationality">-->
+                            <div class="col-12 gy-5 d-flex align-items-center " >
                                 <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="radio" name="inlineRadioOptions"
-                                           id="inlineRadio1" selected value="option1"
-                                           onchange="switchContent(['nationalCode-item'],['passport-item'])">
-                                    <label class="form-check-label black" for="inlineRadio1">ایرانی</label>
+                                    <input class="form-check-input" type="radio" name="nationality"
+                                           id="nationality-1" checked value="iranian"
+                                           onchange="editInfo(['nationalCode'],{show:['nationalCode-item'],hide:['passport-item']})">
+                                    <label class="form-check-label black" for="nationality-1">ایرانی</label>
                                 </div>
                                 <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="radio" name="inlineRadioOptions"
-                                           id="inlineRadio2" value="option2"
-                                           onchange="switchContent(['passport-item'],['nationalCode-item'])">
-                                    <label class="form-check-label black" for="inlineRadio2">غیر ایرانی</label>
+                                    <input class="form-check-input" type="radio" name="nationality"
+                                           id="nationality-2" value="non-iranian"
+                                           onchange="editInfo(['passportNumber','passportCountry'],{show:['passport-item'],hide:['nationalCode-item']})">
+                                    <label class="form-check-label black" for="nationality-2">غیر ایرانی</label>
                                 </div>
 
                             </div>
@@ -718,9 +719,9 @@
                                         <div class="d-flex flex-row-reverse">
                                             <div class="p-2">
                                                 <button type="button" class="btn btn-info btn-sm"
-                                                        onclick="editInfo(['nationalCode'],{
-                                                show:['section-info-nationalCode'],
-                                                hide:['section-form-nationalCode']
+                                                        onclick="editInfo(['passportNumber','passportCountry'],{
+                                                show:['section-info-passport','section-info-passport'],
+                                                hide:['section-form-passport','section-form-passport']
                                             })">
                                                     ذخیره
                                                 </button>
