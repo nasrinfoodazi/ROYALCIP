@@ -127,62 +127,62 @@
                 <nav class="sidebar sidebar-offcanvas" id="sidebar">
                     <ul class="nav">
                         <li class="nav-item nav-profile">
-                          <a href="#" class="nav-link">
-                            <div class="nav-profile-image">
-                              <img src="../assets/image/SVG/Group 715.svg" alt="profile">
-                              <span class="login-status online"></span>
-                              <!--change to offline or busy as needed-->
-                            </div>
-                            <div class="nav-profile-text d-flex flex-column">
-                              <span class="font-weight-bold mb-2 user-name">نسرین فودازی</span>
-                            </div>
-                          </a>
+                            <a href="#" class="nav-link">
+                                <div class="nav-profile-image">
+                                    <img src="../assets/image/SVG/Group 715.svg" alt="profile">
+                                    <span class="login-status online"></span>
+                                    <!--change to offline or busy as needed-->
+                                </div>
+                                <div class="nav-profile-text d-flex flex-column">
+                                    <span class="font-weight-bold mb-2 user-name">نسرین فودازی</span>
+                                </div>
+                            </a>
                         </li>
-          
-          
+
+
                         <li class="nav-item">
-                          <a class="nav-link" href="../panel/dashboard.html">
-                            <i class="icon-Order menu-icon"></i>
-                            <span class="menu-title mt-2">سفارش ها</span>
-                          </a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link" href="../panel/profile.html">
-                            <i class="icon-User menu-icon"></i>
-                            <span class="menu-title mt-2">حساب کاربری</span>
-                          </a>
+                            <a class="nav-link" href="../panel/dashboard.html">
+                                <i class="icon-Order menu-icon"></i>
+                                <span class="menu-title mt-2">سفارش ها</span>
+                            </a>
                         </li>
                         <li class="nav-item">
-                          <a class="nav-link" href="../panel/order.html">
-                            <i class="icon-Payment menu-icon"></i>
-          
-                            <span class="menu-title mt-2">امور مالی</span>
-                          </a>
+                            <a class="nav-link" href="../panel/profile.html">
+                                <i class="icon-User menu-icon"></i>
+                                <span class="menu-title mt-2">حساب کاربری</span>
+                            </a>
                         </li>
                         <li class="nav-item">
-                          <a class="nav-link" href="../panel/passenger.html">
-                            <i class="icon-Traveler menu-icon"></i>
-                            <span class="menu-title mt-2">لیست مسافران</span>
-          
-                          </a>
+                            <a class="nav-link" href="../panel/order.html">
+                                <i class="icon-Payment menu-icon"></i>
+
+                                <span class="menu-title mt-2">امور مالی</span>
+                            </a>
                         </li>
                         <li class="nav-item">
-                          <a class="nav-link" href="../panel/setting.html">
-                            <i class="icon-Switch01 menu-icon"></i>
-                            <span class="menu-title mt-2"> تنظیمات</span>
-          
-                          </a>
+                            <a class="nav-link" href="../panel/passenger.html">
+                                <i class="icon-Traveler menu-icon"></i>
+                                <span class="menu-title mt-2">لیست مسافران</span>
+
+                            </a>
                         </li>
                         <li class="nav-item">
-                          <a class="nav-link" href="../panel/support.html">
-                            <i class="icon-Call-Center menu-icon"></i>
-                            <span class="menu-title mt-2"> پشتیبانی</span>
-          
-                          </a>
+                            <a class="nav-link" href="../panel/setting.html">
+                                <i class="icon-Switch01 menu-icon"></i>
+                                <span class="menu-title mt-2"> تنظیمات</span>
+
+                            </a>
                         </li>
-          
-          
-                      </ul>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../panel/support.html">
+                                <i class="icon-Call-Center menu-icon"></i>
+                                <span class="menu-title mt-2"> پشتیبانی</span>
+
+                            </a>
+                        </li>
+
+
+                    </ul>
                 </nav>
                 <!-- partial -->
                 <div class="main-panel">
@@ -599,16 +599,20 @@
                             </div>
                             <div class="col-12 gy-5 d-flex align-items-center ">
                                 <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                           id="inlineRadio1" selected value="option1"
+                                           onchange="switchContent(['nationalCode-item'],['passport-item'])">
                                     <label class="form-check-label black" for="inlineRadio1">ایرانی</label>
                                 </div>
                                 <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                                    <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                           id="inlineRadio2" value="option2"
+                                           onchange="switchContent(['passport-item'],['nationalCode-item'])">
                                     <label class="form-check-label black" for="inlineRadio2">غیر ایرانی</label>
                                 </div>
 
                             </div>
-                            <div class="col-12 gy-5">
+                            <div class="col-12 gy-5" id="nationalCode-item">
                                 <div class="row">
                                     <div class="col-12" id="section-info-nationalCode">
                                         <div class="item-label">کد ملی</div>
@@ -659,6 +663,79 @@
 
                                     </div>
                                 </div>
+                            </div>
+
+                            <div class="col-12 gy-5 content-hide" id="passport-item">
+
+                                <div class="row" style="display: flex;align-items: flex-end" id="section-info-passport">
+                                    <div class="col-12 col-sm-6">
+                                        <div class="item-label">کشور</div>
+                                        <div class="item-info">
+                                            <div>
+                                                <span id="user-info-passportCountry"></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-sm-6">
+                                        <div class="item-label">شماره پاسپورت</div>
+                                        <div class="item-info">
+                                            <div>
+                                                <span id="user-info-passportNumber"></span>
+                                            </div>
+                                            <div onclick="setFormInfo(['passportNumber','passportCountry'], {
+                                            show:['section-form-passport'],
+                                            hide:['section-info-passport']
+                                          })">
+                                                ویرایش
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 content-hide" id="section-form-passport">
+                                    <div class="row">
+                                        <div class="col-12">
+                                            اطلاعات خود را بر اساس پاسپورت تکمیل کنید.
+                                        </div>
+                                        <div class="col-12 col-sm-6">
+                                            <div class="form-group black">
+                                                <select name="countryCode" id="user-form-passportCountry">
+                                                    <option value="98">ایران</option>
+                                                    <option value="1">کانادا</option>
+                                                </select>
+                                                <label class="control-label black">کشور</label><i
+                                                    class="bar black"></i>
+                                            </div>
+                                        </div>
+                                        <div class="col-12  col-sm-6">
+                                            <div class="form-group black">
+                                                <input type="text" required="required" name="name"
+                                                       id="user-form-passportNumber">
+                                                <label class="control-label black">شماره گذرنامه</label><i
+                                                    class="bar black"></i>
+                                            </div>
+                                        </div>
+
+                                        <div class="d-flex flex-row-reverse">
+                                            <div class="p-2">
+                                                <button type="button" class="btn btn-info btn-sm"
+                                                        onclick="editInfo(['nationalCode'],{
+                                                show:['section-info-nationalCode'],
+                                                hide:['section-form-nationalCode']
+                                            })">
+                                                    ذخیره
+                                                </button>
+                                            </div>
+                                            <div class="p-2">
+                                                <button type="button" class="btn btn-outline-secondary btn-sm"
+                                                        onclick="switchContent(['section-info-passport'],['section-form-passport'])">
+                                                    لغو
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
                             </div>
                         </div>
                     </div>
