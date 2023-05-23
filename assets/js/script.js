@@ -40,7 +40,6 @@ autocomplete(document.getElementById("myInput"), countries);
 
 
 function GetReserve(e, action) {
-    console.log("e, type::GetReserve:", e, type)
 }
 
 let formData = {};
@@ -54,7 +53,6 @@ function GetFlight(e, type) {
     }
     document.getElementById('form-submit-btn').disabled = true;
     requireField.forEach(item => {
-        console.log("document.getElementsByName(item)", document.getElementsByName(item))
         document.getElementsByName(item)[0].value = null
     });
     formData = {}
@@ -79,20 +77,18 @@ function GetFormInfo(e) {
     });
     document.getElementById('form-submit-btn').disabled = disabled;
 
-    console.log("e, type::GetFormInfo:", e.target.name, e.target.value, document.getElementById('flight2Section').style.display)
 }
 
 
 let selectedServices = {}
 
 function checkServices(e, type) {
-    console.log('"ttttttttt', e, type)
     if (selectedServices[type]) {
-        Reflect.deleteProperty(selectedServices, type);
-        document.getElementById(`${type}-select-id`).classList.remove('accordion-check')
+        // Reflect.deleteProperty(selectedServices, type);
+        // document.getElementById(`${type}-select-id`).classList.remove('accordion-check')
     } else {
         selectedServices[type] = true;
-        document.getElementById(`${type}-select-id`).classList.add('accordion-check')
+        document.getElementById(`${type}-select-id`)?.classList.add('accordion-check')
     }
 
     updateDetails()
@@ -221,11 +217,12 @@ function addService(service, action, parameter, type) {
                 }
             }
             document.getElementById(`add-service-quantity-${service}`).innerHTML = addServiceFormData[service]['quantity'];
-            console.log("addServiceFormData", addServiceFormData);
             updateDetails()
 
         }
     }
+
+    checkServices(null, type)
 }
 
 function updateDetails() {
@@ -278,7 +275,6 @@ function addPassenger(state) {
 addPassenger('start');
 
 function generatePassengerForm(newPassenger, state) {
-    console.log("newPassenger", newPassenger)
 
     let pHtml = `
     <div class="accordion-item" id="passenger-accordion-item-${newPassenger['id']}">
@@ -455,12 +451,10 @@ function generatePassengerForm(newPassenger, state) {
 function deletePassenger( id) {
     document.getElementById(`passenger-accordion-item-${id}`).remove();
     passengers = passengers.filter(item=>item.id!==id);
-    console.log("passengers", passengers)
 }
 function updatePassengerInfo(event, id) {
     let findPassenger = passengers.find(item => item.id === id);
     if (findPassenger) {
-        console.log("event.target.name", event.target.name, event.target.value)
         findPassenger[event.target.name] = event.target.value;
         passengers = passengers.map(item => {
             if (item.id === id) {
@@ -484,7 +478,6 @@ function updatePassengerInfo(event, id) {
         if(findPassenger['nationality']==="foreign"){
             document.getElementById(`nationality-${id}`).style.display = 'flex';
         }
-        console.log("events, id", findPassenger, passengers)
     }
 
 }
