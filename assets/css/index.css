@@ -14,6 +14,7 @@
     --gray: #707070;
     --black: #0f0e2d;
     --darkblue: #1e1c54;
+    --darkblue-1: #1e1c54;
     --blue: #3f3baa;
     --lightblue: #6e69ef;
     --red: #e96d6d;
@@ -71,8 +72,10 @@
     --gray: #707070;
     --black: rgba(255,255,255,1);
     --darkblue: rgba(0,0,0,.2);
+    --darkblue-1: rgba(255,255,255,1);
     --blue: #3f3baa;
-    --lightblue: rgba(0,0,0,.3);
+    --lightblue: rgba(0,0,0,.8);
+
     --red: #e96d6d;
     --green: #45c58e;
 }
@@ -493,7 +496,7 @@ p {
 
 .nav-search.active {
     background-color: var(--white);
-    color: var(--darkblue);
+    color: var(--darkblue-1);
 }
 
 .search-input input {
