@@ -120,24 +120,13 @@
             </div>
             <h5 class="logIn-title ">ورود</h5>
             <div class="log-form px-5">
-                <ul class="nav nav-pills " id="pills-tab" role="tablist">
-                    <li class="nav-item" role="presentation">
-                      <button class="nav-link active" id="pills-username-tab" data-bs-toggle="pill" data-bs-target="#pills-username" type="button" role="tab" aria-controls="pills-username" aria-selected="true">نام کاربری</button>
-                    </li>
-                    <li class="nav-item" role="presentation">
-                      <button class="nav-link" id="pills-email-tab" data-bs-toggle="pill" data-bs-target="#pills-email" type="button" role="tab" aria-controls="pills-email" aria-selected="false">ایمیل</button>
-                    </li>
-                    <li class="nav-item" role="presentation">
-                      <button class="nav-link" id="pills-mobile-tab" data-bs-toggle="pill" data-bs-target="#pills-mobile" type="button" role="tab" aria-controls="pills-mobile" aria-selected="false">موبایل</button>
-                    </li>
-
-                  </ul>
+  
                   <div class="tab-content p-3" id="pills-tabContent">
                     <div class="tab-pane fade show active" id="pills-username" role="tabpanel" aria-labelledby="pills-username-tab" tabindex="0">
                         <div class="row gx-0">
                         <div class="form-group">
                             <input type="text" required="required" name="firstName">
-                            <label class="control-label">نام کاربری</label><i class="bar"></i>
+                            <label class="control-label"> ایمیل و شماره موبایل</label><i class="bar"></i>
                         </div>
                     </div>
                     <div class="row gx-0">
@@ -153,72 +142,7 @@
                     </div>
 
 
-                    <div class="tab-pane fade" id="pills-email" role="tabpanel" aria-labelledby="pills-email-tab" tabindex="0">
-                        <div class="row gx-0" id="signin-email">
-                            <div class="form-group">
-                                <input type="email" required="required" name="email">
-                                <label class="control-label">  ایمیل خود را وارد کنید</label><i class="bar"></i>
-                            </div>
-                            <button class="btn btn-login" onclick="switchContent(['signin-email-otp'],['signin-email'])">ارسال کد</button>
-                        </div>
-                        <div class="row gx-0 mt-5 content-hide" id="signin-email-otp">
-                            <div class="col-3">
-                                <div class="box-code">
-                                    <input type="text">
-                                </div>
-                            </div>
-                            <div class="col-3">
-                                <div class="box-code">
-                                    <input type="text">
-                                </div>
-                            </div>
-                            <div class="col-3">
-                                <div class="box-code">
-                                    <input type="text">
-                                </div>
-                            </div>
-                            <div class="col-3">
-                                <div class="box-code">
-                                    <input type="text">
-                                </div>
-                            </div>
-                            <button class="btn btn-login" onclick="switchContent(['signin-email'], ['signin-email-otp'])">تایید کد</button>
-                        </div>
-                    </div>
-                    <div class="tab-pane fade" id="pills-mobile" role="tabpanel" aria-labelledby="pills-mobile-tab" tabindex="0">
-                        <div class="row gx-0"  id="signin-mobile">
-                            <div class="form-group">
-                                <input type="text" required="required" name="number">
-                                <label class="control-label">  شماره تلفن همراه خود را وارد کنید</label><i class="bar"></i>
-                            </div>
-                            <button class="btn btn-login" onclick="switchContent(['signin-otp'],['signin-mobile'])">ارسال کد</button>
-                        </div>
-
-
-                        <div class="row gx-0 mt-5 content-hide" id="signin-otp">
-                            <div class="col-3">
-                                <div class="box-code">
-                                    <input type="text">
-                                </div>
-                            </div>
-                            <div class="col-3">
-                                <div class="box-code">
-                                    <input type="text">
-                                </div>
-                            </div>
-                            <div class="col-3">
-                                <div class="box-code">
-                                    <input type="text">
-                                </div>
-                            </div>
-                            <div class="col-3">
-                                <div class="box-code">
-                                    <input type="text">
-                                </div>
-                            </div>
-                            <button class="btn btn-login"  onclick="switchContent(['signin-mobile'],['signin-otp'])">تایید کد</button>
-                        </div>
-                    </div>
+       
                   </div>
                   <div class="px-3 w-100">
                   <button class="btn btn-login-google">
