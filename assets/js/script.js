@@ -508,3 +508,33 @@ function switchContent(show=[], hide=[]){
         }
     });
 }
+
+
+
+
+
+
+
+document.getElementById('themeMode').addEventListener('click',()=>{
+    let body = document.getElementsByTagName('body');
+    if(body && body.length){
+        let mode = body[0].id==='darkMode' ? 'lightMode' : 'darkMode'
+        setMode(mode)
+    }
+})
+
+function setMode(mode){
+    let body = document.getElementsByTagName('body');
+    if(body && body.length){
+        body[0].setAttribute('id', mode)
+        console.log("mode", mode)
+        document.getElementById('themeMode').innerText = mode==='darkMode' ? 'حالت روز' : 'حالت شب';
+        localStorage.setItem('theme', mode)
+    }
+}
+function getMode(){
+    let mode = localStorage.getItem('theme');
+    setMode(mode || 'darkMode')
+
+}
+getMode()

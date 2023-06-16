@@ -4,7 +4,7 @@
 /* @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"); */
 
 
-/* :root {
+ :root {
     --bs-primary: #fff;
     --yellow: #e8c347;
     --lightyellow: #e8c247a3;
@@ -59,7 +59,23 @@
     --bs-font-IRANSans-ultra-light: IRANSans_UltraLight;
 
 
-} */
+}
+
+:root:has(#lightMode) {
+    --bs-primary: #1e1c54;
+    --yellow: #e8c347;
+    --lightyellow: #e8c247a3;
+    --lighteryellow: #e8c247bd;
+    --white: rgba(0,0,0,.8);
+    --light-gray: #9b9b9b;
+    --gray: #707070;
+    --black: rgba(255,255,255,1);
+    --darkblue: rgba(0,0,0,.2);
+    --blue: #3f3baa;
+    --lightblue: rgba(0,0,0,.3);
+    --red: #e96d6d;
+    --green: #45c58e;
+}
 
 body {
     font-family: var(--bs-font-IRANSans);
@@ -460,7 +476,7 @@ p {
 }
 
 .search-tab li button.active {
-    background-color: var(--white) !important;
+    background-color: var(--lightblue) !important;
 
 }
 
@@ -572,7 +588,7 @@ p {
     transition: .5s;
 }
 .text-white {
-    color: var(--white);
+    color: var(--white) !important;
     font-size: 1rem;
     line-height: 30px;
     text-align: justify;
@@ -821,9 +837,8 @@ p {
         padding: 0.2rem 0.5em;
         border-radius: 5px;
         margin: 0 0 2rem;
-        position: relative;
         font-size: 1rem;
-        color: var(--darkblue);
+        color: var(--light-gray);
         position: absolute;
         top: -35px;
     }
