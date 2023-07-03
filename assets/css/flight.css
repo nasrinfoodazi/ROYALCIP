@@ -97,6 +97,7 @@
 .section-content {
     margin-bottom: 40px;
     padding: 10px 0;
+    padding-top:0;
 }
 
 .section-content .divider {
@@ -928,7 +929,7 @@ fieldset {
 }
 
 .btn-primary {
-    background-color: var(--white);
+    background-color: var(--white-2);
     color: var(--bs-black);
 
 }
@@ -1418,7 +1419,17 @@ a:hover {
     font-size: 12px;
     cursor: pointer;
 }
-
+#lightMode .flight-timeline{
+    color: #FFF;
+}
+#lightMode .flight-timeline .before .line.inprocess,
+#lightMode .flight-timeline .before .shape.inprocess{
+    border-color: #fff;
+    background-color: var(--lightblue);
+}
+#lightMode .flight-timeline .before .line{
+    border-bottom: 1px solid #fff;
+}
 
 
 

@@ -1,0 +1,101 @@
+@media (max-width: 576px) { 
+    
+    .mobile-header{
+        display: ;
+    }
+    .newsletter .section-title{
+        font-size: .7rem !important;
+    }
+    
+
+
+}
+
+
+@media (max-width: 767.98px) { 
+
+
+    .mobile-header{
+        display:flex !important;
+    }
+    .btn-border-light-gray{
+        padding: 5px 10px!important;
+    }
+    #main-div{
+        display:none;
+    }
+    .whatsapp-icon{
+        display: none
+    }
+    .navbar-brand{
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    .navbar-brand .header-logo{
+        width: 50px;
+    }
+    .navbar-expand-md .icon-menu{
+        color: var(--yellow);
+    }
+    .nav-mobile{
+        display: flex;
+        flex-direction: row-reverse !important;
+    }
+    .dash-box-banner h1{
+        font-size: 2rem;
+    }
+    .dash-box-banner h3{
+        font-size: 1.5rem;
+    }
+    .dash-box-banner {
+        color: var(--white);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    .search-box .nav-search{
+        font-size: 13px !important;
+        padding:.1rem
+    }
+    .search-box .nav-pills{
+        flex-wrap: nowrap;
+    }
+    .why-us-box p{
+        font-size: 1.2rem !important;
+    }
+    .faq_section .accordion-button{
+        font-size: .8rem;
+    }
+    .footer-header .nav-header li{
+        padding: 0 5px
+    }
+    .footer-header .nav-header{
+        padding: 0;
+    }
+
+ }
+ @media (max-width: 991.98px) {
+    .search-box .nav-search{
+        font-size: 12px;
+        padding:.5rem
+    }
+    .search-input .btn-bcdark{
+        padding: 10px;
+    }
+    .why-us-box p{
+        font-size: .8rem;
+    }
+    .newsletter-form{
+        padding: 30px;
+    }
+    
+    .newsletter .section-title{
+        font-size: 1.1rem;
+        font-weight: bold;
+    }
+    .footer-header .nav-header li{
+        padding: 0 5px
+    }
+ 
+  }

@@ -10,8 +10,10 @@
     --lightyellow: #e8c247a3;
     --lighteryellow: #e8c247bd;
     --white: #fff;
+    --white-2: #fff;
     --light-gray: #9b9b9b;
     --gray: #707070;
+    --gray-1:#9b9b9b;
     --black: #0f0e2d;
     --darkblue: #1e1c54;
     --darkblue-1: #1e1c54;
@@ -67,19 +69,24 @@
     --yellow: #e8c347;
     --lightyellow: #e8c247a3;
     --lighteryellow: #e8c247bd;
-    --white: rgba(0,0,0,.8);
-    --light-gray: #9b9b9b;
+    --white: rgba(0,0,0,1);
+    --white-2:#fff;
+    --light-gray: #0f0e2d;
     --gray: #707070;
+    --gray-1:#9b9b9b;
     --black: rgba(255,255,255,1);
-    --darkblue: rgba(0,0,0,.2);
+    --darkblue:  #1e1c54;
     --darkblue-1: rgba(255,255,255,1);
     --blue: #3f3baa;
-    --lightblue: rgba(0,0,0,.8);
+    --lightblue: #1e1c54;
+    --lightblue-2: #6e69ef;
 
     --red: #e96d6d;
     --green: #45c58e;
 }
-
+body:has(#lightblue) .circle{
+    color: var(--white);
+}
 body {
     font-family: var(--bs-font-IRANSans);
     color: var(--white)
@@ -122,7 +129,7 @@ ul {
 }
 
 .gray-text {
-    color: var(--light-gray);
+    color: var(--gray-1);
 
 }
 
@@ -345,7 +352,7 @@ p {
 }
 
 .header-drop-down span {
-    color: var(--white);
+    color: var(--white-2);
     font-size: .9rem;
     font-weight: 700;
     margin-right: 10px;
@@ -393,7 +400,7 @@ p {
 .btn h5 {
     font-size: .8rem;
     font-weight: 700;
-    color: var(--white) !important;
+    color: var(--white-2) !important;
     margin-bottom: 5px !important;
 }
 
@@ -408,6 +415,7 @@ p {
     display: flex;
     justify-content: center;
     margin: 50px 0;
+    margin-top: 0;
 }
 
 .banner {
@@ -479,7 +487,7 @@ p {
 }
 
 .search-tab li button.active {
-    background-color: var(--lightblue) !important;
+    background-color: var(--white) !important;
 
 }
 
@@ -600,6 +608,7 @@ p {
 
 /* feature */
 .feature-section {
+    width: 100%;
     display: flex;
     justify-content: space-between;
     margin: 30px 0;
@@ -1310,6 +1319,7 @@ img {
     padding: 10px 20px;
     background-color: var(--darkblue);
     border-radius: 7px;
+    color: var(--yellow);
 }
 
 .input-faq-serach {
@@ -1480,10 +1490,11 @@ img {
 }
 
 .form_section {
-    background-color: var(--white);
+    background-color: var(--white-2);
     border-radius: 1px 8px 8px 1px;
     height: 100%;
     padding: 25px 30px;
+    border: 1px dotted var(--darkblue);
 }
 
 .form_section h4 {
@@ -2012,7 +2023,7 @@ input[type=email] {
 }
 
 .mag_section .text-body-secondary {
-    color: var(--light-gray) !important;
+    color: var(--gray-1) !important;
 }
 
 .service-text .gray-text {
@@ -2110,4 +2121,90 @@ input[type=email] {
     color: var(--white);
     background-color: var(--blue);
     border-radius: 7px;
+}
+#lightMode .dash-box-banner {
+    color: var(--white-2);
+}
+
+#lightMode .header-left .circle {
+    color: var(--blue);
+}
+
+
+#lightMode header .icon-Search{
+    color: var(--lightblue-2);
+}
+#lightMode #main-div span{
+   color: VAR(--yellow);
+}
+#lightMode  .mag_section .card-text{
+   color: var(--white-2); ;
+}
+#lightMode .form-newsletter input{
+    background-color: #fff;
+}
+#lightMode .exteraService_item{
+    border-color: var(--yellow);
+}
+#lightMode .exteraService_item .gray-text{
+    color: var(--white-2);
+}
+#lightMode .cost_type{
+    color: var(--white);
+}
+#lightMode .exteraService_item .white-text
+
+{
+    color: var(--white-2);
+}
+#lightMode .exteraService_item .caption{
+    color: var(--gray);
+}
+#lightMode .exteraService_item .icon{
+    color: var(--blue);
+}
+#lightMode .shape{
+    background-color:var(--white);
+    z-index: 2;
+}
+#lightMode .language{
+    border-bottom: 1px solid var(--blue);
+}
+#lightMode .site-box-darkblue{
+    background-color:var(--white-2);
+    border:1px dotted var(--white)
+}
+#lightMode .search-faq{
+    color: var(--white-2) !important;
+}
+#lightMode ::placeholder {
+    color: var(--yellow);
+    font-size: 1rem;
+}
+
+
+#lightMode :-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: var(--yellow);
+}
+
+#lightMode ::-ms-input-placeholder {
+    /* Microsoft Edge */
+    color: var(--yellow);
+}
+
+#lightMode .icon-Search {
+    color: var(--yellow);
+}
+ .mobile-header{
+    display:none;
+}
+.navbar .header-logo{
+    /* width: 50px; */
+}
+.navbar-brand img{
+    width: 50px;
+}
+.search-box .nav-pills{
+    flex-wrap: nowrap;
 }

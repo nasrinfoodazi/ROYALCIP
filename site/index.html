@@ -10,111 +10,45 @@
     <link rel="stylesheet" href="../assets/bootstrap/css/bootstrap.min.css" type="text/css">
     <link rel="stylesheet" href="../assets/css/index.css" type="text/css">
     <link rel="stylesheet" href="../assets/css/style.css">
-
+    <link rel="stylesheet" href="../assets/css/responsive.css">
     <title>سفر رویایی با رویال سی آی پی</title>
 </head>
 
 <body class="bg-dark-blue home-page">
-    <header class="header-top ">
-        <div class="navbar-header col-12 col-sm-10">
-            <div class="header-left">
+    <header class="header-top">
+ <div class="col-12 col-md-10">
+    <nav class="navbar navbar-expand-md bg-body-tertiary nav-mobile">
+        <div class="container-fluid">
+          
+          <button class="navbar-toggler" type="" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="icon-menu"></span>
+          </button>
+          <a class="navbar-brand" href="#">
+            <img src="../assets/image/1667121945301-LOGO/SVG/Gold.svg" alt="">
+          </a>
+          <div class="collapse navbar-collapse" id="navbarText">
+            <nav class="d-flex align-items-center">
+                <ul class="nav-header m-0 navbar-nav me-auto mb-2 mb-lg-0">
+                    <li><a href="#">خانه</a></li>
+                    <li><a href="#">سرویس ها</a></li>
+                    <li><a href="#">پکیج ها</a></li>
+                    <li><a href="#">سوالات متداول</a></li>
+                    <li><a href="#"> درباره ما</a></li>
+                    <li><a href="#">ارتباط با ما</a></li>
+                </ul>
+            </nav>
 
-                <div class="header-lang">
-                    <div class="lang-icon circle ">
-
-                        <span class="icon-language-and-currency "></span>
-                    </div>
-                    <div class="lang-drop-down box arrow-top">
-                        <div class="language">
-                            <h4 class="header-drop-down">
-                                <i class="icon-language light-blue "></i>
-                                <span>زبان </span>
-                            </h4>
-                            <div class="drop-select">
-                                <input type="radio" class="btn-check " name="options" id="option1" autocomplete="off"
-                                    checked>
-                                <label class="btn language-btn" for="option1">
-                                    <h5>فارسی</h5>
-                                    <span>ایران</span>
-                                </label>
-                                <input type="radio" class="btn-check " name="options" id="option2" autocomplete="off">
-                                <label class="btn language-btn" for="option2">
-                                    <h5>انگلیسی</h5>
-                                    <span>امریکا</span>
-
-                                </label>
-
-                            </div>
-                        </div>
-                        <div class="country">
-                            <h4 class="header-drop-down ">
-                                <i class="icon-currency light-blue"></i>
-                                <span>واحد پول</span>
-                            </h4>
-                            <div class="drop-select">
-                                <input type="radio" class="btn-check " name="country" id="count1" autocomplete="off"
-                                    checked>
-                                <label class="btn language-btn" for="count1">
-                                    <h5>ریال ایران</h5>
-                                    <span>ریال</span>
-                                </label>
-                                <input type="radio" class="btn-check " name="country" id="count2" autocomplete="off">
-                                <label class="btn language-btn" for="count2">
-                                    <h5>دلار امریکا</h5>
-                                    <span>USD-$</span>
-
-                                </label>
-                                <input type="radio" class="btn-check" name="country" id="count3" autocomplete="off">
-                                <label class="btn language-btn" for="count3">
-                                    <h5>یورو</h5>
-                                    <span>EUR-$</span>
-
-                                </label>
-
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="header-signin btn-yellow-border btn-dif">
-                    <a href="#">ورود /</a>
-                    <a href="#"> ثبت نام</a>
-                </div>
-                <nav class="d-flex align-items-center">
-                    <ul class="nav-header m-0">
-                        <li><a href="#">خانه</a></li>
-                        <li><a href="#">سرویس ها</a></li>
-                        <li><a href="#">پکیج ها</a></li>
-                        <li><a href="#">سوالات متداول</a></li>
-                        <li><a href="#"> درباره ما</a></li>
-                        <li><a href="#">ارتباط با ما</a></li>
-                    </ul>
-                </nav>
-                <div class="header-search">
-                    <div class="search-icon circle">
-                        <span class="icon-Search"></span>
-                    </div>
-                    <div class="autocomplete">
-                        <input class="searchInput" id="myInput" type="text">
-                    </div>
-                </div>
-            </div>
-            <div class="header-right">
-
-
-                <div class="header-logo ">
-                    <a href="">
-                        <img src="../assets/image/1667121945301-LOGO/SVG/Gold.svg" alt="cip-logo">
-                    </a>
-                </div>
-            </div>
-
+        
+          </div>
 
         </div>
+      </nav>
+ </div>
     </header>
 
 
     <section class="banner ">
-        <div class="dash-box col-9">
+        <div class="dash-box col-md-9 col-11">
             <div class="dash-box-banner">
                 <h1>به <span class="text-bold">ROYAL CIP</span> خوش آمدید</h1>
                 <h3>بهترین تجربتان از فرودگاه</h3>
@@ -125,7 +59,7 @@
 
     </section>
     <div class="search ">
-        <div class="search-box col-9">
+        <div class="search-box col-md-9 col-11">
             <ul class="nav nav-pills mb-3 search-tab" id="pills-tab" role="tablist">
                 <li class="nav-item" role="presentation">
                     <button class="nav-search active" id="pills-tashrifat-tab" data-bs-toggle="pill"
@@ -140,7 +74,7 @@
                 <li class="nav-item" role="presentation">
                     <button class="nav-search" id="pills-transfer-tab" data-bs-toggle="pill"
                         data-bs-target="#pills-transfer" type="button" role="tab" aria-controls="pills-transfer"
-                        aria-selected="false">ترانسفر</button>
+                        aria-selected="false"> ترانسفر فرودگاهی</button>
                 </li>
                 <li class="nav-item" role="presentation">
                     <button class="nav-search" id="pills-exiting-tab" data-bs-toggle="pill"
@@ -152,31 +86,31 @@
                 <div class="tab-pane fade show active search-tab" id="pills-tashrifat" role="tabpanel"
                     aria-labelledby="pills-tashrifat-tab">
                     <div class="search-input ">
-                        <div class="d-flex">
-                            <div class="col-10 ">
-                                <div class="search-input-section">
-                                    <div class="col-3  ">
+                        <div class="d-flex row">
+                            <div class="col-lg-10 col-12 mb-2 mb-lg-0">
+                                <div class="search-input-section row px-1">
+                                    <div class="col-md-3  col-12 px-1 px-md-0">
                                         <label for="">تاریخ پرواز</label>
                                         <input type="text">
                                     </div>
-                                    <div class="col-3 px-1">
+                                    <div class="col-md-3 px-1 col-12">
                                         <label for="">فرودگاه</label>
                                         <input type="text">
                                     </div>
-                                    <div class="col-3 px-1">
+                                    <div class="col-md-3 px-1 col-12">
                                         <label for="">پرواز و سفر</label>
                                         <input type="text">
                                     </div>
-                                    <div class="col-3 px-1">
+                                    <div class="col-md-3 px-1 col-12">
                                         <label for="">تعداد مسافران</label>
                                         <input type="text">
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-2  search-button">
-                                <div class="">
+                            <div class="col-lg-2  col-12 search-button m">
+                               
                                     <button onclick="" class="btn-dif btn-bcdark">شروع رزرو</button>
-                                </div>
+                               
                             </div>
                         </div>
                     </div>
@@ -211,25 +145,25 @@
             <div class="about-text ">
                 <div class="why-us ">
                     <div class="row">
-                        <div class="col-12 col-sm-3">
+                        <div class="col-12 col-md-3">
                             <div class="why-us-box p-3">
                                 <span class="icon-Calender"></span>
                                 <p>پشتیبانی 24 ساعته</p>
                             </div>
                         </div>
-                        <div class="col-12 col-sm-3">
+                        <div class="col-12 col-md-3">
                             <div class="why-us-box p-3">
                                 <span class="icon-loaction"></span>
                                 <p>پشتیبانی 24 ساعته</p>
                             </div>
                         </div>
-                        <div class="col-12 col-sm-3">
+                        <div class="col-12 col-md-3">
                             <div class="why-us-box p-3">
                                 <span class="icon-Call-Center"></span>
                                 <p>پشتیبانی 24 ساعته</p>
                             </div>
                         </div>
-                        <div class="col-12 col-sm-3">
+                        <div class="col-12 col-md-3">
                             <div class="why-us-box p-3">
                                 <span class="icon-confirmed"></span>
                                 <p>پشتیبانی 24 ساعته</p>
@@ -264,8 +198,8 @@
     <section class="feature">
         <div class="col-9">
 
-            <article class="feature-section ">
-                <div class="col-4">
+            <article class="feature-section  row">
+                <div class="col-12 col-md-6">
                     <h2 class="section-title yellow-text">
                         ترانسفر فرودگاهی
                     </h2>
@@ -276,20 +210,20 @@
                     <a href="#" class="btn-dif btn-border-light-gray"> اطلاعات بیشتر</a>
 
                 </div>
-                <div class="col-6">
-                    <figure class="feature-img">
+                <div class="col-12 col-md-6">
+                    <figure class="feature-img mt-4 mt-lg-0">
                         <img src="../assets/image/pexels-ron-lach-9520199+.jpg" alt="transfer-image">
                     </figure>
                 </div>
             </article>
 
-            <article class="feature-section ">
-                <div class="col-6">
-                    <figure class="feature-img">
+            <article class="feature-section row">
+                <div class="col-md-6 col-12">
+                    <figure class="feature-img ">
                         <img src="../assets/image/note-thanun-LMd7IfbnPsU-unsplash.jpg" alt="transfer-image">
                     </figure>
                 </div>
-                <div class="col-4">
+                <div class="col-md-6 col-12">
                     <h2 class="section-title yellow-text">
                         لانژ اختصاصی </h2>
                     <p class="text-white ">
@@ -300,8 +234,8 @@
                 </div>
             </article>
 
-            <article class="feature-section ">
-                <div class="col-4 ">
+            <article class="feature-section row">
+                <div class="col-md-6 col-12">
                     <div class="feature-text">
                         <h2 class="section-title yellow-text">
                             پرواز به دور از جمعیت </h2>
@@ -313,8 +247,8 @@
 
                     </div>
                 </div>
-                <div class="col-6">
-                    <figure class="feature-img">
+                <div class="col-md-6 col-12">
+                    <figure class="feature-img mt-4 mt-lg-0">
                         <img src="../assets/image/yaroslav-muzychenko-xG-pV6Eu-bE-unsplash.jpg" alt="transfer-image">
                     </figure>
                 </div>
@@ -663,7 +597,7 @@
             <h2 class="section-title mb-5 d-flex justify-content-center yellow-text ">
                 آخرین اخبار
             </h2>
-            <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="row row-cols-1 row-cols-lg-3 g-4">
                 <div class="col">
                     <div class="card h-100">
                         <img src="../assets/image/pexels-nappy-1058959+.jpg" class="card-img-top mag-img" alt="...">
@@ -759,51 +693,51 @@
           </svg>
     </div>
 </a>
+<footer class="col-md-10 col-11 footer ">
+    <nav class="footer-header">
+        <ul class="nav-header ">
+            <li><a href="#" class="font6 " id="themeMode"></a></li>
+            <li><a href="#" class="font6 "> درباره ما</a></li>
+            <li><a href="#" class="font6 "> درباره ما</a></li>
+            <li><a href="#" class="font7 ">تماس با ما</a></li>
+            <li><a href="#" class="font4 d-none d-lg-flex">سوالات متداول</a></li>
+            <li><a href="#" class="font1 ">اخبار</a></li>
+            <li><a href="#" class="font2">سرویس ها</a></li>
+            <li><a href="#" class="font3 ">پکیج ها</a></li>
+            <!-- <li><a href="#" class="font6 "> قوانین و مقررات</a></li> -->
+        </ul>
+    </nav>
+    <div class="siteDividerBody">
+        <div class="siteDivider centerItem">
+            <div class="siteDivider1 centerItem">
+                <div class="siteDivider2 centerItem">
+                    <div class="siteDivider3">
 
-    <footer class="col-9 footer ">
-        <nav class="footer-header">
-            <ul class="nav-header ">
-                <li><a href="#" class="font6" id="themeMode"></a></li>
-                <li><a href="#" class="font6"> درباره ما</a></li>
-                <li><a href="#" class="font7">تماس با ما</a></li>
-                <li><a href="#" class="font4">سوالات متداول</a></li>
-                <li><a href="#" class="font1">اخبار</a></li>
-                <li><a href="#" class="font2">سرویس ها</a></li>
-                <li><a href="#" class="font3">پکیج ها</a></li>
-                <li><a href="#" class="font6"> قوانین و مقررات</a></li>
-            </ul>
-        </nav>
-        <div class="siteDividerBody">
-            <div class="siteDivider centerItem">
-                <div class="siteDivider1 centerItem">
-                    <div class="siteDivider2 centerItem">
-                        <div class="siteDivider3">
-
-                        </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="footer-bottom">
-            <div class="social-media col-4">
-                <span class="icon-twitter-square-color-icon"><span class="path1"></span><span
-                        class="path2"></span></span>
-                <span class="icon-facebook-square-color-icon"><span class="path1"></span><span
-                        class="path2"></span></span>
-                <span class="icon-black-instagram-icon"></span>
-            </div>
-            <div class="footer-logo col-4">
-                <a href="">
-                    <img src="../assets/image/1667121945301-LOGO/SVG/Gold.svg" alt="">
-                </a>
-            </div>
-            <div class="footer-telephone col-4">
-                <span class="icon-telephone-02 phone-footer"></span>
-                <span>0912-2030153</span>
-            </div>
+    </div>
+    <div class="footer-bottom">
+        <div class="social-media col-4">
+            <span class="icon-twitter-square-color-icon"><span class="path1"></span><span
+                    class="path2"></span></span>
+            <span class="icon-facebook-square-color-icon"><span class="path1"></span><span
+                    class="path2"></span></span>
+            <span class="icon-black-instagram-icon"></span>
         </div>
+        <div class="footer-logo col-4">
+            <a href="">
+                <img src="../assets/image/1667121945301-LOGO/SVG/Gold.svg" alt="">
+            </a>
+        </div>
+        <div class="footer-telephone col-4">
+            <span class="icon-telephone-02 phone-footer"></span>
+            <span>0912-2030153</span>
+        </div>
+    </div>
 
-    </footer>
+</footer>
 
 
     <!-- Optional JavaScript -->
