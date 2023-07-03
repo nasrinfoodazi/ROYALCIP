@@ -538,3 +538,34 @@ function getMode(){
 
 }
 getMode()
+
+
+
+
+
+const toggleButton = document.querySelector('.hamburger-toggle-button');
+const navDrawer = document.querySelector('.nav-drawer');
+const closeButton = document.querySelector('.close-button');
+console.log("closeButton", closeButton)
+
+toggleButton.addEventListener('click', () => {
+    toggleNavDrawer();
+});
+
+closeButton.addEventListener('click', () => {
+    closeNavDrawer();
+});
+function toggleNavDrawer() {
+    setTimeout(function () {
+        navDrawer.classList.toggle('active');
+        navDrawer.classList.remove('inactive');
+    }, 250);
+}
+
+function closeNavDrawer() {
+    console.log("navDrawer", navDrawer)
+    setTimeout(function () {
+        navDrawer.classList.remove('active');
+        navDrawer.classList.add('inactive');
+    }, 250);
+}

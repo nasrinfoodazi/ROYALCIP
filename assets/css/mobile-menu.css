@@ -1,0 +1,114 @@
+
+  
+  .hamburger-toggle-button {
+    position: relative;
+    display: block;
+    width: 40px;
+    height: 38px;
+    padding: 0.30rem;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: 0.15s;
+    -webkit-transition: 0.15s;
+  }
+  
+  .hamburger-toggle-button:hover {
+    background-color: #655d5e;
+  }
+  
+  .nav-drawer {
+    display: flex;
+    flex-direction: column;
+    justify-content: baseline;
+    align-items: baseline;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 75%;
+    max-width: 320px;
+    height: 100vh;
+    background-color: #e7e5e5;
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    z-index: 5;
+  }
+  
+  .nav-drawer.active {
+    right: 0;
+  }
+  
+  .nav-drawer.inactive {
+    transition: all 0.3s ease-out;
+    -webkit-transition: all 0.3s ease-out;
+  }
+  
+  .close-button {
+    display: inline-flex;
+    align-self: flex-end;
+    padding: 0.5rem;
+    margin: 2.5vw;
+    border-radius: 50%;
+    background-color: transparent;
+    outline: 1px solid #cfcece;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05rem;
+    border: none;
+    cursor: pointer;
+    height: 2.25rem;
+    width: 2.25rem;
+    transition: 0.15s;
+    -webkit-transition: 0.15s;
+  }
+  
+  .close-button:hover {
+    background-color: #e32231;
+    outline: none;
+  }
+  
+  .close-button:active {
+    background-color: #ba1824;
+    outline: none;
+  }
+  
+  .close-button-icon {
+    transition: 0.15s;
+    -webkit-transition: 0.15s;
+    stroke: #000;
+  }
+  
+  .close-button-icon-hovered {
+    stroke: #fff;
+  }
+  
+  .nav-drawer ul {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    margin: 10px 10px 10px 22px;
+    padding: 0;
+  }
+  
+  .nav-drawer ul li {
+    margin: 20px 0;
+  }
+  
+  .nav-drawer ul li a {
+    padding: 0.5em 1em 0.5em 1em;
+    text-decoration: none;
+    color: #333;
+    font-size: 1.2rem;
+    border-radius: 5px;
+  }
+  
+  .nav-drawer ul li a:hover {
+    background-color: #cfcccc;
+  }
+  
+  .nav-drawer > .triangular-arrow {
+    display: inline-block;
+  }
+  
+ 

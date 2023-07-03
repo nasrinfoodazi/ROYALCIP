@@ -219,7 +219,7 @@ p {
 
 
 .header-right {
-    display: none;
+    display: flex;
     align-items: center;
 }
 
@@ -228,11 +228,11 @@ p {
     align-items: center;
 }
 
-@media (min-width: 625px) {
+/* @media (min-width: 625px) {
     .header-right {
         display: flex;
     }
-}
+} */
 
 .btn-dif {
     border: 2px solid var(--yellow);
