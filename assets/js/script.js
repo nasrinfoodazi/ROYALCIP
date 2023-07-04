@@ -268,8 +268,8 @@ let passengers = [];
 
 function addPassenger(state) {
     samplePassenger['id'] = new Date().getTime();
-    passengers = [...passengers, {...samplePassenger}];
-    generatePassengerForm({...samplePassenger}, state)
+    passengers = [...passengers, { ...samplePassenger }];
+    generatePassengerForm({ ...samplePassenger }, state)
 }
 
 addPassenger('start');
@@ -441,16 +441,16 @@ function generatePassengerForm(newPassenger, state) {
 
     let getAccordion = document.getElementById('accordionPanelPassengers');
     getAccordion?.insertAdjacentHTML('beforeend', pHtml);
-    if(state!=='start'){
-        document.getElementById(`passenger-edit-${newPassenger['id']}`).style.display='inline-block';
-        document.getElementById(`passenger-delete-${newPassenger['id']}`).style.display='inline-block';
+    if (state !== 'start') {
+        document.getElementById(`passenger-edit-${newPassenger['id']}`).style.display = 'inline-block';
+        document.getElementById(`passenger-delete-${newPassenger['id']}`).style.display = 'inline-block';
     }
 };
 
 
-function deletePassenger( id) {
+function deletePassenger(id) {
     document.getElementById(`passenger-accordion-item-${id}`).remove();
-    passengers = passengers.filter(item=>item.id!==id);
+    passengers = passengers.filter(item => item.id !== id);
 }
 function updatePassengerInfo(event, id) {
     let findPassenger = passengers.find(item => item.id === id);
@@ -475,7 +475,7 @@ function updatePassengerInfo(event, id) {
             document.getElementById(`passenger-title-${id}`).innerText = fullName
         }
 
-        if(findPassenger['nationality']==="foreign"){
+        if (findPassenger['nationality'] === "foreign") {
             document.getElementById(`nationality-${id}`).style.display = 'flex';
         }
     }
@@ -485,25 +485,25 @@ function updatePassengerInfo(event, id) {
 
 
 
-function sendContactUs(){
+function sendContactUs() {
     let contactUsForm = document.getElementById('contact-us-form');
     let contactUsSend = document.getElementById('contact-us-send');
-    if(contactUsForm && contactUsSend){
+    if (contactUsForm && contactUsSend) {
         contactUsForm.classList.add('contact-us-hide')
         contactUsSend.classList.remove('contact-us-hide')
     }
 }
 
-function switchContent(show=[], hide=[]){
-    show.forEach(item=>{
+function switchContent(show = [], hide = []) {
+    show.forEach(item => {
         let element = document.getElementById(item);
-        if(element){
+        if (element) {
             element.classList.remove('content-hide');
         }
     });
-    hide.forEach(item=>{
+    hide.forEach(item => {
         let element = document.getElementById(item);
-        if(element){
+        if (element) {
             element.classList.add('content-hide');
         }
     });
@@ -515,24 +515,24 @@ function switchContent(show=[], hide=[]){
 
 
 
-document.getElementById('themeMode').addEventListener('click',()=>{
+document.getElementById('themeMode').addEventListener('click', () => {
     let body = document.getElementsByTagName('body');
-    if(body && body.length){
-        let mode = body[0].id==='darkMode' ? 'lightMode' : 'darkMode'
+    if (body && body.length) {
+        let mode = body[0].id === 'darkMode' ? 'lightMode' : 'darkMode'
         setMode(mode)
     }
 })
 
-function setMode(mode){
+function setMode(mode) {
     let body = document.getElementsByTagName('body');
-    if(body && body.length){
+    if (body && body.length) {
         body[0].setAttribute('id', mode)
         console.log("mode", mode)
-        document.getElementById('themeMode').innerText = mode==='darkMode' ? 'حالت روز' : 'حالت شب';
+        document.getElementById('themeMode').innerText = mode === 'darkMode' ? 'حالت روز' : 'حالت شب';
         localStorage.setItem('theme', mode)
     }
 }
-function getMode(){
+function getMode() {
     let mode = localStorage.getItem('theme');
     setMode(mode || 'darkMode')
 
@@ -568,4 +568,34 @@ function closeNavDrawer() {
         navDrawer.classList.remove('active');
         navDrawer.classList.add('inactive');
     }, 250);
+}
+
+
+
+var passengerCounter = {
+    big: 1,
+    child: 0,
+    baby: 0
+}
+
+$(".dropdown-toggle, .dropdown-menu li a").click(function (e) {
+    e.stopPropagation();
+});
+function addPassenger(e, type, number) {
+    if (passengerCounter) {
+        console.log("(type, number", e, type, number, passengerCounter)
+        let num = passengerCounter[type] + (number)
+        if (num < 0) {
+            num = 0
+        }
+        if (type === 'big' && num === 0) {
+            num = 1
+        }
+        passengerCounter[type] = num;
+        document.getElementById(`${type}-passenger`).innerText = num;
+        document.getElementById(`passenger-counter`).value = passengerCounter['big'] + passengerCounter['child'] + passengerCounter['baby'];
+    }
+
+
+
 }

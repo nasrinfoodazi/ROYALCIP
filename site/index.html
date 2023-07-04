@@ -113,7 +113,7 @@
                         </div>
                     </div>
                 </div>
-             
+
                 <div class="header-signin btn-yellow-border btn-dif">
                     <a href="#">ورود /</a>
                     <a href="#"> ثبت نام</a>
@@ -151,7 +151,7 @@
                 <span class="hamburger-toggle-button">
                     <span class="icon-menu"></span>
                 </span>
-                
+
                 <div class="mobile-menu nav-drawer inactive" tabindex="-1">
                     <span class="close-button">
                         <svg class="close-button-icon" viewBox="0 0 24 24">
@@ -159,7 +159,7 @@
                                 stroke-linejoin="round" />
                         </svg>
                     </span>
-                    
+
                     <ul>
                         <li><a href="#">خانه</a></li>
                         <li><a href="#">سرویس ها</a></li>
@@ -250,7 +250,44 @@
                                     </div>
                                     <div class="col-md-3 px-1 col-12">
                                         <label for="">تعداد مسافران</label>
-                                        <input type="text">
+
+                                        <div class="dropdown">
+                                            <input readonly type="text" id="passenger-counter"
+                                                class=" dropdown-toggle" data-bs-toggle="dropdown"
+                                                data-bs-auto-close="outside"
+                                                aria-expanded="false">
+                                            <!-- <button class="btn btn-secondary dropdown-toggle" type="button" id="passenger-counter" data-bs-toggle="dropdown" aria-expanded="false">
+                                              Dropdown button
+                                            </button> -->
+
+                                            <div class="row dropdown-menu" class="dropdown-menu"
+                                                aria-labelledby="passenger-counter">
+                                                <div class="col-12">
+                                                    <div>بزرگسال(۱۲ سال به بالا)</div>
+                                                    <div>
+                                                        <div onclick="addPassenger(event,'big',1)">+</div>
+                                                        <div id="big-passenger">1</div>
+                                                        <div onclick="addPassenger(event,'big',-1)">-</div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12">
+                                                    <div>کودک(۲ تا ۱۲ سال)</div>
+                                                    <div>
+                                                        <div onclick="addPassenger(event,'child',1)">+</div>
+                                                        <div id="child-passenger">0</div>
+                                                        <div onclick="addPassenger(event,'child',-1)">-</div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12">
+                                                    <div>نوزاد(۱۰ روز تا ۲ سال)</div>
+                                                    <div>
+                                                        <div onclick="addPassenger(event,'baby',1)">+</div>
+                                                        <div id="baby-passenger">0</div>
+                                                        <div onclick="addPassenger(event,'baby',-1)">-</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -900,6 +937,11 @@
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="../assets/bootstrap/js/jquery-3.2.1.slim.min.js" type="application/javascript"></script>
     <script src="../assets/datePicker/unpkg.com_persian-date@1.1.0_dist_persian-date.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+
     <script src="../assets/datePicker/unpkg.com_persian-datepicker@1.2.0_dist_js_persian-datepicker.min.js"></script>
     <script src="../assets/bootstrap/js/bootstrap.min.js" type="application/javascript"></script>
     <script src="../assets/js/autocomplete.js"></script>
