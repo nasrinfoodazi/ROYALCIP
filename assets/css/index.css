@@ -4,7 +4,7 @@
 /* @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"); */
 
 
- :root {
+:root {
     --bs-primary: #fff;
     --yellow: #e8c347;
     --lightyellow: #e8c247a3;
@@ -13,7 +13,7 @@
     --white-2: #fff;
     --light-gray: #9b9b9b;
     --gray: #707070;
-    --gray-1:#9b9b9b;
+    --gray-1: #9b9b9b;
     --black: #0f0e2d;
     --darkblue: #1e1c54;
     --darkblue-1: #1e1c54;
@@ -69,14 +69,14 @@
     --yellow: #e8c347;
     --lightyellow: #e8c247a3;
     --lighteryellow: #e8c247bd;
-    --white: rgba(0,0,0,1);
-    --white-2:#fff;
+    --white: rgba(0, 0, 0, 1);
+    --white-2: #fff;
     --light-gray: #0f0e2d;
     --gray: #707070;
-    --gray-1:#9b9b9b;
-    --black: rgba(255,255,255,1);
-    --darkblue:  #1e1c54;
-    --darkblue-1: rgba(255,255,255,1);
+    --gray-1: #9b9b9b;
+    --black: rgba(255, 255, 255, 1);
+    --darkblue: #1e1c54;
+    --darkblue-1: rgba(255, 255, 255, 1);
     --blue: #3f3baa;
     --lightblue: #1e1c54;
     --lightblue-2: #6e69ef;
@@ -84,9 +84,11 @@
     --red: #e96d6d;
     --green: #45c58e;
 }
-body:has(#lightblue) .circle{
+
+body:has(#lightblue) .circle {
     color: var(--white);
 }
+
 body {
     font-family: var(--bs-font-IRANSans);
     color: var(--white)
@@ -589,17 +591,20 @@ p {
     /* font-size: 1.7rem; */
 
 }
-.footer-head .btn-yellow-border{
+
+.footer-head .btn-yellow-border {
     margin-top: 10px;
     color: var(--yellow) !important;
     padding: 10px 30px;
     transition: .5s;
 }
-.footer-head .btn-yellow-border:hover{
+
+.footer-head .btn-yellow-border:hover {
     background-color: var(--yellow);
-    color: var(--darkblue)  !important;
+    color: var(--darkblue) !important;
     transition: .5s;
 }
+
 .text-white {
     color: var(--white) !important;
     font-size: 1rem;
@@ -803,14 +808,15 @@ p {
     color: var(--white);
     margin: 0 5px;
 }
-.phone-footer{
+
+.phone-footer {
     font-size: 2rem;
     color: var(--yellow);
     margin-left: 10px;
 }
 
-.whatsapp-icon{
-    background:var(--yellow);
+.whatsapp-icon {
+    background: var(--yellow);
     color: var(--white);
     position: fixed;
     width: 60px;
@@ -832,68 +838,75 @@ p {
 }
 
 #main-div {
-        position: fixed;
-        width: 60px;
-        height: 60px;
-        bottom: 120px;
-        left: 30px;
-        z-index: 100;
-        font-size: 40px;
-        z-index: 100;
-        display: flex;
-        align-items: flex-end;
-        flex-direction: column;
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 120px;
+    left: 30px;
+    z-index: 100;
+    font-size: 40px;
+    z-index: 100;
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
 
-    }
-    #main-div span {
-        background: var(--white);
-        box-shadow: 0 3px 10px 0px rgb(0 0 0 / 20%);
-        display: block;
-        padding: 0.2rem 0.5em;
-        border-radius: 5px;
-        margin: 0 0 2rem;
-        font-size: 1rem;
-        color: var(--light-gray);
-        position: absolute;
-        top: -35px;
-    }
-    #main-button {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        position: absolute;
-        left: 10px;
-        bottom: 0;
-        height: 60px;
-        width: 60px;
-        font-size: 40px;
-        cursor: pointer;
-        background-color: var(--yellow);
-        box-shadow: 0 0 10px 0 rgb(0 0 0 / 50%);
-        border-radius: 50%;
-        color: var(--white);
-        animation-name: pulse;
-        animation-duration: 1.5s;
-        animation-timing-function: ease-out;
-        animation-iteration-count: infinite;
-    }
-    .wave {
-        animation-name: wave;
-        animation-duration: 1s;
-        animation-timing-function: linear;
-        animation-iteration-count: infinite;
-    }
-    #main-button a{
-        color: var(--white);
-    }
-@keyframes pulse{
+}
+
+#main-div span {
+    background: var(--white);
+    box-shadow: 0 3px 10px 0px rgb(0 0 0 / 20%);
+    display: block;
+    padding: 0.2rem 0.5em;
+    border-radius: 5px;
+    margin: 0 0 2rem;
+    font-size: 1rem;
+    color: var(--light-gray);
+    position: absolute;
+    top: -35px;
+}
+
+#main-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: 10px;
+    bottom: 0;
+    height: 60px;
+    width: 60px;
+    font-size: 40px;
+    cursor: pointer;
+    background-color: var(--yellow);
+    box-shadow: 0 0 10px 0 rgb(0 0 0 / 50%);
+    border-radius: 50%;
+    color: var(--white);
+    animation-name: pulse;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-out;
+    animation-iteration-count: infinite;
+}
+
+.wave {
+    animation-name: wave;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+#main-button a {
+    color: var(--white);
+}
+
+@keyframes pulse {
     0% {
         box-shadow: 0 0 0 0 rgba(233, 204, 15, 0.5);
     }
+
     80% {
         box-shadow: 0 0 0 14px rgba(37, 211, 102, 0);
     }
 }
+
 .siteDividerBody {
     padding: 0px 5%;
 }
@@ -1594,16 +1607,42 @@ input[type=email] {
     border: 2px solid var(--lightblue)
 }
 
+
+
 .logo-img-send {
     height: 400px;
     border-left: 2px solid var(--lightblue);
     border-radius: 1px 17px 17px 1px;
+    border-bottom: 0
 }
 
 .logo-img-send img {
     width: 150px;
     height: 150px;
 }
+
+.send-box {
+    height: 400px;
+}
+
+@media (max-width: 767.98px) {
+    .send-box {
+        height: 200px;
+    }
+
+    .logo-img-send {
+        height: 200px;
+        border-left: 0px;
+        border-bottom: 2px solid var(--lightblue);
+        border-radius: 17px 17px 1px 1px;
+    }
+
+    .logo-img-send img {
+        width: 100px;
+        height: 100px;
+    }
+}
+
 
 .form-field-send .icon-send {
     font-size: 2.5rem;
@@ -2106,18 +2145,21 @@ input[type=email] {
 .fz-2 {
     font-size: .8rem;
 }
-.dl-ticket{
+
+.dl-ticket {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-.dl-ticket h2{
+
+.dl-ticket h2 {
     font-size: 1.2rem;
-    font-family:var(--bs-font-cairo-medium);
+    font-family: var(--bs-font-cairo-medium);
     color: var(--darkblue);
     margin-bottom: 20px;
 }
-.dl-ticket a{
+
+.dl-ticket a {
     width: 180px;
     padding: 10px 20px;
     text-align: center;
@@ -2125,6 +2167,7 @@ input[type=email] {
     background-color: var(--blue);
     border-radius: 7px;
 }
+
 #lightMode .dash-box-banner {
     color: var(--white-2);
 }
@@ -2134,52 +2177,65 @@ input[type=email] {
 }
 
 
-#lightMode header .icon-Search{
+#lightMode header .icon-Search {
     color: var(--lightblue-2);
 }
-#lightMode #main-div span{
-   color: VAR(--yellow);
+
+#lightMode #main-div span {
+    color: VAR(--yellow);
 }
-#lightMode  .mag_section .card-text{
-   color: var(--white-2); ;
+
+#lightMode .mag_section .card-text {
+    color: var(--white-2);
+    ;
 }
-#lightMode .form-newsletter input{
+
+#lightMode .form-newsletter input {
     background-color: #fff;
 }
-#lightMode .exteraService_item{
+
+#lightMode .exteraService_item {
     border-color: var(--yellow);
 }
-#lightMode .exteraService_item .gray-text{
+
+#lightMode .exteraService_item .gray-text {
     color: var(--white-2);
 }
-#lightMode .cost_type{
+
+#lightMode .cost_type {
     color: var(--white);
 }
-#lightMode .exteraService_item .white-text
 
-{
+#lightMode .exteraService_item .white-text {
     color: var(--white-2);
 }
-#lightMode .exteraService_item .caption{
+
+#lightMode .exteraService_item .caption {
     color: var(--gray);
 }
-#lightMode .exteraService_item .icon{
+
+#lightMode .exteraService_item .icon {
     color: var(--blue);
 }
-#lightMode .shape{
-    background-color:var(--white);
+
+#lightMode .shape {
+    background-color: var(--white);
     z-index: 2;
 }
-#lightMode .language{
+
+#lightMode .language {
     border-bottom: 1px solid var(--blue);
 }
-#lightMode .site-box-darkblue{
-    background-color:var(--white-2);
-    border:1px dotted var(--white)
+
+#lightMode .site-box-darkblue {
+    background-color: var(--white-2);
+    border: 1px dotted var(--white)
 }
-#lightMode .search-faq{
+
+#lightMode .search-faq {
     color: var(--white-2) !important;
 }
+
 #lightMode ::placeholder {
     color: var(--yellow);
     font-size: 1rem;
@@ -2199,19 +2255,24 @@ input[type=email] {
 #lightMode .icon-Search {
     color: var(--yellow);
 }
- .mobile-header{
-    display:none;
+
+.mobile-header {
+    display: none;
 }
-.navbar .header-logo{
+
+.navbar .header-logo {
     /* width: 50px; */
 }
-.navbar-brand img{
+
+.navbar-brand img {
     width: 50px;
 }
-.search-box .nav-pills{
+
+.search-box .nav-pills {
     flex-wrap: nowrap;
 }
-.services-select{
+
+.services-select {
     display: flex;
     flex-wrap: wrap;
 }
