@@ -8,8 +8,16 @@
         font-size: .7rem !important;
     }
 
-
-
+    .sticky-top {
+        position: relative !important;
+    }
+.fz-2{
+    font-size: 14px;
+}
+.flight-timeline .before .shape{
+   display: block !important;
+}
+    
 }
 
 .header-desktop {
@@ -31,16 +39,6 @@
 } */
 
 @media (max-width: 767.98px) {
-
-    .header-desktop {
-        display: none;
-    }
-    .header-mobile {
-        display: flex;
-    }
-    .mobile-header {
-        display: flex !important;
-    }
 
     .btn-border-light-gray {
         padding: 5px 10px !important;
@@ -113,9 +111,56 @@
         padding: 0;
     }
 
+    .sticky-top {
+        position: relative !important;
+    }
+
+    .flight-timeline .before {
+        margin-right: 2px !important;
+        margin-left: 2px !important;
+
+    }
+    .price {
+        font-size: 20px !important;
+    }
+    .fz-2{
+        font-size: 14px;
+    }
+    .add-service-title{
+        margin-bottom: 20px;
+        font-size: 15px;
+    }
+    .mg-2{
+        margin-bottom: 0 !important;
+    }
+
+    .contact_item-text h5{
+        font-size: .9rem;
+    }
+    .form_section{
+        border-radius:8px 8px 1px 1px;
+        margin-bottom: 10px;
+    }
+  .contact_items{
+    padding-left: 20px;
+    padding-left: 10px;
+  }
+
 }
 
 @media (max-width: 991.98px) {
+    .header-desktop {
+        display: none;
+    }
+
+    .header-mobile {
+        display: flex;
+    }
+
+    .mobile-header {
+        display: flex !important;
+    }
+
     .search-box .nav-search {
         font-size: 12px;
         padding: .5rem
@@ -142,4 +187,58 @@
         padding: 0 5px
     }
 
+    .about_section p {
+        padding-left: 0;
+    }
+
+    .price {
+        font-size: 20px;
+    }
+    .fz-2{
+        font-size: 14px;
+    }
+    
+    .flight-timeline .before {
+        margin-right: 5px !important;
+        margin-left: 5px !important;
+
+    }
+    .flight-timeline .before .shape{
+        width: 0;
+        height: 0;
+        display:none;
+    }
+    .flight-timeline ul li{
+        font-size: 14px;
+    }
+    .done>div:nth-child(2){
+        font-size: 12px;
+      
 }
+.inprocess>div:nth-child(2){
+    font-size: 12px;
+}
+ .flight-timeline ul>li>div:nth-child(2){
+    font-size:12px;
+}
+
+}
+
+@media (max-width: 1200px) {
+  .done>div:nth-child(2){
+    font-size: 12px;
+  }
+    .price {
+        font-size: 13px;
+    }
+
+    .services-select {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+}
+.logo-img-send{
+    flex-wrap: wrap;
+    
+  }

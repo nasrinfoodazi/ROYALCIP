@@ -349,6 +349,8 @@ p {
 .header-drop-down {
     display: flex;
     align-items: center;
+    position: relative;
+    z-index: 4;
 }
 
 .header-drop-down span {
@@ -826,6 +828,7 @@ p {
     animation-duration: 1.5s;
     animation-timing-function: ease-out;
     animation-iteration-count: infinite;
+    z-index: 5;
 }
 
 #main-div {
@@ -2207,4 +2210,8 @@ input[type=email] {
 }
 .search-box .nav-pills{
     flex-wrap: nowrap;
+}
+.services-select{
+    display: flex;
+    flex-wrap: wrap;
 }

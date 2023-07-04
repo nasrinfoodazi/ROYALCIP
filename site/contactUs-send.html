@@ -12,6 +12,8 @@
     <link rel="stylesheet" href="../assets/css/style.css">
     <link rel="stylesheet" href="../assets/css/index.css" type="text/css">
     <link rel="stylesheet" href="../assets/css/flight.css" type="text/css">
+    <link rel="stylesheet" href="../assets/css/mobile-menu.css">
+    <link rel="stylesheet" href="../assets/css/responsive.css">
 
 
     <title>درباره royal</title>
@@ -19,7 +21,7 @@
 
 <body class="bg-dark-blue">
     <header class="header-top ">
-        <div class="navbar-header col-12 col-sm-10">
+        <div class="navbar-header col-12 col-sm-10 header-desktop">
             <div class="header-left">
 
                 <div class="header-lang">
@@ -78,6 +80,7 @@
                         </div>
                     </div>
                 </div>
+             
                 <div class="header-signin btn-yellow-border btn-dif">
                     <a href="#">ورود /</a>
                     <a href="#"> ثبت نام</a>
@@ -102,7 +105,52 @@
                 </div>
             </div>
             <div class="header-right">
+                <div class="header-logo ">
+                    <a href="">
+                        <img src="../assets/image/1667121945301-LOGO/SVG/Gold.svg" alt="cip-logo">
+                    </a>
+                </div>
+            </div>
+        </div>
 
+        <div class="navbar-header col-12 header-mobile">
+            <div class="header-left">
+                <span class="hamburger-toggle-button">
+                    <span class="icon-menu"></span>
+                </span>
+                
+                <div class="mobile-menu nav-drawer inactive" tabindex="-1">
+                    <span class="close-button">
+                        <svg class="close-button-icon" viewBox="0 0 24 24">
+                            <path d="M5.5 5.5L18.5 18.5M18.5 5.5L5.5 18.5" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                    </span>
+                    
+                    <ul>
+                        <li><a href="#">خانه</a></li>
+                        <li><a href="#">سرویس ها</a></li>
+                        <li><a href="#">پکیج ها</a></li>
+                        <li><a href="#">سوالات متداول</a></li>
+                        <li><a href="#"> درباره ما</a></li>
+                        <li><a href="#">ارتباط با ما</a></li>
+                    </ul>
+                    <div class="header-signin btn-yellow-border btn-dif">
+                        <a href="#">ورود /</a>
+                        <a href="#"> ثبت نام</a>
+                    </div>
+
+                    <!-- <div class="header-search">
+                        <div class="search-icon circle">
+                            <span class="icon-Search"></span>
+                        </div>
+                        <div class="autocomplete">
+                            <input class="searchInput" id="myInput" type="text">
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+            <div class="header-right">
 
                 <div class="header-logo ">
                     <a href="">
@@ -110,8 +158,6 @@
                     </a>
                 </div>
             </div>
-
-
         </div>
     </header>
 
@@ -179,13 +225,13 @@
             <div class="form-field d-flex justify-content-md-end  justify-content-center ">
                 <div class="col-md-10 col-11 logo-img-send form-field-send">
                         <div class="row no-padding ">
-                        <div class="col-md-7 col-12 no-padding ">
+                        <div class="col-md-7 col-12 no-padding h-send">
                             <div class="logo-img-send d-flex justify-content-center align-items-center">
                                     <img src="../assets/image/1667121945301-LOGO/2x/Gold@2x.png" alt="" >
                             </div>
                         </div>
                         <div class="col-md-5 col-12 no-padding">
-                       <div class="d-flex flex-column align-items-center justify-content-center h-100 light-blue">
+                       <div class="d-flex flex-column align-items-center justify-content-center  light-blue h-send">
                         <span class="icon-send "></span>
                     <h4>پیام شما ارسال شد.</h4>
                        </div>
@@ -214,35 +260,38 @@
 <div class="footer-head">
     <h2 class="header-titel">رزرو تشریفات <span>ROYAL CIP</span></h2>
 </div>
-<footer class="col-9 footer ">
+<footer class="col-md-10 col-11 footer ">
     <nav class="footer-header">
         <ul class="nav-header ">
-            <li><a href="#" class="font6" id="themeMode"></a></li>
-            <li><a href="#" class="font6"> درباره ما</a></li>
-            <li><a href="#" class="font7">تماس با ما</a></li>
-            <li><a href="#" class="font4">سوالات متداول</a></li>
-            <li><a href="#" class="font1">اخبار</a></li>
+            <li><a href="#" class="font6 " id="themeMode"></a></li>
+            <li><a href="#" class="font6 "> درباره ما</a></li>
+            <li><a href="#" class="font6 "> درباره ما</a></li>
+            <li><a href="#" class="font7 ">تماس با ما</a></li>
+            <li><a href="#" class="font4 d-none d-lg-flex">سوالات متداول</a></li>
+            <li><a href="#" class="font1 ">اخبار</a></li>
             <li><a href="#" class="font2">سرویس ها</a></li>
-            <li><a href="#" class="font3">پکیج ها</a></li>
-            <li><a href="#" class="font6"> قوانین و مقررات</a></li>
+            <li><a href="#" class="font3 ">پکیج ها</a></li>
+            <!-- <li><a href="#" class="font6 "> قوانین و مقررات</a></li> -->
         </ul>
     </nav>
-<!--    <div class="siteDividerBody">-->
-<!--        <div class="siteDivider centerItem">-->
-<!--            <div class="siteDivider1 centerItem">-->
-<!--                <div class="siteDivider2 centerItem">-->
-<!--                    <div class="siteDivider3">-->
+    <div class="siteDividerBody">
+        <div class="siteDivider centerItem">
+            <div class="siteDivider1 centerItem">
+                <div class="siteDivider2 centerItem">
+                    <div class="siteDivider3">
 
-<!--                    </div>-->
-<!--                </div>-->
-<!--            </div>-->
-<!--        </div>-->
-<!--    </div>-->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <div class="footer-bottom">
         <div class="social-media col-4">
-            <i class="bi bi-twitter"></i>
-            <i class="bi bi-instagram"></i>
-            <i class="bi bi-facebook"></i>
+            <span class="icon-twitter-square-color-icon"><span class="path1"></span><span
+                    class="path2"></span></span>
+            <span class="icon-facebook-square-color-icon"><span class="path1"></span><span
+                    class="path2"></span></span>
+            <span class="icon-black-instagram-icon"></span>
         </div>
         <div class="footer-logo col-4">
             <a href="">
@@ -250,7 +299,8 @@
             </a>
         </div>
         <div class="footer-telephone col-4">
-            <span>+98-9122030153</span>
+            <span class="icon-telephone-02 phone-footer"></span>
+            <span>0912-2030153</span>
         </div>
     </div>
 

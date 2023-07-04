@@ -14,10 +14,13 @@
     -webkit-transition: 0.15s;
   }
   
-  .hamburger-toggle-button:hover {
+  /* .hamburger-toggle-button:hover {
     background-color: #655d5e;
   }
-  
+   */
+   .icon-menu{
+    color: var(--yellow);
+   }
   .nav-drawer {
     display: flex;
     flex-direction: column;
@@ -29,10 +32,11 @@
     width: 75%;
     max-width: 320px;
     height: 100vh;
-    background-color: #e7e5e5;
+    background-color:var(--black);
+    /* background-color:var(--white); */
     transition: all 0.3s ease-in-out;
     -webkit-transition: all 0.3s ease-in-out;
-    z-index: 5;
+    z-index: 125;
   }
   
   .nav-drawer.active {
@@ -51,7 +55,7 @@
     margin: 2.5vw;
     border-radius: 50%;
     background-color: transparent;
-    outline: 1px solid #cfcece;
+    outline: 2px solid var(--yellow);
     font-size: 0.75rem;
     text-transform: uppercase;
     letter-spacing: 0.05rem;
@@ -61,26 +65,27 @@
     width: 2.25rem;
     transition: 0.15s;
     -webkit-transition: 0.15s;
+    font-weight:bold;
   }
   
   .close-button:hover {
-    background-color: #e32231;
+    background-color:var(--black);
     outline: none;
   }
   
   .close-button:active {
-    background-color: #ba1824;
+    background-color: var(--black);;
     outline: none;
   }
   
   .close-button-icon {
     transition: 0.15s;
     -webkit-transition: 0.15s;
-    stroke: #000;
+    stroke: var(--yellow);
   }
   
   .close-button-icon-hovered {
-    stroke: #fff;
+    stroke: var(--yellow);
   }
   
   .nav-drawer ul {
@@ -98,13 +103,13 @@
   .nav-drawer ul li a {
     padding: 0.5em 1em 0.5em 1em;
     text-decoration: none;
-    color: #333;
-    font-size: 1.2rem;
+    color: var(--white);
+    font-size: 1rem;
     border-radius: 5px;
   }
   
   .nav-drawer ul li a:hover {
-    background-color: #cfcccc;
+    color: var(--yellow);
   }
   
   .nav-drawer > .triangular-arrow {

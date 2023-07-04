@@ -9,9 +9,13 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="../assets/bootstrap/css/bootstrap.min.css" type="text/css">
     <link rel="stylesheet" href="../assets/bootstrap/css/bootstrap.rtl.min.css" type="text/css">
-    <link rel="stylesheet" href="../assets/css/style.css">
-    <link rel="stylesheet" href="../assets/css/index.css" type="text/css">
+
     <link rel="stylesheet" href="../assets/css/flight.css" type="text/css">
+   
+    <link rel="stylesheet" href="../assets/css/index.css" type="text/css">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/mobile-menu.css">
+    <link rel="stylesheet" href="../assets/css/responsive.css">
 
 
     <title>درباره royal</title>
@@ -19,7 +23,7 @@
 
 <body class="bg-dark-blue">
     <header class="header-top ">
-        <div class="navbar-header col-12 col-sm-10">
+        <div class="navbar-header col-12 col-sm-10 header-desktop">
             <div class="header-left">
 
                 <div class="header-lang">
@@ -78,6 +82,7 @@
                         </div>
                     </div>
                 </div>
+             
                 <div class="header-signin btn-yellow-border btn-dif">
                     <a href="#">ورود /</a>
                     <a href="#"> ثبت نام</a>
@@ -102,7 +107,52 @@
                 </div>
             </div>
             <div class="header-right">
+                <div class="header-logo ">
+                    <a href="">
+                        <img src="../assets/image/1667121945301-LOGO/SVG/Gold.svg" alt="cip-logo">
+                    </a>
+                </div>
+            </div>
+        </div>
 
+        <div class="navbar-header col-12 header-mobile">
+            <div class="header-left">
+                <span class="hamburger-toggle-button">
+                    <span class="icon-menu"></span>
+                </span>
+                
+                <div class="mobile-menu nav-drawer inactive" tabindex="-1">
+                    <span class="close-button">
+                        <svg class="close-button-icon" viewBox="0 0 24 24">
+                            <path d="M5.5 5.5L18.5 18.5M18.5 5.5L5.5 18.5" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                    </span>
+                    
+                    <ul>
+                        <li><a href="#">خانه</a></li>
+                        <li><a href="#">سرویس ها</a></li>
+                        <li><a href="#">پکیج ها</a></li>
+                        <li><a href="#">سوالات متداول</a></li>
+                        <li><a href="#"> درباره ما</a></li>
+                        <li><a href="#">ارتباط با ما</a></li>
+                    </ul>
+                    <div class="header-signin btn-yellow-border btn-dif">
+                        <a href="#">ورود /</a>
+                        <a href="#"> ثبت نام</a>
+                    </div>
+
+                    <!-- <div class="header-search">
+                        <div class="search-icon circle">
+                            <span class="icon-Search"></span>
+                        </div>
+                        <div class="autocomplete">
+                            <input class="searchInput" id="myInput" type="text">
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+            <div class="header-right">
 
                 <div class="header-logo ">
                     <a href="">
@@ -110,8 +160,6 @@
                     </a>
                 </div>
             </div>
-
-
         </div>
     </header>
     <!-- icon-call -->
@@ -129,28 +177,30 @@
           </svg>
     </div>
 </a>
-<section class="about_section d-flex justify-content-end ">
-    <div class="col-sm-10">
-        <div class="d-flex ">
-            <div class="col-sm-7 col-12">
+<section class="about_section d-flex justify-content-md-end justify-content-center">
+ 
+    <div class="col-10 ">
+        <div class="d-flex row gx-0">
+            <div class="col-md-7 col-12">
                 <div class="text-section d-flex  flex-column align-items-center ">
                     <h2 class="section-title mb-5 yellow-text">
                         درباره <span>Royal Cip</span>
                     </h2>
-<p class="gray-text ">مجموعه رویال سی آی پی با رویکرد ارائه خدمات تشریفات اختصاصی با کیفیت شروع به فعالیت کرده است این مجموعه متشکل از مهندسین و متخصصین جوان که با دانش و پشتکار در ارائه هرچه بهتر خدمات به مشتریان می کوشند در این مجموعه سرویس تشریفاتی سی آی پی فست ترک و لانج کلیه فرودگاه های داخلی و خارجی را ارائه می دهد و در کلیه ساعات شبانه روز آماده خدمت رسانی می باشد.علاوه بر خدمات تشریفات فرودگاهی خدمات ترانسفر با خودروهای لوکس در تهران و همه شهرهای ایران نیز ارائه می گردد مجموعه رویا سی پی آمادگی همکاری با کلیه شرکت های همکار و آژانس ها را دارد و می تواند با ارائه api و یا ساین با همکاران محترم همکاری داشته باشد. مجموعه رویا سی آی پی برای بهتر شدن خدمات آمادگی دریافت کلیه انتقادات و پیشنهادات و مذاکره برای هر نوع همکاری را دارد
+<p class="gray-text px-">مجموعه رویال سی آی پی با رویکرد ارائه خدمات تشریفات اختصاصی با کیفیت شروع به فعالیت کرده است این مجموعه متشکل از مهندسین و متخصصین جوان که با دانش و پشتکار در ارائه هرچه بهتر خدمات به مشتریان می کوشند در این مجموعه سرویس تشریفاتی سی آی پی فست ترک و لانج کلیه فرودگاه های داخلی و خارجی را ارائه می دهد و در کلیه ساعات شبانه روز آماده خدمت رسانی می باشد.علاوه بر خدمات تشریفات فرودگاهی خدمات ترانسفر با خودروهای لوکس در تهران و همه شهرهای ایران نیز ارائه می گردد مجموعه رویا سی پی آمادگی همکاری با کلیه شرکت های همکار و آژانس ها را دارد و می تواند با ارائه api و یا ساین با همکاران محترم همکاری داشته باشد. مجموعه رویا سی آی پی برای بهتر شدن خدمات آمادگی دریافت کلیه انتقادات و پیشنهادات و مذاکره برای هر نوع همکاری را دارد
 
 </p>
 <p class="gray-text ">جایگاه تشریفات اختصاصی (CIP) در ساختمانی مجزا از ترمینال اصلی فرودگاه امام خمینی (ره) در فضایی به مساحت 7500 متر و با زیربنای 8000 متر جهت پروازهای بین المللی در سه طبقه مورد بهره‌برداری قرار گرفته است مسافرین (CIP) روش‌های معمول ورود و خروج مانند منتظر ماندن در صف‌های طولانی و انتظار برای دریافت کارت پرواز و چمدان‌ها را تجربه نمی‌کنند، بلکه فارغ از ازدحام ترمینال اصلی فرودگاه ساعات قبل یا بعد از پرواز خود را در سالن تشریفاتی استراحت می‌کنند و با انواع خوراک‌های ایرانی و خارجی، نوشیدنی‌های سرد و گرم و... به صورت بوفه آزاد پذیرایی می‌شوند. در طول این مدت تمامی مراحل سوار شدن به هواپیما از حمل چمدان‌ها تا گرفتن کارت پرواز و انتقال مسافرین تا پلکان هواپیما با خودروهای اختصاصی توسط تیم متخصص Royal CIP انجام می‌شود. </p>
             </div>
         </div>
 
-            <div class="col-sm-5 col-12 ">
+            <div class="col-md-5 col-12 ">
                 <figure class="d-flex justify-content-end  about_img">
                     <img src="../assets/image/pexels-aaron-hilborn-3643181+.jpg" alt="" >
                 </figure>
             </div>
         </div>
     </div>
+</div>
 </section>
 <div class="footer-head">
     <a href="">
@@ -174,17 +224,18 @@
 </div>
 </a>
 
-<footer class="col-9 footer ">
+<footer class="col-md-10 col-11 footer ">
     <nav class="footer-header">
         <ul class="nav-header ">
-            <li><a href="#" class="font6" id="themeMode"></a></li>
-            <li><a href="#" class="font6"> درباره ما</a></li>
-            <li><a href="#" class="font7">تماس با ما</a></li>
-            <li><a href="#" class="font4">سوالات متداول</a></li>
-            <li><a href="#" class="font1">اخبار</a></li>
+            <li><a href="#" class="font6 " id="themeMode"></a></li>
+            <li><a href="#" class="font6 "> درباره ما</a></li>
+            <li><a href="#" class="font6 "> درباره ما</a></li>
+            <li><a href="#" class="font7 ">تماس با ما</a></li>
+            <li><a href="#" class="font4 d-none d-lg-flex">سوالات متداول</a></li>
+            <li><a href="#" class="font1 ">اخبار</a></li>
             <li><a href="#" class="font2">سرویس ها</a></li>
-            <li><a href="#" class="font3">پکیج ها</a></li>
-            <li><a href="#" class="font6"> قوانین و مقررات</a></li>
+            <li><a href="#" class="font3 ">پکیج ها</a></li>
+            <!-- <li><a href="#" class="font6 "> قوانین و مقررات</a></li> -->
         </ul>
     </nav>
     <div class="siteDividerBody">

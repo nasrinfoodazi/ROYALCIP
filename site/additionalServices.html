@@ -12,15 +12,17 @@
     <link rel="stylesheet" href="../assets/css/index.css" type="text/css">
     <link rel="stylesheet" href="../assets/css/flight.css" type="text/css">
     <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/mobile-menu.css">
+    <link rel="stylesheet" href="../assets/css/responsive.css">
 
     <title>سفر رویایی با رویال سی آی پی</title>
 </head>
 
 <body class="bg-dark-blue ">
     <header class="header-top ">
-        <div class="navbar-header col-12 col-sm-10">
+        <div class="navbar-header col-12 col-sm-10 header-desktop">
             <div class="header-left">
-       
+
                 <div class="header-lang">
                     <div class="lang-icon circle ">
 
@@ -77,6 +79,7 @@
                         </div>
                     </div>
                 </div>
+             
                 <div class="header-signin btn-yellow-border btn-dif">
                     <a href="#">ورود /</a>
                     <a href="#"> ثبت نام</a>
@@ -101,20 +104,63 @@
                 </div>
             </div>
             <div class="header-right">
-        
-         
                 <div class="header-logo ">
                     <a href="">
                         <img src="../assets/image/1667121945301-LOGO/SVG/Gold.svg" alt="cip-logo">
                     </a>
                 </div>
             </div>
- 
+        </div>
 
+        <div class="navbar-header col-12 header-mobile">
+            <div class="header-left">
+                <span class="hamburger-toggle-button">
+                    <span class="icon-menu"></span>
+                </span>
+                
+                <div class="mobile-menu nav-drawer inactive" tabindex="-1">
+                    <span class="close-button">
+                        <svg class="close-button-icon" viewBox="0 0 24 24">
+                            <path d="M5.5 5.5L18.5 18.5M18.5 5.5L5.5 18.5" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                    </span>
+                    
+                    <ul>
+                        <li><a href="#">خانه</a></li>
+                        <li><a href="#">سرویس ها</a></li>
+                        <li><a href="#">پکیج ها</a></li>
+                        <li><a href="#">سوالات متداول</a></li>
+                        <li><a href="#"> درباره ما</a></li>
+                        <li><a href="#">ارتباط با ما</a></li>
+                    </ul>
+                    <div class="header-signin btn-yellow-border btn-dif">
+                        <a href="#">ورود /</a>
+                        <a href="#"> ثبت نام</a>
+                    </div>
+
+                    <!-- <div class="header-search">
+                        <div class="search-icon circle">
+                            <span class="icon-Search"></span>
+                        </div>
+                        <div class="autocomplete">
+                            <input class="searchInput" id="myInput" type="text">
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+            <div class="header-right">
+
+                <div class="header-logo ">
+                    <a href="">
+                        <img src="../assets/image/1667121945301-LOGO/SVG/Gold.svg" alt="cip-logo">
+                    </a>
+                </div>
+            </div>
         </div>
     </header>
     <div class="container-fluid d-flex justify-content-center d-flex timeline-content ">
-        <div class="col-12 col-sm-10">
+        <div class="col-10 col-sm-10">
             <div class="row">
                 <div class="col-12">
                     <section class="flight-timeline">
@@ -162,9 +208,9 @@
 
     <div class="container-fluid justify-content-center d-flex add-service ">
         
-        <div class="col-12 col-sm-10">
+        <div class="col-12 col-md-10">
             <div class="row">
-                <div class="col-12 col-sm-9">
+                <div class="col-12 col-lg-9">
                     <p class="fw-bold my-4">علاقه به داشتن سرویس اضافی دارید؟</p>
                     <section class="section-content">
                         <div class="row">
@@ -198,14 +244,14 @@
                                             aria-labelledby="panelsStayOpen-1">
                                             <div class="accordion-body accordion-body-custom">
                                                 <div class="row">
-                                                    <div class="col-12 col-sm-6 add-service-title">
+                                                    <div class="col-12 col-md-6 add-service-title">
                                                         حیوان خانگی
                                                     </div>
-                                                    <div class="col-12 col-sm-6">
+                                                    <div class="col-12 col-md-6">
                                                         <div class="row">
                                                             <div class="col-6">
                                                                 <div class="row add-service-counter">
-                                                                    <div class="col-6 add-service-title">تعداد</div>
+                                                                    <div class="col-6 add-service-title mg-2">تعداد</div>
                                                                     <div
                                                                         class="col-6 d-flex align-items-center justify-content-between">
                                                                         <div class="add-service-action"
@@ -229,7 +275,7 @@
                                                                     <div>&nbsp;تومان&nbsp;</div>
                                                                 </div>
                                                                 <div
-                                                                    class="d-flex align-items-center  justify-content-end">
+                                                                    class="d-flex align-items-center  justify-content-end fz-2">
                                                                     به ازای هر حیوان خانگی
                                                                 </div>
                                                             </div>
@@ -237,14 +283,14 @@
                                                     </div>
                                                 </div>
                                                 <div class="row">
-                                                    <div class="col-12 col-sm-6 add-service-title">
+                                                    <div class="col-12 col-md-6 add-service-title">
                                                         نگهداری از حیوان خانگی
                                                     </div>
-                                                    <div class="col-12 col-sm-6">
+                                                    <div class="col-12 col-md-6">
                                                         <div class="row">
                                                             <div class="col-6">
                                                                 <div class="row add-service-counter">
-                                                                    <div class="col-6 add-service-title">تعداد</div>
+                                                                    <div class="col-6 add-service-title mg-2">تعداد</div>
                                                                     <div
                                                                         class="col-6 d-flex align-items-center justify-content-between">
                                                                         <div class="add-service-action"
@@ -268,7 +314,7 @@
                                                                     <div>&nbsp;تومان&nbsp;</div>
                                                                 </div>
                                                                 <div
-                                                                    class="d-flex align-items-center  justify-content-end">
+                                                                    class="d-flex align-items-center  justify-content-end fz-2">
                                                                     به ازای هر حیوان خانگی
                                                                 </div>
                                                             </div>
@@ -306,14 +352,14 @@
                                             aria-labelledby="panelsStayOpen-2">
                                             <div class="accordion-body  accordion-body-custom">
                                                 <div class="row">
-                                                    <div class="col-12 col-sm-6 add-service-title">
+                                                    <div class="col-12 col-md-6 add-service-title">
                                                         نیاز به ویلچر دارم
                                                     </div>
-                                                    <div class="col-12 col-sm-6">
+                                                    <div class="col-12 col-md-6">
                                                         <div class="row">
                                                             <div class="col-6">
                                                                 <div class="row add-service-counter">
-                                                                    <div class="col-6 add-service-title">تعداد</div>
+                                                                    <div class="col-6 add-service-title mg-2">تعداد</div>
                                                                     <div
                                                                         class="col-6 d-flex align-items-center justify-content-between">
                                                                         <div class="add-service-action"
@@ -341,14 +387,14 @@
                                                     </div>
                                                 </div>
                                                 <div class="row">
-                                                    <div class="col-12 col-sm-6 add-service-title">
+                                                    <div class="col-12 col-md-6 add-service-title fz-2">
                                                         نیاز به دستیار برای ویلچر دارم
                                                     </div>
-                                                    <div class="col-12 col-sm-6">
+                                                    <div class="col-12 col-md-6">
                                                         <div class="row">
                                                             <div class="col-6">
                                                                 <div class="row add-service-counter">
-                                                                    <div class="col-6 add-service-title">تعداد</div>
+                                                                    <div class="col-6 add-service-title mg-2">تعداد</div>
                                                                     <div
                                                                         class="col-6 d-flex align-items-center justify-content-between">
                                                                         <div class="add-service-action"
@@ -1158,10 +1204,10 @@
                                             aria-labelledby="panelsStayOpen-2">
                                             <div class="accordion-body   accordion-body-custom">
                                                 <div class="row">
-                                                    <div class="col-12 col-sm-6 add-service-title">
+                                                    <div class="col-12 col-md-6 add-service-title">
                                                         تویوتا RAV4 - ظرفیت 4 نفر - 4چمدان 30kg
                                                     </div>
-                                                    <div class="col-12 col-sm-6">
+                                                    <div class="col-12 col-md-6">
                                                         <div class="row">
                                                             <div class="col-6">
                                                                 <div class="row add-service-counter">
@@ -1195,14 +1241,14 @@
                                                     </div>
                                                 </div>
                                                 <div class="row">
-                                                    <div class="col-12 col-sm-6 add-service-title">
+                                                    <div class="col-12 col-md-6 add-service-title">
                                                         سواری اتومبیل خارجی (کمری - سونوتا - اکسنت - رنوفلونس -یاریس)
                                                     </div>
-                                                    <div class="col-12 col-sm-6">
+                                                    <div class="col-12 col-md-6">
                                                         <div class="row">
                                                             <div class="col-6">
                                                                 <div class="row add-service-counter">
-                                                                    <div class="col-6 add-service-title">تعداد</div>
+                                                                    <div class="col-6 add-service-title mg-2">تعداد</div>
                                                                     <div
                                                                         class="col-6 d-flex align-items-center justify-content-between">
                                                                         <div class="add-service-action"
@@ -1232,14 +1278,14 @@
                                                     </div>
                                                 </div>
                                                 <div class="row">
-                                                    <div class="col-12 col-sm-6 add-service-title">
+                                                    <div class="col-12 col-md-6 add-service-title">
                                                         مینی ون - ظرفیت 3 نفر - 3چمدان 30kg
                                                     </div>
-                                                    <div class="col-12 col-sm-6">
+                                                    <div class="col-12 col-md-6">
                                                         <div class="row">
                                                             <div class="col-6">
                                                                 <div class="row add-service-counter">
-                                                                    <div class="col-6 add-service-title">تعداد</div>
+                                                                    <div class="col-6 add-service-title mg-2">تعداد</div>
                                                                     <div
                                                                         class="col-6 d-flex align-items-center justify-content-between">
                                                                         <div class="add-service-action"
@@ -1267,14 +1313,14 @@
                                                     </div>
                                                 </div>
                                                 <div class="row">
-                                                    <div class="col-12 col-sm-6 add-service-title">
+                                                    <div class="col-12 col-md-6 add-service-title">
                                                         سواری اتومبیل داخلی (پزو - سمند )
                                                     </div>
-                                                    <div class="col-12 col-sm-6">
+                                                    <div class="col-12 col-md-6">
                                                         <div class="row">
                                                             <div class="col-6">
                                                                 <div class="row add-service-counter">
-                                                                    <div class="col-6 add-service-title">تعداد</div>
+                                                                    <div class="col-6 add-service-title mg-2">تعداد</div>
                                                                     <div
                                                                         class="col-6 d-flex align-items-center justify-content-between">
                                                                         <div class="add-service-action"
@@ -1302,14 +1348,14 @@
                                                     </div>
                                                 </div>
                                                 <div class="row">
-                                                    <div class="col-12 col-sm-6 add-service-title">
+                                                    <div class="col-12 col-md-6 add-service-title">
                                                         ون هیوندای H350 - ظرفیت 7 نفر - 4چمدان 30kg
                                                     </div>
-                                                    <div class="col-12 col-sm-6">
+                                                    <div class="col-12 col-md-6">
                                                         <div class="row">
                                                             <div class="col-6">
                                                                 <div class="row add-service-counter">
-                                                                    <div class="col-6 add-service-title">تعداد</div>
+                                                                    <div class="col-6 add-service-title mg-2">تعداد</div>
                                                                     <div
                                                                         class="col-6 d-flex align-items-center justify-content-between">
                                                                         <div class="add-service-action"
@@ -1345,8 +1391,8 @@
                         </div>
                     </section>
                 </div>
-                <div class="col-12 col-sm-3">
-                    <div class="sticky-top">
+                <div class="col-12 col-lg-3">
+                    <div class="sticky-lg-top">
                         <div class="reserve-details  my-4">
                             <div class="fw-bold">جزییات رزرو</div>
                             <div class="divider"></div>
@@ -1392,14 +1438,14 @@
                             </div>
                             <div class="divider"></div>
 
-                            <div class="row services-select">
+                            <div class="row services-select ">
 
                                 <div class="col-6 d-flex">
                                     <div class="caption">جمع کل:</div>
 
                                 </div>
                                 <div class="col-6">
-                                    <div class="d-flex align-items-center  justify-content-end">
+                                    <div class="d-flex align-items-center  justify-content-end price-text">
                                         <div class="price">230,000,000</div>
                                         <div>&nbsp;تومان&nbsp;</div>
                                     </div>
@@ -1479,17 +1525,18 @@
 </div>
 </a>
 
-<footer class="col-9 footer ">
+<footer class="col-md-10 col-11 footer ">
     <nav class="footer-header">
         <ul class="nav-header ">
-            <li><a href="#" class="font6" id="themeMode"></a></li>
-            <li><a href="#" class="font6"> درباره ما</a></li>
-            <li><a href="#" class="font7">تماس با ما</a></li>
-            <li><a href="#" class="font4">سوالات متداول</a></li>
-            <li><a href="#" class="font1">اخبار</a></li>
+            <li><a href="#" class="font6 " id="themeMode"></a></li>
+            <li><a href="#" class="font6 "> درباره ما</a></li>
+            <li><a href="#" class="font6 "> درباره ما</a></li>
+            <li><a href="#" class="font7 ">تماس با ما</a></li>
+            <li><a href="#" class="font4 d-none d-lg-flex">سوالات متداول</a></li>
+            <li><a href="#" class="font1 ">اخبار</a></li>
             <li><a href="#" class="font2">سرویس ها</a></li>
-            <li><a href="#" class="font3">پکیج ها</a></li>
-            <li><a href="#" class="font6"> قوانین و مقررات</a></li>
+            <li><a href="#" class="font3 ">پکیج ها</a></li>
+            <!-- <li><a href="#" class="font6 "> قوانین و مقررات</a></li> -->
         </ul>
     </nav>
     <div class="siteDividerBody">

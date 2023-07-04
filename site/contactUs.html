@@ -12,6 +12,8 @@
     <link rel="stylesheet" href="../assets/css/style.css">
     <link rel="stylesheet" href="../assets/css/index.css" type="text/css">
     <link rel="stylesheet" href="../assets/css/flight.css" type="text/css">
+    <link rel="stylesheet" href="../assets/css/mobile-menu.css">
+    <link rel="stylesheet" href="../assets/css/responsive.css">
 
 
     <title>درباره royal</title>
@@ -19,7 +21,7 @@
 
 <body class="bg-dark-blue">
     <header class="header-top ">
-        <div class="navbar-header col-12 col-sm-10">
+        <div class="navbar-header col-12 col-sm-10 header-desktop">
             <div class="header-left">
 
                 <div class="header-lang">
@@ -78,6 +80,7 @@
                         </div>
                     </div>
                 </div>
+             
                 <div class="header-signin btn-yellow-border btn-dif">
                     <a href="#">ورود /</a>
                     <a href="#"> ثبت نام</a>
@@ -102,7 +105,52 @@
                 </div>
             </div>
             <div class="header-right">
+                <div class="header-logo ">
+                    <a href="">
+                        <img src="../assets/image/1667121945301-LOGO/SVG/Gold.svg" alt="cip-logo">
+                    </a>
+                </div>
+            </div>
+        </div>
 
+        <div class="navbar-header col-12 header-mobile">
+            <div class="header-left">
+                <span class="hamburger-toggle-button">
+                    <span class="icon-menu"></span>
+                </span>
+                
+                <div class="mobile-menu nav-drawer inactive" tabindex="-1">
+                    <span class="close-button">
+                        <svg class="close-button-icon" viewBox="0 0 24 24">
+                            <path d="M5.5 5.5L18.5 18.5M18.5 5.5L5.5 18.5" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                    </span>
+                    
+                    <ul>
+                        <li><a href="#">خانه</a></li>
+                        <li><a href="#">سرویس ها</a></li>
+                        <li><a href="#">پکیج ها</a></li>
+                        <li><a href="#">سوالات متداول</a></li>
+                        <li><a href="#"> درباره ما</a></li>
+                        <li><a href="#">ارتباط با ما</a></li>
+                    </ul>
+                    <div class="header-signin btn-yellow-border btn-dif">
+                        <a href="#">ورود /</a>
+                        <a href="#"> ثبت نام</a>
+                    </div>
+
+                    <!-- <div class="header-search">
+                        <div class="search-icon circle">
+                            <span class="icon-Search"></span>
+                        </div>
+                        <div class="autocomplete">
+                            <input class="searchInput" id="myInput" type="text">
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+            <div class="header-right">
 
                 <div class="header-logo ">
                     <a href="">
@@ -110,8 +158,6 @@
                     </a>
                 </div>
             </div>
-
-
         </div>
     </header>
     <!-- icon-call -->
@@ -131,14 +177,14 @@
 </a>
 <section class="contact_section">
     <div class="d-flex  d-flex  flex-column align-items-center">
-        <div class="col-sm-8">
+        <div class="col-md-10">
             <div class="text-section d-flex  justify-content-center ">
                 <h2 class="section-title mb-5 yellow-text">
                     ارتباط با ما
                 </h2>
             </div>
-            <div class="contact_items mt-4">
-                <div class="row ">
+            <div class="contact_items mt-4 ">
+                <div class="row gx-0">
                     <div class="col-12 col-md-4 ">
                         <div class="contact_item  ">
                             <div class="contact_item-text">
@@ -293,18 +339,18 @@
       </svg>
 </div>
 </a>
-
-<footer class="col-9 footer ">
+<footer class="col-md-10 col-11 footer ">
     <nav class="footer-header">
         <ul class="nav-header ">
-            <li><a href="#" class="font6" id="themeMode"></a></li>
-            <li><a href="#" class="font6"> درباره ما</a></li>
-            <li><a href="#" class="font7">تماس با ما</a></li>
-            <li><a href="#" class="font4">سوالات متداول</a></li>
-            <li><a href="#" class="font1">اخبار</a></li>
+            <li><a href="#" class="font6 " id="themeMode"></a></li>
+            <li><a href="#" class="font6 "> درباره ما</a></li>
+            <li><a href="#" class="font6 "> درباره ما</a></li>
+            <li><a href="#" class="font7 ">تماس با ما</a></li>
+            <li><a href="#" class="font4 d-none d-lg-flex">سوالات متداول</a></li>
+            <li><a href="#" class="font1 ">اخبار</a></li>
             <li><a href="#" class="font2">سرویس ها</a></li>
-            <li><a href="#" class="font3">پکیج ها</a></li>
-            <li><a href="#" class="font6"> قوانین و مقررات</a></li>
+            <li><a href="#" class="font3 ">پکیج ها</a></li>
+            <!-- <li><a href="#" class="font6 "> قوانین و مقررات</a></li> -->
         </ul>
     </nav>
     <div class="siteDividerBody">
