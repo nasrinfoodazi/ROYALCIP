@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="../assets/bootstrap/css/bootstrap.rtl.min.css" type="text/css">
     <link rel="stylesheet" href="../assets/css/index.css" type="text/css">
     <link rel="stylesheet" href="../assets/css/flight.css" type="text/css">
+    <link rel="stylesheet" href="../assets/css/mobile-menu.css">
+    <link rel="stylesheet" href="../assets/css/responsive.css">
     <!--    font-->
     <link rel="stylesheet" href="../assets/css/style.css">
 
@@ -18,7 +20,146 @@
 </head>
 
 <body class="bg-dark-blue " id="">
-    
+    <header class="header-top ">
+        <div class="navbar-header col-12 col-sm-10 header-desktop">
+            <div class="header-left">
+
+                <div class="header-lang">
+                    <div class="lang-icon circle ">
+
+                        <span class="icon-language-and-currency "></span>
+                    </div>
+                    <div class="lang-drop-down box arrow-top">
+                        <div class="language">
+                            <h4 class="header-drop-down">
+                                <i class="icon-language light-blue "></i>
+                                <span>زبان </span>
+                            </h4>
+                            <div class="drop-select">
+                                <input type="radio" class="btn-check " name="options" id="option1" autocomplete="off"
+                                    checked>
+                                <label class="btn language-btn" for="option1">
+                                    <h5>فارسی</h5>
+                                    <span>ایران</span>
+                                </label>
+                                <input type="radio" class="btn-check " name="options" id="option2" autocomplete="off">
+                                <label class="btn language-btn" for="option2">
+                                    <h5>انگلیسی</h5>
+                                    <span>امریکا</span>
+
+                                </label>
+
+                            </div>
+                        </div>
+                        <div class="country">
+                            <h4 class="header-drop-down ">
+                                <i class="icon-currency light-blue"></i>
+                                <span>واحد پول</span>
+                            </h4>
+                            <div class="drop-select">
+                                <input type="radio" class="btn-check " name="country" id="count1" autocomplete="off"
+                                    checked>
+                                <label class="btn language-btn" for="count1">
+                                    <h5>ریال ایران</h5>
+                                    <span>ریال</span>
+                                </label>
+                                <input type="radio" class="btn-check " name="country" id="count2" autocomplete="off">
+                                <label class="btn language-btn" for="count2">
+                                    <h5>دلار امریکا</h5>
+                                    <span>USD-$</span>
+
+                                </label>
+                                <input type="radio" class="btn-check" name="country" id="count3" autocomplete="off">
+                                <label class="btn language-btn" for="count3">
+                                    <h5>یورو</h5>
+                                    <span>EUR-$</span>
+
+                                </label>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="header-signin btn-yellow-border btn-dif">
+                    <a href="#">ورود /</a>
+                    <a href="#"> ثبت نام</a>
+                </div>
+                <nav class="d-flex align-items-center">
+                    <ul class="nav-header m-0">
+                        <li><a href="#">خانه</a></li>
+                        <li><a href="#">سرویس ها</a></li>
+                        <li><a href="#">پکیج ها</a></li>
+                        <li><a href="#">سوالات متداول</a></li>
+                        <li><a href="#"> درباره ما</a></li>
+                        <li><a href="#">ارتباط با ما</a></li>
+                    </ul>
+                </nav>
+                <div class="header-search">
+                    <div class="search-icon circle">
+                        <span class="icon-Search"></span>
+                    </div>
+                    <div class="autocomplete">
+                        <input class="searchInput" id="myInput" type="text">
+                    </div>
+                </div>
+            </div>
+            <div class="header-right">
+                <div class="header-logo ">
+                    <a href="">
+                        <img src="../assets/image/1667121945301-LOGO/SVG/Gold.svg" alt="cip-logo">
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="navbar-header col-12 header-mobile">
+            <div class="header-left">
+                <span class="hamburger-toggle-button">
+                    <span class="icon-menu"></span>
+                </span>
+
+                <div class="mobile-menu nav-drawer inactive" tabindex="-1">
+                    <span class="close-button">
+                        <svg class="close-button-icon" viewBox="0 0 24 24">
+                            <path d="M5.5 5.5L18.5 18.5M18.5 5.5L5.5 18.5" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                    </span>
+
+                    <ul>
+                        <li><a href="#">خانه</a></li>
+                        <li><a href="#">سرویس ها</a></li>
+                        <li><a href="#">پکیج ها</a></li>
+                        <li><a href="#">سوالات متداول</a></li>
+                        <li><a href="#"> درباره ما</a></li>
+                        <li><a href="#">ارتباط با ما</a></li>
+                    </ul>
+                    <div class="header-signin btn-yellow-border btn-dif">
+                        <a href="#">ورود /</a>
+                        <a href="#"> ثبت نام</a>
+                    </div>
+
+                    <!-- <div class="header-search">
+                        <div class="search-icon circle">
+                            <span class="icon-Search"></span>
+                        </div>
+                        <div class="autocomplete">
+                            <input class="searchInput" id="myInput" type="text">
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+            <div class="header-right">
+
+                <div class="header-logo ">
+                    <a href="">
+                        <img src="../assets/image/1667121945301-LOGO/SVG/Gold.svg" alt="cip-logo">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
         <!-- icon-call -->
 
         <div id="main-div" class="">
@@ -263,17 +404,18 @@
 </div>
 </a>
 
-<footer class="col-9 footer ">
+<footer class="col-md-10 col-11 footer ">
     <nav class="footer-header">
         <ul class="nav-header ">
-            <li><a href="#" class="font6" id="themeMode"></a></li>
-            <li><a href="#" class="font6"> درباره ما</a></li>
-            <li><a href="#" class="font7">تماس با ما</a></li>
-            <li><a href="#" class="font4">سوالات متداول</a></li>
-            <li><a href="#" class="font1">اخبار</a></li>
+            <li><a href="#" class="font6 " id="themeMode"></a></li>
+            <li><a href="#" class="font6 "> درباره ما</a></li>
+            <li><a href="#" class="font6 "> درباره ما</a></li>
+            <li><a href="#" class="font7 ">تماس با ما</a></li>
+            <li><a href="#" class="font4 d-none d-lg-flex">سوالات متداول</a></li>
+            <li><a href="#" class="font1 ">اخبار</a></li>
             <li><a href="#" class="font2">سرویس ها</a></li>
-            <li><a href="#" class="font3">پکیج ها</a></li>
-            <li><a href="#" class="font6"> قوانین و مقررات</a></li>
+            <li><a href="#" class="font3 ">پکیج ها</a></li>
+            <!-- <li><a href="#" class="font6 "> قوانین و مقررات</a></li> -->
         </ul>
     </nav>
     <div class="siteDividerBody">
@@ -307,6 +449,7 @@
     </div>
 
 </footer>
+
 <!-- Optional JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 <script src="../assets/bootstrap/js/jquery-3.2.1.slim.min.js" type="application/javascript"></script>
