@@ -548,11 +548,11 @@ const navDrawer = document.querySelector('.nav-drawer');
 const closeButton = document.querySelector('.close-button');
 console.log("closeButton", closeButton)
 
-toggleButton.addEventListener('click', () => {
+toggleButton?.addEventListener('click', () => {
     toggleNavDrawer();
 });
 
-closeButton.addEventListener('click', () => {
+closeButton?.addEventListener('click', () => {
     closeNavDrawer();
 });
 function toggleNavDrawer() {
@@ -578,11 +578,9 @@ var passengerCounter = {
     baby: 0
 }
 
-$(".dropdown-toggle, .dropdown-menu li a").click(function (e) {
-    e.stopPropagation();
-});
-function addPassenger(e, type, number) {
-    if (passengerCounter) {
+
+function addPassengerfunc(e, type, number) {
+    if (type) {
         console.log("(type, number", e, type, number, passengerCounter)
         let num = passengerCounter[type] + (number)
         if (num < 0) {
@@ -594,8 +592,7 @@ function addPassenger(e, type, number) {
         passengerCounter[type] = num;
         document.getElementById(`${type}-passenger`).innerText = num;
         document.getElementById(`passenger-counter`).value = passengerCounter['big'] + passengerCounter['child'] + passengerCounter['baby'];
+
     }
-
-
 
 }
