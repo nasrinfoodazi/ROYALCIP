@@ -235,20 +235,20 @@
                         <div class="d-flex row">
                             <div class="col-lg-10 col-12 mb-2 mb-lg-0">
                                 <div class="search-input-section row px-1">
-                                    <div class="col-md-3  col-12 px-1 px-md-0">
+                                    <div class="col-lg-3  col-md-6 col-12 px-1 px-md-0">
                                         <label for="">تاریخ پرواز</label>
                                         <input type="text" class="tashrifat-date" />
 
                                     </div>
-                                    <div class="col-md-3 px-1 col-12">
+                                    <div class="col-lg-3 col-md-6 px-1 col-12">
                                         <label for="">فرودگاه</label>
                                         <input type="text">
                                     </div>
-                                    <div class="col-md-3 px-1 col-12">
+                                    <div class="col-lg-3 col-md-6 px-1 col-12">
                                         <label for="">پرواز و سفر</label>
                                         <input type="text">
                                     </div>
-                                    <div class="col-md-3 px-1 col-12">
+                                    <div class="col-lg-3 col-md-6 px-1 col-12">
                                         <label for="">تعداد مسافران</label>
 
                                         <div class="dropdown">
@@ -260,30 +260,30 @@
                                               Dropdown button
                                             </button> -->
 
-                                            <div class="row dropdown-menu" class="dropdown-menu"
+                                            <div class="row dropdown-menu dropdown-menu-2 "
                                                 aria-labelledby="passenger-counter">
-                                                <div class="col-12">
-                                                    <div>بزرگسال(۱۲ سال به بالا)</div>
-                                                    <div>
-                                                        <div onclick="addPassengerfunc(event,'big',1)">+</div>
-                                                        <div id="big-passenger">1</div>
-                                                        <div onclick="addPassengerfunc(event,'big',-1)">-</div>
+                                                <div class="col-12 ">
+                                                    <div class=" d-flex justify-content-center">بزرگسال(۱۲ سال به بالا)</div>
+                                                    <div class="d-flex justify-content-center">
+                                                        <div onclick="addPassengerfunc(event,'big',1)" class="plus-pass">+</div>
+                                                        <div class="count-pass " id="big-passenger">1</div>
+                                                        <div onclick="addPassengerfunc(event,'big',-1)" class="minus-pass">-</div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 my-3">
+                                                    <div class=" d-flex justify-content-center">کودک(۲ تا ۱۲ سال)</div>
+                                                    <div class="d-flex justify-content-center">
+                                                        <div onclick="addPassengerfunc(event,'child',1)" class="plus-pass">+</div>
+                                                        <div class="count-pass " id="child-passenger">0</div>
+                                                        <div onclick="addPassengerfunc(event,'child',-1)" class="minus-pass">-</div>
                                                     </div>
                                                 </div>
                                                 <div class="col-12">
-                                                    <div>کودک(۲ تا ۱۲ سال)</div>
-                                                    <div>
-                                                        <div onclick="addPassengerfunc(event,'child',1)">+</div>
-                                                        <div id="child-passenger">0</div>
-                                                        <div onclick="addPassengerfunc(event,'child',-1)">-</div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-12">
-                                                    <div>نوزاد(۱۰ روز تا ۲ سال)</div>
-                                                    <div>
-                                                        <div onclick="addPassengerfunc(event,'baby',1)">+</div>
-                                                        <div id="baby-passenger">0</div>
-                                                        <div onclick="addPassengerfunc(event,'baby',-1)">-</div>
+                                                    <div class=" d-flex justify-content-center">نوزاد(۱۰ روز تا ۲ سال)</div>
+                                                    <div class="d-flex justify-content-center">
+                                                        <div onclick="addPassengerfunc(event,'baby',1)" class="plus-pass">+</div>
+                                                        <div class="count-pass " id="baby-passenger">0</div>
+                                                        <div onclick="addPassengerfunc(event,'baby',-1)" class="minus-pass">-</div>
                                                     </div>
                                                 </div>
                                             </div>

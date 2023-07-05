@@ -2092,6 +2092,7 @@ input[type=email] {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .ticket-service {
@@ -2113,6 +2114,7 @@ input[type=email] {
 
     border-radius: 9px;
     background-color: var(--darkblue);
+    /* display: flex;flex-wrap: wrap; */
 }
 
 .yellow-box {
@@ -2160,7 +2162,7 @@ input[type=email] {
 }
 
 .dl-ticket a {
-    width: 180px;
+    /* width: 180px; */
     padding: 10px 20px;
     text-align: center;
     color: var(--white);
@@ -2275,4 +2277,52 @@ input[type=email] {
 .services-select {
     display: flex;
     flex-wrap: wrap;
+}
+/* datepicker */
+.datepicker-container{
+    font-family: var(--bs-font-IRANSans);
+    border:2px sold var(--yellow)
+}
+
+.datepicker tbody td{
+    font-family: var(--bs-font-IRANSans-bold) !important ;
+}
+.datepicker-navigator{
+    background-color: var(--yellow);
+    font-family: var(--bs-font-IRANSans);
+}
+.datepicker-plot-area{
+    font-family: var(--bs-font-IRANSans);
+    width: 230px ;
+    border:2px solid var(--yellow) !important;
+    width: 100% !important;
+    position: absolute;
+    width: 100%;
+}
+.datepicker-plot-area *{
+    font-family: var(--bs-font-IRANSans-bold);
+    
+}
+.dropdown-menu-2{
+    width: 100%;
+}
+.plus-pass,
+.minus-pass{
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:var(--yellow);
+    border-radius: 5px;
+    color: var(--white);
+}
+.count-pass{
+    display: flex;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    justify-content: center;
+
 }

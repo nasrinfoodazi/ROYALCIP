@@ -145,7 +145,12 @@
     padding-left: 20px;
     padding-left: 10px;
   }
-
+  .caption{
+    font-size: 12px;
+  }
+  .datepicker-plot-area{
+    width: 400px !important;
+  }
 }
 
 @media (max-width: 991.98px) {
@@ -221,7 +226,14 @@
  .flight-timeline ul>li>div:nth-child(2){
     font-size:12px;
 }
-
+.ticket-img{
+    order: 1;
+}
+.row-center{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
 }
 
 @media (max-width: 1200px) {
@@ -240,5 +252,8 @@
 }
 .logo-img-send{
     flex-wrap: wrap;
-    
+
+  }
+  .bd-bottom{
+    border-bottom:1px dotted var(--white)
   }
